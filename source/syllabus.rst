@@ -7,9 +7,10 @@ These are the official course syllabi for the most recent section(s) of this cou
 Course: COMP 335/488 Formal Methods in Software Engineering
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**UNDER CONSTRUCTION FOR FALL 2022**
-
-- Prerequisite: `Comp 313 <https://academics.cs.luc.edu/courses/comp313.html>`_
+- Prerequisites: 
+  `COMP 313 <https://academics.cs.luc.edu/courses/comp313.html>`_/`413 <https://academics.cs.luc.edu/courses/comp413.html>`_
+  or
+  `COMP 272 <https://academics.cs.luc.edu/courses/comp272.html>`_/`400C <https://academics.cs.luc.edu/courses/comp400c.html>`_
 - Official course description: `Comp 335 <https://academics.cs.luc.edu/courses/comp335.html>`_
 
 
