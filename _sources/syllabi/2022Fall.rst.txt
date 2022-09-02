@@ -27,9 +27,11 @@ Sections: 335-001/488-335 Fall 2022
 
   - :ref:`appendix-software`
   - `These lecture notes <https://laufer.cs.luc.edu/lucformalmethodscourse>`_
-  - `An Introduction to Regular Expressions <https://learning.oreilly.com/library/view/an-introduction-to/9781492082569>`_
-   - `Effective Software Testing <https://learning.oreilly.com/library/view/effective-software-testing/9781633439931>`_ (chapters 2-5)
   - `Notes on Hoare Logic <https://www.cs.cmu.edu/~aldrich/courses/15-819O-13sp/resources/hoare-logic.pdf>`_
+  - `PlusCal User's Manual <https://lamport.azurewebsites.net/tla/p-manual.pdf>`_
+  - `Learning TLA <https://old.learntla.com>`_
+  - `An Introduction to Regular Expressions <https://learning.oreilly.com/library/view/an-introduction-to/9781492082569>`_
+   - `Effective Software Testing <https://learning.oreilly.com/library/view/effective-software-testing/9781633439931>`_ (chapters 2-5) 
   - `Practical TLA+: Planning Driven Development <https://learning.oreilly.com/library/view/practical-tla-planning/9781484238295>`_
 
 - *Additional resources:* :ref:`appendix-resources`
