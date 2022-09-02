@@ -35,6 +35,10 @@ We maintain these lecture notes using `GitHub`_. We also offer `PDF`_ and `ePub`
    overview
    summary
 
+   software 
+   syllabus
+   todo
+
 .. Indices and tables
 .. ==================
 
