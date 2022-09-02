@@ -3,6 +3,8 @@ Overview
 
 In this chapter, we provide an outline of the course, along with a brief motivation and key learning outcomes.
 
+This course studies the formal specification, verification, and synthesis of software. 
+
 
 Motivation
 ~~~~~~~~~~
