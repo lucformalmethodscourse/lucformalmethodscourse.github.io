@@ -23,9 +23,9 @@ Key learning outcomes
   of software systems
 - Proficiency in the representative methods and tools, such as
 
+  - design-by-contract 
   - property-based testing
-  - design-by-contract
-  - 
+  - model-checking sequential and concurrent systems
 
 
 Course outline
