@@ -14,6 +14,7 @@
         <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
@@ -68,55 +69,53 @@
            <div itemprop="articleBody">
              
   <section id="appendix-course-software">
-<span id="appendix-software"></span><h1>Appendix: Course Software<a class="headerlink" href="#appendix-course-software" title="Permalink to this headline"></a></h1>
-<p><strong>UNDER CONSTRUCTION FOR FALL 2022</strong></p>
+<span id="appendix-software"></span><h1>Appendix: Course Software<a class="headerlink" href="#appendix-course-software" title="Permalink to this heading"></a></h1>
 <p>You can choose either or both of the following options.</p>
 <section id="cloud-based-development-environment">
-<h2>Cloud-based development environment<a class="headerlink" href="#cloud-based-development-environment" title="Permalink to this headline"></a></h2>
+<h2>Cloud-based development environment<a class="headerlink" href="#cloud-based-development-environment" title="Permalink to this heading"></a></h2>
 <p>This option is recommended if you have any problems with your local setup or if you prefer a basic cloud-based setup.</p>
 <section id="pros">
-<h3>Pros<a class="headerlink" href="#pros" title="Permalink to this headline"></a></h3>
+<h3>Pros<a class="headerlink" href="#pros" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>consistent, cloud-based environment</p></li>
 </ul>
 </section>
 <section id="cons">
-<h3>Cons<a class="headerlink" href="#cons" title="Permalink to this headline"></a></h3>
+<h3>Cons<a class="headerlink" href="#cons" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>requires good network connection</p></li>
 <li><p>might lack code completion</p></li>
+<li><p>free plan might be underresourced (CPUs, RAM, disk space, etc.)</p></li>
 </ul>
 </section>
-<section id="zero-install-option">
-<h3>Zero-install option<a class="headerlink" href="#zero-install-option" title="Permalink to this headline"></a></h3>
-<p>Scastie is an interactive playground for Scala with support for Scala 3 and sbt (Scala Build Tool) configuration.
-It allows you to save code snippets to your GitHub account, which you can access later.
-It is not suitable for working on full-fledged Scala projects, however.</p>
-<p>To launch, visit <a class="reference external" href="https://scastie.scala-lang.org">https://scastie.scala-lang.org</a>.
-Be sure to</p>
-<ul>
-<li><p>choose target Scala 3 and Scala version 3.0.1</p></li>
-<li><p>add the following <cite>scalacOptions</cite> under build settings:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;-Yexplicit-nulls&quot;</span><span class="p">,</span>
-<span class="s2">&quot;-language:strictEquality&quot;</span>
-</pre></div>
-</div>
-</li>
+<section id="gitpod-recommended">
+<h3>Gitpod (recommended)<a class="headerlink" href="#gitpod-recommended" title="Permalink to this heading"></a></h3>
+<p>Gitpod is a cloud-based development environment based on Visual Studio
+Code running on Ubuntu LTS.</p>
+<p>To launch, visit <a class="reference external" href="https://gitpod.io">https://gitpod.io</a> and log in using your GitHub
+account.</p>
+<ul class="simple">
+<li><p>The first time around, create a new workspace and select the GitHub
+project you want to work on in the new workspace.</p></li>
+<li><p>After that, your GitHub landing page will show your workspace(s).</p></li>
+<li><p>For each new workspace, using the installed <a class="reference external" href="https://sdkman.io">SDKMAN!</a>, perform a one-time installation of java and <a class="reference external" href="https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Linux.html">sbt</a>.</p></li>
+<li><p>Now you should be able to work on the project by following the
+instructions in the readme.</p></li>
 </ul>
 </section>
 </section>
 <section id="locally-installed-development-environment">
-<h2>Locally installed development environment<a class="headerlink" href="#locally-installed-development-environment" title="Permalink to this headline"></a></h2>
+<h2>Locally installed development environment<a class="headerlink" href="#locally-installed-development-environment" title="Permalink to this heading"></a></h2>
 <p>This option will give you an advanced development environment with code completion, type info, etc.</p>
 <section id="id1">
-<h3>Pros<a class="headerlink" href="#id1" title="Permalink to this headline"></a></h3>
+<h3>Pros<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>provides powerful capabilities, including code completion</p></li>
 <li><p>does not require network connection once installed</p></li>
 </ul>
 </section>
 <section id="id2">
-<h3>Cons<a class="headerlink" href="#id2" title="Permalink to this headline"></a></h3>
+<h3>Cons<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>might be slow on older machines</p></li>
 <li><p>need to maintain on each machine you use</p></li>
@@ -124,9 +123,9 @@ Be sure to</p>
 </ul>
 </section>
 <section id="required-packages">
-<h3>Required packages<a class="headerlink" href="#required-packages" title="Permalink to this headline"></a></h3>
+<h3>Required packages<a class="headerlink" href="#required-packages" title="Permalink to this heading"></a></h3>
 <ul class="simple">
-<li><p><a class="reference external" href="http://www.oracle.com/technetwork/java/javase/downloads/">Java 11 and/or newer JDK</a></p></li>
+<li><p><a class="reference external" href="http://www.oracle.com/technetwork/java/javase/downloads/">Java 17 and/or newer JDK</a></p></li>
 <li><p><a class="reference external" href="http://git-scm.com/">Git</a> distributed version control system (usually preinstalled on Mac OS and Linux)</p>
 <ul>
 <li><p>recommended installation option on Windows: <em>Use Git and optional Unix tools from the Windows Command Prompt</em></p></li>
@@ -134,26 +133,22 @@ Be sure to</p>
 </ul>
 </li>
 <li><p><a class="reference external" href="https://www.scala-sbt.org/1.x/docs/Setup.html">sbt</a> Scala build tool</p></li>
-<li><p><a class="reference external" href="https://visualvm.github.io/">VisualVM</a> visual heap profiling tool</p></li>
 <li><p><em>Mac and Linux users are strongly encouraged to use</em> <a class="reference external" href="https://sdkman.io/">SDKMAN!</a> <em>to manage their Java, sbt, VisualVM, and other command-line development tools.</em></p></li>
 </ul>
 </section>
 <section id="choices-of-development-environments">
-<h3>Choices of development environments<a class="headerlink" href="#choices-of-development-environments" title="Permalink to this headline"></a></h3>
+<h3>Choices of development environments<a class="headerlink" href="#choices-of-development-environments" title="Permalink to this heading"></a></h3>
 <ul class="simple">
-<li><p><a class="reference external" href="https://www.jetbrains.com/idea/download/">IntelliJ IDEA CE</a> integrated development environment (recommended)</p>
+<li><p><a class="reference external" href="https://www.jetbrains.com/idea/download/">IntelliJ IDEA CE</a> integrated development environment (recommended for Java development)</p>
 <ul>
 <li><p>check specific prerequisite details for your platform</p></li>
 <li><p>for the following steps, make sure you have no projects open and are looking at the welcome window as in the attached screenshot</p></li>
-<li><p><em>Scala plugin installation:</em> IntelliJ IDEA &gt; Configure (bottom right) &gt; Plugins &gt; Browse repositories &gt; find and right-click Scala &gt; download and install &gt; close repository browser &gt; OK to restart IDEA
-Because Scala 3 is still evolving, JetBrains recommend setting the IntelliJ Scala plugin to the nightly channel for more frequent updates. For details, visit <a class="reference external" href="https://blog.jetbrains.com/scala/2020/03/17/scala-3-support-in-intellij-scala-plugin/">this blog post</a>.</p></li>
 <li><p><em>JDK configuration</em>: IntelliJ IDEA &gt; Configure &gt; Project Defaults &gt; Project Structure &gt; Platform Settings &gt; SDKs &gt; + &gt; JDK &gt; navigate to the installation directory of your most recent JDK &gt; OK</p></li>
 </ul>
 </li>
-<li><p><a class="reference external" href="https://code.visualstudio.com/">Visual Studio Code</a> alternative based on your preference and/or experience</p>
+<li><p><a class="reference external" href="https://code.visualstudio.com/">Visual Studio Code</a> alternative based on your preference and/or experience (recommended for PlusCal/TLA+ development)</p>
 <ul>
-<li><p>it should offer to install Scala support when you open a Scala project folder for the first time</p></li>
-<li><p><a class="reference external" href="https://stackoverflow.com/a/61156424">discussion of IDEA vs VS Code for Scala development</a></p></li>
+<li><p>need to install TLA+ extension</p></li>
 </ul>
 </li>
 <li><p>conventional text editor</p>
@@ -166,21 +161,8 @@ Because Scala 3 is still evolving, JetBrains recommend setting the IntelliJ Scal
 </ul>
 </section>
 </section>
-<section id="sbt-optional-plugins">
-<h2>sbt optional plugins<a class="headerlink" href="#sbt-optional-plugins" title="Permalink to this headline"></a></h2>
-<p>This section applies to all uses of sbt, whether cloud-based or on the local command line.</p>
-<p>These are useful additional sbt plugins. <a class="reference external" href="http://www.scala-sbt.org/0.13/tutorial/Using-Plugins.html">You can install them per project or globally.</a> Many of the example projects already come with one or more of these plugins (especially the first two).</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://github.com/sbt/sbt-native-packager">sbt-native-packager</a>: creates a script for running your app outside sbt</p></li>
-<li><p><a class="reference external" href="https://github.com/scoverage/sbt-scoverage">sbt-scoverage</a>: uses Scoverage to produce a test code coverage report</p></li>
-<li><p><a class="reference external" href="https://github.com/rtimush/sbt-updates">sbt-updates</a>: checks central repos for dependency updates</p></li>
-<li><p><a class="reference external" href="https://github.com/scalameta/sbt-scalafmt">sbt-scalafmt</a>: automatic source code formatting using <a class="reference external" href="https://scalameta.org/scalafmt/">Scalafmt</a></p></li>
-<li><p><a class="reference external" href="https://github.com/scalastyle/scalastyle-sbt-plugin">scalastyle</a>: static code checker for Scala</p></li>
-<li><p><a class="reference external" href="https://github.com/wartremover/wartremover">wart remover</a>: code linting tool (another static checker)</p></li>
-</ul>
-</section>
 <section id="github">
-<h2>GitHub<a class="headerlink" href="#github" title="Permalink to this headline"></a></h2>
+<h2>GitHub<a class="headerlink" href="#github" title="Permalink to this heading"></a></h2>
 <p><a class="reference external" href="https://github.com">GitHub</a> is a provider of hosted Git repositories, which emphasizes community and collaboration. For this reason, we use it to host our course examples.</p>
 <ul class="simple">
 <li><p>Create a GitHub account if you don’t already have one.</p></li>
@@ -197,7 +179,7 @@ Because Scala 3 is still evolving, JetBrains recommend setting the IntelliJ Scal
 </ul>
 </section>
 <section id="remote-participation">
-<h2>Remote participation<a class="headerlink" href="#remote-participation" title="Permalink to this headline"></a></h2>
+<h2>Remote participation<a class="headerlink" href="#remote-participation" title="Permalink to this heading"></a></h2>
 <p>This software allows you to participating in class remotely in case of weather emergencies, pandemics, etc.
 For security and privacy reasons, be sure to update it frequently.</p>
 <ul class="simple">

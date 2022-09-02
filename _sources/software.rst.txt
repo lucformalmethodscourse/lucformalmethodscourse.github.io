@@ -3,9 +3,6 @@
 Appendix: Course Software
 -------------------------
 
-**UNDER CONSTRUCTION FOR FALL 2022**
-
-
 You can choose either or both of the following options.
 
 
@@ -26,22 +23,26 @@ Cons
 
 - requires good network connection
 - might lack code completion
+- free plan might be underresourced (CPUs, RAM, disk space, etc.)
 
-Zero-install option
-```````````````````
 
-Scastie is an interactive playground for Scala with support for Scala 3 and sbt (Scala Build Tool) configuration.
-It allows you to save code snippets to your GitHub account, which you can access later.
-It is not suitable for working on full-fledged Scala projects, however.
+Gitpod (recommended)
+````````````````````
 
-To launch, visit https://scastie.scala-lang.org.
-Be sure to
+Gitpod is a cloud-based development environment based on Visual Studio
+Code running on Ubuntu LTS.
 
-- choose target Scala 3 and Scala version 3.0.1
-- add the following `scalacOptions` under build settings::
+To launch, visit https://gitpod.io and log in using your GitHub
+account.
 
-    "-Yexplicit-nulls",
-    "-language:strictEquality"
+- The first time around, create a new workspace and select the GitHub
+  project you want to work on in the new workspace.
+- After that, your GitHub landing page will show your workspace(s).
+- For each new workspace, using the installed `SDKMAN!
+  <https://sdkman.io>`_, perform a one-time installation of java and `sbt
+  <https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Linux.html>`_.
+- Now you should be able to work on the project by following the
+  instructions in the readme.
 
 
 Locally installed development environment
@@ -68,7 +69,7 @@ Cons
 Required packages
 `````````````````
 
-- `Java 11 and/or newer JDK <http://www.oracle.com/technetwork/java/javase/downloads/>`_
+- `Java 17 and/or newer JDK <http://www.oracle.com/technetwork/java/javase/downloads/>`_
 - `Git <http://git-scm.com/>`_ distributed version control system (usually preinstalled on Mac OS and Linux)
 
   - recommended installation option on Windows: *Use Git and optional Unix tools from the Windows Command Prompt*
@@ -76,46 +77,28 @@ Required packages
 
 
 - `sbt <https://www.scala-sbt.org/1.x/docs/Setup.html>`_ Scala build tool
-- `VisualVM <https://visualvm.github.io/>`_ visual heap profiling tool
 - *Mac and Linux users are strongly encouraged to use* `SDKMAN! <https://sdkman.io/>`_ *to manage their Java, sbt, VisualVM, and other command-line development tools.*
 
 
 Choices of development environments
 ```````````````````````````````````
 
-- `IntelliJ IDEA CE <https://www.jetbrains.com/idea/download/>`_ integrated development environment (recommended)
+- `IntelliJ IDEA CE <https://www.jetbrains.com/idea/download/>`_ integrated development environment (recommended for Java development)
 
   - check specific prerequisite details for your platform
   - for the following steps, make sure you have no projects open and are looking at the welcome window as in the attached screenshot
-  - *Scala plugin installation:* IntelliJ IDEA > Configure (bottom right) > Plugins > Browse repositories > find and right-click Scala > download and install > close repository browser > OK to restart IDEA
-    Because Scala 3 is still evolving, JetBrains recommend setting the IntelliJ Scala plugin to the nightly channel for more frequent updates. For details, visit `this blog post <https://blog.jetbrains.com/scala/2020/03/17/scala-3-support-in-intellij-scala-plugin/>`_.
   - *JDK configuration*: IntelliJ IDEA > Configure > Project Defaults > Project Structure > Platform Settings > SDKs > + > JDK > navigate to the installation directory of your most recent JDK > OK
 
-- `Visual Studio Code <https://code.visualstudio.com/>`_ alternative based on your preference and/or experience
+- `Visual Studio Code <https://code.visualstudio.com/>`_ alternative based on your preference and/or experience (recommended for PlusCal/TLA+ development)
 
-  - it should offer to install Scala support when you open a Scala project folder for the first time
-  - `discussion of IDEA vs VS Code for Scala development <https://stackoverflow.com/a/61156424>`_
+  - need to install TLA+ extension 
+
 
 - conventional text editor
 
   - Emacs
   - vim
   - etc.
-
-
-sbt optional plugins
-~~~~~~~~~~~~~~~~~~~~
-
-This section applies to all uses of sbt, whether cloud-based or on the local command line.
-
-These are useful additional sbt plugins. `You can install them per project or globally. <http://www.scala-sbt.org/0.13/tutorial/Using-Plugins.html>`_ Many of the example projects already come with one or more of these plugins (especially the first two).
-
-- `sbt-native-packager <https://github.com/sbt/sbt-native-packager>`_: creates a script for running your app outside sbt
-- `sbt-scoverage <https://github.com/scoverage/sbt-scoverage>`_: uses Scoverage to produce a test code coverage report
-- `sbt-updates <https://github.com/rtimush/sbt-updates>`_: checks central repos for dependency updates
-- `sbt-scalafmt <https://github.com/scalameta/sbt-scalafmt>`_: automatic source code formatting using `Scalafmt <https://scalameta.org/scalafmt/>`_
-- `scalastyle <https://github.com/scalastyle/scalastyle-sbt-plugin>`_: static code checker for Scala
-- `wart remover <https://github.com/wartremover/wartremover>`_: code linting tool (another static checker)
 
 
 GitHub
