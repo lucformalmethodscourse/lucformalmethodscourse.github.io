@@ -94,7 +94,7 @@ Choices of development environments
   - need to install `TLA+ extension <https://github.com/tlaplus/vscode-tlaplus>`_
   - alternatively, you can use the standalone `TLA Toolbox <http://lamport.azurewebsites.net/tla/tla.html>`_
 
-  - For sbt-based Java development in VS Code, you might get some strange errors:
+  - For sbt-based Java development in VS Code (including Gitpod), you might get some strange errors:
 
     - for errors arising when running `sbt` tasks in the terminal, try deleting `project/project/metals.sbt`
     - for false syntax errors in your Java source editor, try disabling the ``Extension pack for Java'' and related extensions for your current workspace
