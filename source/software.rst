@@ -91,10 +91,11 @@ Choices of development environments
 
 - `Visual Studio Code <https://code.visualstudio.com/>`_ alternative based on your preference and/or experience (recommended for PlusCal/TLA+ development)
 
-  - need to install TLA+ extension 
+  - need to install `TLA+ extension <https://github.com/tlaplus/vscode-tlaplus>`_
+  - alternatively, you can use the standalone `TLA Toolbox <http://lamport.azurewebsites.net/tla/tla.html>`_
 
 
-- conventional text editor
+- conventional text editor (OK for general development but not recommended for working with PlusCal/TLA+)
 
   - Emacs
   - vim
