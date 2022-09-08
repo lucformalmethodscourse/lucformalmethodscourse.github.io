@@ -160,9 +160,9 @@ instructions in the readme.</p></li>
 </section>
 <section id="choices-of-development-environments">
 <h3><span class="section-number">3.2.4. </span>Choices of development environments<a class="headerlink" href="#choices-of-development-environments" title="Permalink to this heading"></a></h3>
-<ul class="simple">
-<li><p><a class="reference external" href="https://www.jetbrains.com/idea/download/">IntelliJ IDEA CE</a> integrated development environment (recommended for Java development)</p>
 <ul>
+<li><p><a class="reference external" href="https://www.jetbrains.com/idea/download/">IntelliJ IDEA CE</a> integrated development environment (recommended for Java development)</p>
+<ul class="simple">
 <li><p>check specific prerequisite details for your platform</p></li>
 <li><p>for the following steps, make sure you have no projects open and are looking at the welcome window as in the attached screenshot</p></li>
 <li><p><em>JDK configuration</em>: IntelliJ IDEA &gt; Configure &gt; Project Defaults &gt; Project Structure &gt; Platform Settings &gt; SDKs &gt; + &gt; JDK &gt; navigate to the installation directory of your most recent JDK &gt; OK</p></li>
@@ -172,10 +172,17 @@ instructions in the readme.</p></li>
 <ul>
 <li><p>need to install <a class="reference external" href="https://github.com/tlaplus/vscode-tlaplus">TLA+ extension</a></p></li>
 <li><p>alternatively, you can use the standalone <a class="reference external" href="http://lamport.azurewebsites.net/tla/tla.html">TLA Toolbox</a></p></li>
+<li><p>For sbt-based Java development in VS Code, you might get some strange errors:</p>
+<ul class="simple">
+<li><p>for errors arising when running <cite>sbt</cite> tasks in the terminal, try deleting <cite>project/project/metals.sbt</cite></p></li>
+<li><p>for false syntax errors in your Java source editor, try disabling the <a href="#id5"><span class="problematic" id="id6">``</span></a>Extension pack for Java’’ and related extensions for your current workspace</p></li>
+</ul>
+<p>If you continue having trouble, consider switching to IntelliJ.</p>
+</li>
 </ul>
 </li>
 <li><p>conventional text editor (OK for general development but not recommended for working with PlusCal/TLA+)</p>
-<ul>
+<ul class="simple">
 <li><p>Emacs</p></li>
 <li><p>vim</p></li>
 <li><p>etc.</p></li>
