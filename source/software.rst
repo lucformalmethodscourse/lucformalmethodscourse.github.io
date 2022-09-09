@@ -93,7 +93,8 @@ Choices of development environments
 
   - need to install `TLA+ extension <https://github.com/tlaplus/vscode-tlaplus>`_
   - alternatively, you can use the standalone `TLA Toolbox <http://lamport.azurewebsites.net/tla/tla.html>`_
-  - if you see false syntax errors in your Java source editor in an sbt project, try disabling the ``Extension pack for Java'' and related extensions for your current workspace
+  - if you see false syntax errors in your Java source editor in an sbt project, try disabling the "Extension pack for Java" and related extensions for your current workspace
+  - if you're not seeing arrows in the source file for running the tests, try importing the build in Metals (big "M" near the bottom of the leftmost column)
 
 - conventional text editor (OK for general development but not recommended for working with PlusCal/TLA+)
 
