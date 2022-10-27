@@ -56,9 +56,9 @@ Sections: 335-001/488-335 Fall 2022
 
   **Max total: 112 points plus extra credit**
 
-  *Grading schema:*
+  *Grading schema (in points):*
 
-  - A 100
+  - A 100 points
   - A- 96
   - B+ 92
   - B 88
