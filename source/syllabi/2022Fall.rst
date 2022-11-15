@@ -26,7 +26,7 @@ Sections: 335-001/488-335 Fall 2022
 - *Required materials:*
 
   - :ref:`appendix-software`
-  - `These lecture notes <https://laufer.cs.luc.edu/lucformalmethodscourse>`_
+  - `These lecture notes <../>`_
   - `Notes on Hoare Logic <https://www.cs.cmu.edu/~aldrich/courses/15-819O-13sp/resources/hoare-logic.pdf>`_
   - `PlusCal User's Manual <https://lamport.azurewebsites.net/tla/p-manual.pdf>`_
   - `Learning TLA <https://old.learntla.com>`_
@@ -57,9 +57,9 @@ Sections: 335-001/488-335 Fall 2022
 
   **Max total: 112 points plus extra credit**
 
-  *Grading schema:*
+  *Grading schema (in points):*
 
-  - A 100
+  - A 100 points
   - A- 96
   - B+ 92
   - B 88
