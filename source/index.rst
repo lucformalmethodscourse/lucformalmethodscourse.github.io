@@ -5,16 +5,16 @@ Lecture Notes: Formal Methods in Software Engineering
 | `Department of Computer Science <http://luc.edu/cs>`_
 | `Loyola University Chicago <http://luc.edu>`_
 
-**UNDER CONSTRUCTION FOR FALL 2022**
+**UNDER CONSTRUCTION FOR SPRING 2024**
 
 Welcome! Willkomme! ¡Bienvenidos/as! Benvenuti/e!
 
 In this course, we study formal methods suitable for contemporary software engineering practice. 
-This version of the course is normally taught by `Konstantin Läufer <https://github.com/klaeufer>`_ and focuses on functional and concurrent programming languages with examples and projects mostly in TBD.
+This version of the course is normally taught by `Konstantin Läufer <https://laufer.cs.luc.edu>`_ and focuses on functional and concurrent programming languages with examples and projects mostly in TBD.
 
-.. _GitHub: https://github.com/klaeufer/lucformalmethodscourse
-.. _PDF: https://klaeufer.github.io/lucformalmethodscourse/download/proglang.pdf
-.. _ePub: https://klaeufer.github.io/lucformalmethodscourse/download/proglang.epub
+.. _GitHub: https://github.com/lucformalmethodscourse/lucformalmethodscourse.github.io
+.. _PDF: https://github.com/lucformalmethodscourse/lucformalmethodscourse.github.io/releases/latest/formalmethods.pdf
+.. _ePub: https://github.com/lucformalmethodscourse/lucformalmethodscourse.github.io/releases/latest/formalmethods.epub
 
 We maintain these lecture notes using `GitHub`_. We also offer `PDF`_ and `ePub`_ formats for offline/mobile reading. 
 
