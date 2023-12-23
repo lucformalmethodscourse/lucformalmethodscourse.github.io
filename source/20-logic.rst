@@ -20,20 +20,20 @@ Propositions
 Logical Connectives
    These are operators used to form compound propositions:
 
-   - **Conjunction** (AND, denoted as ∧)
-     The compound proposition "p ∧ q" is true only if both "p" and "q" are true.
+   - **Conjunction** (AND, denoted as :math:`\and`)
+     The compound proposition :math:`p \and q` is true only if both :math:`p` and :math:`q` are true.
 
-   - **Disjunction** (OR, denoted as ∨)
-     The compound proposition "p ∨ q" is true if either "p" or "q" (or both) is true.
+   - **Disjunction** (OR, denoted as :math:`\or`)
+     The compound proposition :math:`p \or q` is true if either :math:`p` or :math:`q` (or both) is true.
 
-   - **Negation** (NOT, denoted as ¬)
+   - **Negation** (NOT, denoted as :math:`\not`)
      The negation "¬p" is true if "p" is false.
 
-   - **Implication** (IF-THEN, denoted as →)
-     The implication "p → q" is true unless "p" is true and "q" is false.
+   - **Implication** (IF-THEN, denoted as :math:`\implies`)
+     The implication :math:`p \implies q` is true unless :math:`p` is true and :math:`q` is false.
 
-   - **Biconditional** (IF AND ONLY IF, denoted as ↔)
-     The biconditional "p ↔ q" is true if both "p" and "q" are either true or false.
+   - **Biconditional** (IF AND ONLY IF, denoted as :math:`\iff`)
+     The biconditional :math:`p \iff q` is true if both :math:`p` and :math:`q` are either true or false.
 
 Syntax and Semantics
    The syntax of propositional logic refers to the formal rules for constructing valid formulas, while semantics deals with the truth values of these formulas.
@@ -59,12 +59,12 @@ Here is an example involving Modus Ponens:
 
 **Propositions**:
 
-- **p**: "It is sunny outside."
-- **q**: "We will go for a walk."
+- :math:`p`: "It is sunny outside."
+- :math:`q`: "We will go for a walk."
 
 **Logical Formulation**:
 
-1. Premise: :math:`p \rightarrow q` (If it is sunny outside, then we will go for a walk.)
+1. Premise: :math:`p \implies q` (If it is sunny outside, then we will go for a walk.)
 2. Premise: :math:`p` (It is sunny outside.)
 3. Conclusion: :math:`q` (Therefore, we will go for a walk.)
 
@@ -110,23 +110,29 @@ Let :math:`P(x)` represent "x is a cat."
 
 Now, consider the statement:
 
-   ∀x P(x): "All animals are cats."
+.. math::
+
+   \forall x P(x): All animals are cats
 
 This statement is false if the domain includes animals other than cats.
 
 Expanding on the previous example, let's add another predicate:
 
-   Let Q(x) represent "x can meow."
+   Let :math:`Q(x)` represent "x can meow."
 
 Now, consider the statement:
 
-   ∀x (P(x) → Q(x)): "All cats can meow."
+.. math::
+
+   \forall x (P(x) \implies Q(x)): All cats can meow.
 
 This statement implies that if an animal is a cat, then it can meow. It is a true statement in the context of our understanding of cats.
 
 To negate this, we assert the existence of at least one cat that cannot meow, which is represented as:
 
-   ∃x (P(x) ∧ ¬Q(x))
+.. math::
+
+   \exists x (P(x) \and \not Q(x))
 
 In natural language, this translates to:
 
