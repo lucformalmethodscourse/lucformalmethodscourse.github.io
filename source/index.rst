@@ -44,7 +44,7 @@ Build status
    .. only:: html
 
       .. image:: https://github.com/lucformalmethodscourse/lucformalmethodscourse.github.io/actions/workflows/main.yml/badge.svg
-         :target: https://github.com/lucformalmethodscourse/lucformalmethodscourse.github.io/actions/workflows/main.yml
+         :target: https://github.com/lucformalmethodscourse/lucformalmethodscourse.github.io/actions
          :alt: GitHub Pages and Release PDF
 
    See `github.com/lucformalmethodscourse/lucformalmethodscourse.github.io/actions <https://github.com/lucformalmethodscourse/lucformalmethodscourse.github.io/actions>`_
