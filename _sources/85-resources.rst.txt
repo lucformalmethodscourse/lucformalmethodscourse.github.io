@@ -1,6 +1,6 @@
 .. _appendix-resources:
 
-Additional Resources
---------------------
+Appendix: Additional Resources
+------------------------------
 
 .. todo:: Under construction for fall 2024

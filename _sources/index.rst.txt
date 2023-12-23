@@ -1,36 +1,29 @@
 Lecture Notes: Formal Methods in Software Engineering
 =====================================================
 
-| `Comp 335 <https://academics.cs.luc.edu/courses/comp335.html>`_
+`Comp 335 <https://academics.cs.luc.edu/courses/comp335.html>`_
 | `Department of Computer Science <http://luc.edu/cs>`_
 | `Loyola University Chicago <http://luc.edu>`_
 
-**UNDER CONSTRUCTION FOR SPRING 2024**
-
-Welcome! Willkomme! ¡Bienvenidos/as! Benvenuti/e!
-
-In this course, we study formal methods suitable for contemporary software engineering practice. 
-This version of the course is normally taught by `Konstantin Läufer <https://laufer.cs.luc.edu>`_ and focuses on functional and concurrent programming languages with examples and projects mostly in TBD.
-
-.. _GitHub: https://github.com/lucformalmethodscourse/lucformalmethodscourse.github.io
-.. _PDF: https://github.com/lucformalmethodscourse/lucformalmethodscourse.github.io/releases/latest/formalmethods.pdf
-.. _ePub: https://github.com/lucformalmethodscourse/lucformalmethodscourse.github.io/releases/latest/formalmethods.epub
-
-We maintain these lecture notes using `GitHub`_. We also offer `PDF`_ and `ePub`_ formats for offline/mobile reading. 
+*Welcome! Willkomme! ¡Bienvenidos/as! Benvenuti/e!*
 
 .. warning::
 
-   These notes are still being written, so expect a few rough edges. But we're getting closer!
+   These notes are still under construction for spring 2024, so expect a few rough edges. But we're getting closer!
    Your contributions are *highly welcome!*
    Please submit `issues <https://github.com/klaeufer/lucformalmethodscourse/issues>`_
    and `pull requests <https://github.com/klaeufer/lucformalmethodscourse/pulls>`_.
 
-.. Contents
-.. ========
+In this course, we study formal methods suitable for contemporary software engineering practice. 
+This version of the course is normally taught by `Konstantin Läufer <https://laufer.cs.luc.edu>`_.
+
+Please get started by reading the :doc:`10-overview`.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
+   :caption: Contents
    :numbered:
+   :hidden:
 
    10-overview
    20-logic
@@ -44,10 +37,30 @@ We maintain these lecture notes using `GitHub`_. We also offer `PDF`_ and `ePub`
    90-syllabi
    95-todo
 
-.. Indices and tables
-.. ==================
+Latest version
+   |version|
+   
+Build status
+   .. only:: html
 
-* :ref:`genindex`
-* :ref:`search`
+      .. image:: https://github.com/lucformalmethodscourse/lucformalmethodscourse.github.io/actions/workflows/main.yml/badge.svg
+         :target: https://github.com/lucformalmethodscourse/lucformalmethodscourse.github.io/actions/workflows/main.yml
+         :alt: GitHub Pages and Release PDF
+
+   See `github.com/lucformalmethodscourse/lucformalmethodscourse.github.io/actions <https://github.com/lucformalmethodscourse/lucformalmethodscourse.github.io/actions>`_
+
+Repository
+   `github.com/lucformalmethodscourse/lucformalmethodscourse.github.io <https://github.com/lucformalmethodscourse/lucformalmethodscourse.github.io>`_
+
+Releases
+   The current book (|version|) in PDF is available at
+   `GitHub Releases <https://github.com/lucformalmethodscourse/lucformalmethodscourse.github.io/releases/latest>`_
+
+
+.. todo:: Indices and tables (put at end of TOC above)
+
+   * :ref:`genindex`
+   * :ref:`modindex`
+
 
 .. todo:: add sample projects, activities, tests, and (tiered) master list for presentations
