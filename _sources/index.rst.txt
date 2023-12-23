@@ -32,12 +32,17 @@ We maintain these lecture notes using `GitHub`_. We also offer `PDF`_ and `ePub`
    :maxdepth: 2
    :numbered:
 
-   overview
-   summary
+   10-overview
+   20-logic
+   30-testing
+   40-modelchecking
+   50-rtverification
+   70-summary
 
-   software 
-   syllabus
-   todo
+   80-software
+   85-resources 
+   90-syllabi
+   95-todo
 
 .. Indices and tables
 .. ==================
