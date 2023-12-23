@@ -1,3 +1,5 @@
+.. _appendix-syllabi:
+
 Appendix: Course Syllabi
 ------------------------
 
@@ -13,6 +15,7 @@ Course: COMP 335/488 Formal Methods in Software Engineering
 
 
 .. include:: syllabi/2024Spring.rst
+.. include:: syllabi/2022Fall.rst
 
 
 Detailed Course Outline
