@@ -11,8 +11,8 @@ Lecture Notes: Formal Methods in Software Engineering
 
    These notes are still under construction for spring 2024, so expect a few rough edges. But we're getting closer!
    Your contributions are *highly welcome!*
-   Please submit `issues <https://github.com/klaeufer/lucformalmethodscourse/issues>`_
-   and `pull requests <https://github.com/klaeufer/lucformalmethodscourse/pulls>`_.
+   Please submit `issues <https://github.com/lucformalmethodscourse/lucformalmethodscourse.github.io/issues>`_
+   and `pull requests <https://github.com/lucformalmethodscourse/lucformalmethodscourse.github.io/pulls>`_.
 
 In this course, we study formal methods suitable for contemporary software engineering practice. 
 This version of the course is normally taught by `Konstantin Läufer <https://laufer.cs.luc.edu>`_.
