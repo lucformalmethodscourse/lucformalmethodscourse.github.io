@@ -16,15 +16,3 @@ Course: COMP 335/488 Formal Methods in Software Engineering
 
 .. include:: syllabi/2024Spring.rst
 .. include:: syllabi/2022Fall.rst
-
-
-Detailed Course Outline
-~~~~~~~~~~~~~~~~~~~~~~~
-
-.. include:: detailedoutline.txt
-
-
-Key Resources
-~~~~~~~~~~~~~
-
-.. include:: keyresources.txt
