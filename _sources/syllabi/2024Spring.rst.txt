@@ -1,10 +1,9 @@
-Sections: 335-001/488-335 Spring 2024
+Sections: 335-001/488-001 Spring 2024
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - *General format:*
 
   - This is a *on-campus*, face-to-face class involving lectures, group activities, etc.
-  - I will make an effort to record all lectures for later viewing through Sakai/Panopto. In addition, some prerecorded videos are available through Panopto.
   - To earn points for group activities or other in-class activities, you are required to participate in class or make up for the work outside of class.
   - *Estimated workload: 9 to 12 hours per week including class time.*
 
@@ -73,8 +72,7 @@ Sections: 335-001/488-335 Spring 2024
 - `Sakai site for this section (gradebook) <https://sakai.luc.edu/portal/site/COMP_371_001_4379_1216>`_
 - `MS Team <https://teams.microsoft.com/l/team/19%3aDdAzd6JoRNUFF1MpwtBFlR61Ku5_7eideyHC0mlXdXM1%40thread.tacv2/conversations?groupId=b0cada27-8037-4cf8-af8c-e9fee7218b89&tenantId=021f4fe3-2b9c-4824-8378-bbcf9ec5accb>`_ *(mandatory subscription and participation)*
 
-- Important dates (tentative) for quizzes and tests:
-
+Important dates (tentative) for quizzes and tests
   - Week 5 - Tue 13 February: quiz 1
   - Week 7 - Tue 27 February: test 1
   - Week 8 - Tue 5 February: **NO CLASS (spring break)**
@@ -83,6 +81,8 @@ Sections: 335-001/488-335 Spring 2024
   - Week 12 - Fri 2 April: test 2
   - Week 16 (finals week) - Tue 30 April: *quiz 3 followed by class session*
 
-- *Recording of class meetings:* In this class, software will be used to record live class discussions. As a student in this class, your participation in live class discussions will be recorded. These recordings will be made available only to students enrolled in the class, to assist those who cannot attend the live session or to serve as a resource for those who would like to review content that was presented. All recordings will become unavailable to students in the class when the course has concluded. The use of all video recordings will be in keeping with the University Privacy Statement shown below.
+Recording of class meetings
+  In this class, software may be used to record live class discussions. As a student in this class, your participation in live class discussions will be recorded. These recordings will be made available only to students enrolled in the class, to assist those who cannot attend the live session or to serve as a resource for those who would like to review content that was presented. All recordings will become unavailable to students in the class when the course has concluded. The use of all video recordings will be in keeping with the University Privacy Statement shown below.
 
-- *Privacy Statement:* Assuring privacy among faculty and students engaged in online and face-to-face instructional activities helps promote open and robust conversations and mitigates concerns that comments made within the context of the class will be shared beyond the classroom. As such, recordings of instructional activities occurring in online or face-to-face classes may be used solely for internal class purposes by the faculty member and students registered for the course, and only during the period in which the course is offered. Students will be informed of such recordings by a statement in the syllabus for the course in which they will be recorded. Instructors who wish to make subsequent use of recordings that include student activity may do so only with informed written consent of the students involved or if all student activity is removed from the recording. Recordings including student activity that have been initiated by the instructor may be retained by the instructor only for individual use.
+Privacy Statement
+  Assuring privacy among faculty and students engaged in online and face-to-face instructional activities helps promote open and robust conversations and mitigates concerns that comments made within the context of the class will be shared beyond the classroom. As such, recordings of instructional activities occurring in online or face-to-face classes may be used solely for internal class purposes by the faculty member and students registered for the course, and only during the period in which the course is offered. Students will be informed of such recordings by a statement in the syllabus for the course in which they will be recorded. Instructors who wish to make subsequent use of recordings that include student activity may do so only with informed written consent of the students involved or if all student activity is removed from the recording. Recordings including student activity that have been initiated by the instructor may be retained by the instructor only for individual use.

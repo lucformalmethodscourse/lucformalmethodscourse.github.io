@@ -7,11 +7,12 @@
 <meta content="white" media="(prefers-color-scheme: light)" name="theme-color"/>
 <meta content="black" metia="(prefers-color-scheme: dark)" name="theme-color"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>Sections: 335-001/488-335 Spring 2024 | Loyola University Chicago COMP 335 Lecture Notes v24s.4</title>
-<meta content="Sections: 335-001/488-335 Spring 2024 | Loyola University Chicago COMP 335 Lecture Notes v24s.4" property="og:title"/>
-<meta content="Sections: 335-001/488-335 Spring 2024 | Loyola University Chicago COMP 335 Lecture Notes v24s.4" name="twitter:title"/>
+<title>Sections: 335-001/488-001 Spring 2024 | Loyola University Chicago COMP 335 Lecture Notes v24s.6</title>
+<meta content="Sections: 335-001/488-001 Spring 2024 | Loyola University Chicago COMP 335 Lecture Notes v24s.6" property="og:title"/>
+<meta content="Sections: 335-001/488-001 Spring 2024 | Loyola University Chicago COMP 335 Lecture Notes v24s.6" name="twitter:title"/>
 <link href="../_static/pygments.css?v=fa44fd50" rel="stylesheet" type="text/css"/>
 <link href="../_static/theme.css?v=7112734b" rel="stylesheet" type="text/css"/>
+<link href="../_static/exercise.css" rel="stylesheet" type="text/css"/>
 <link href="../search.html" rel="search" title="Search"/>
 <link href="../genindex.html" rel="index" title="Index"/>
 <script>
@@ -32,7 +33,7 @@
       Skip to content
     </a><header class="sticky top-0 z-40 w-full border-b shadow-sm border-border supports-backdrop-blur:bg-background/60 bg-background/95 backdrop-blur"><div class="container flex items-center h-14">
 <div class="hidden mr-4 md:flex">
-<a class="flex items-center mr-6" href="../index.html"><span class="hidden font-bold sm:inline-block text-clip whitespace-nowrap">Loyola University Chicago COMP 335 Lecture Notes v24s.4</span>
+<a class="flex items-center mr-6" href="../index.html"><span class="hidden font-bold sm:inline-block text-clip whitespace-nowrap">Loyola University Chicago COMP 335 Lecture Notes v24s.6</span>
 </a></div><button @click="showSidebar = true" class="inline-flex items-center justify-center h-10 px-0 py-2 mr-2 text-base font-medium transition-colors rounded-md hover:text-accent-foreground hover:bg-transparent md:hidden" type="button">
 <svg aria-hidden="true" fill="currentColor" height="24" viewbox="0 96 960 960" width="24" xmlns="http://www.w3.org/2000/svg">
 <path d="M152.587 825.087q-19.152 0-32.326-13.174t-13.174-32.326q0-19.152 13.174-32.326t32.326-13.174h440q19.152 0 32.326 13.174t13.174 32.326q0 19.152-13.174 32.326t-32.326 13.174h-440Zm0-203.587q-19.152 0-32.326-13.174T107.087 576q0-19.152 13.174-32.326t32.326-13.174h320q19.152 0 32.326 13.174T518.087 576q0 19.152-13.174 32.326T472.587 621.5h-320Zm0-203.587q-19.152 0-32.326-13.174t-13.174-32.326q0-19.152 13.174-32.326t32.326-13.174h440q19.152 0 32.326 13.174t13.174 32.326q0 19.152-13.174 32.326t-32.326 13.174h-440ZM708.913 576l112.174 112.174q12.674 12.674 12.674 31.826t-12.674 31.826Q808.413 764.5 789.261 764.5t-31.826-12.674l-144-144Q600 594.391 600 576t13.435-31.826l144-144q12.674-12.674 31.826-12.674t31.826 12.674q12.674 12.674 12.674 31.826t-12.674 31.826L708.913 576Z"></path>
@@ -62,7 +63,7 @@
 </div>
 </header>
 <div class="flex-1"><div class="container flex-1 items-start md:grid md:grid-cols-[220px_minmax(0,1fr)] md:gap-6 lg:grid-cols-[240px_minmax(0,1fr)] lg:gap-10"><aside :aria-hidden="!showSidebar" :class="{ 'translate-x-0': showSidebar }" class="fixed inset-y-0 left-0 md:top-14 z-50 md:z-30 bg-background md:bg-transparent transition-all duration-100 -translate-x-full md:translate-x-0 ml-0 p-6 md:p-0 md:-ml-2 md:h-[calc(100vh-3.5rem)] w-5/6 md:w-full shrink-0 overflow-y-auto border-r border-border md:sticky" id="left-sidebar">
-<a class="!justify-start text-sm md:!hidden bg-background" href="../index.html"><span class="font-bold text-clip whitespace-nowrap">Loyola University Chicago COMP 335 Lecture Notes v24s.4</span>
+<a class="!justify-start text-sm md:!hidden bg-background" href="../index.html"><span class="font-bold text-clip whitespace-nowrap">Loyola University Chicago COMP 335 Lecture Notes v24s.6</span>
 </a>
 <div class="relative overflow-hidden md:overflow-auto my-4 md:my-0 h-[calc(100vh-8rem)] md:h-auto">
 <div class="overflow-y-auto h-full w-full relative pr-6"><nav class="table w-full min-w-full my-6 lg:my-8">
@@ -92,21 +93,20 @@
 <div class="w-full min-w-0 mx-auto">
 <nav aria-label="breadcrumbs" class="flex items-center mb-4 space-x-1 text-sm text-muted-foreground">
 <a class="overflow-hidden text-ellipsis whitespace-nowrap hover:text-foreground" href="../index.html">
-<span class="hidden md:inline">Loyola University Chicago COMP 335 Lecture Notes v24s.4</span>
+<span class="hidden md:inline">Loyola University Chicago COMP 335 Lecture Notes v24s.6</span>
 <svg aria-label="Home" class="md:hidden" fill="currentColor" height="18" stroke="none" viewbox="0 96 960 960" width="18" xmlns="http://www.w3.org/2000/svg">
 <path d="M240 856h120V616h240v240h120V496L480 316 240 496v360Zm-80 80V456l320-240 320 240v480H520V696h-80v240H160Zm320-350Z"></path>
 </svg>
 </a>
-<div class="mr-1">/</div><span aria-current="page" class="font-medium text-foreground overflow-hidden text-ellipsis whitespace-nowrap">Sections: 335-001/488-335 Spring 2024</span>
+<div class="mr-1">/</div><span aria-current="page" class="font-medium text-foreground overflow-hidden text-ellipsis whitespace-nowrap">Sections: 335-001/488-001 Spring 2024</span>
 </nav>
 <div id="content" role="main">
-<section id="sections-335-001-488-335-spring-2024">
-<h1>Sections: 335-001/488-335 Spring 2024<a class="headerlink" href="#sections-335-001-488-335-spring-2024" title="Link to this heading">¶</a></h1>
+<section id="sections-335-001-488-001-spring-2024">
+<h1>Sections: 335-001/488-001 Spring 2024<a class="headerlink" href="#sections-335-001-488-001-spring-2024" title="Link to this heading">¶</a></h1>
 <ul>
 <li><p><em>General format:</em></p>
 <ul class="simple">
 <li><p>This is a <em>on-campus</em>, face-to-face class involving lectures, group activities, etc.</p></li>
-<li><p>I will make an effort to record all lectures for later viewing through Sakai/Panopto. In addition, some prerecorded videos are available through Panopto.</p></li>
 <li><p>To earn points for group activities or other in-class activities, you are required to participate in class or make up for the work outside of class.</p></li>
 <li><p><em>Estimated workload: 9 to 12 hours per week including class time.</em></p></li>
 </ul>
@@ -170,8 +170,9 @@
 <li><p><em>Academic integrity:</em> <a class="reference external" href="https://www.luc.edu/academics/catalog/undergrad/reg_academicintegrity.shtml">LUC</a> | <a class="reference external" href="https://www.luc.edu/cas/advising/academicintegritystatement/">CAS</a> | <a class="reference external" href="https://www.luc.edu/gradschool/academics_policies.shtml">Grad</a></p></li>
 <li><p><a class="reference external" href="https://sakai.luc.edu/portal/site/COMP_371_001_4379_1216">Sakai site for this section (gradebook)</a></p></li>
 <li><p><a class="reference external" href="https://teams.microsoft.com/l/team/19%3aDdAzd6JoRNUFF1MpwtBFlR61Ku5_7eideyHC0mlXdXM1%40thread.tacv2/conversations?groupId=b0cada27-8037-4cf8-af8c-e9fee7218b89&amp;tenantId=021f4fe3-2b9c-4824-8378-bbcf9ec5accb">MS Team</a> <em>(mandatory subscription and participation)</em></p></li>
-<li><p>Important dates (tentative) for quizzes and tests:</p>
-<ul class="simple">
+</ul>
+<dl class="simple">
+<dt>Important dates (tentative) for quizzes and tests</dt><dd><ul class="simple">
 <li><p>Week 5 - Tue 13 February: quiz 1</p></li>
 <li><p>Week 7 - Tue 27 February: test 1</p></li>
 <li><p>Week 8 - Tue 5 February: <strong>NO CLASS (spring break)</strong></p></li>
@@ -180,10 +181,12 @@
 <li><p>Week 12 - Fri 2 April: test 2</p></li>
 <li><p>Week 16 (finals week) - Tue 30 April: <em>quiz 3 followed by class session</em></p></li>
 </ul>
-</li>
-<li><p><em>Recording of class meetings:</em> In this class, software will be used to record live class discussions. As a student in this class, your participation in live class discussions will be recorded. These recordings will be made available only to students enrolled in the class, to assist those who cannot attend the live session or to serve as a resource for those who would like to review content that was presented. All recordings will become unavailable to students in the class when the course has concluded. The use of all video recordings will be in keeping with the University Privacy Statement shown below.</p></li>
-<li><p><em>Privacy Statement:</em> Assuring privacy among faculty and students engaged in online and face-to-face instructional activities helps promote open and robust conversations and mitigates concerns that comments made within the context of the class will be shared beyond the classroom. As such, recordings of instructional activities occurring in online or face-to-face classes may be used solely for internal class purposes by the faculty member and students registered for the course, and only during the period in which the course is offered. Students will be informed of such recordings by a statement in the syllabus for the course in which they will be recorded. Instructors who wish to make subsequent use of recordings that include student activity may do so only with informed written consent of the students involved or if all student activity is removed from the recording. Recordings including student activity that have been initiated by the instructor may be retained by the instructor only for individual use.</p></li>
-</ul>
+</dd>
+<dt>Recording of class meetings</dt><dd><p>In this class, software may be used to record live class discussions. As a student in this class, your participation in live class discussions will be recorded. These recordings will be made available only to students enrolled in the class, to assist those who cannot attend the live session or to serve as a resource for those who would like to review content that was presented. All recordings will become unavailable to students in the class when the course has concluded. The use of all video recordings will be in keeping with the University Privacy Statement shown below.</p>
+</dd>
+<dt>Privacy Statement</dt><dd><p>Assuring privacy among faculty and students engaged in online and face-to-face instructional activities helps promote open and robust conversations and mitigates concerns that comments made within the context of the class will be shared beyond the classroom. As such, recordings of instructional activities occurring in online or face-to-face classes may be used solely for internal class purposes by the faculty member and students registered for the course, and only during the period in which the course is offered. Students will be informed of such recordings by a statement in the syllabus for the course in which they will be recorded. Instructors who wish to make subsequent use of recordings that include student activity may do so only with informed written consent of the students involved or if all student activity is removed from the recording. Recordings including student activity that have been initiated by the instructor may be retained by the instructor only for individual use.</p>
+</dd>
+</dl>
 </section>
 </div></div>
 </main>
@@ -196,7 +199,7 @@
 </div>
 </footer>
 </div>
-<script src="../_static/documentation_options.js?v=9991f0c4"></script>
+<script src="../_static/documentation_options.js?v=0a11feb7"></script>
 <script src="../_static/doctools.js?v=888ff710"></script>
 <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
 <script defer="defer" src="../_static/theme.js?v=e8bd915e"></script>
