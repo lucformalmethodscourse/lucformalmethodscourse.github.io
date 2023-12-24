@@ -8,7 +8,7 @@ Logic Foundations
 .. https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf
 .. https://milde.users.sourceforge.net/LUCR/Math/mathpackages/amssymb-symbols.pdf
 
-Propositional logic
+Propositional Logic
 ^^^^^^^^^^^^^^^^^^^
 
 Propositional logic, also known as propositional calculus or boolean logic, is a branch of logic that deals with propositions and their combinations using logical connectives.
@@ -73,13 +73,13 @@ Here is an example involving Modus Ponens:
 In this example, the premises lead to the conclusion using the Modus Ponens rule. If the first premise is true (it is sunny outside), and the second premise is also true (if it is sunny, we go for a walk), then the conclusion (we will go for a walk) logically follows.
 
 
-Further reading
+Further Reading
 """""""""""""""
 
 See `wikipedia.org/wiki/Propositional_calculus <https://en.wikipedia.org/wiki/Propositional_calculus>`_ for more details.
 
 
-Predicate logic
+Predicate Logic
 ^^^^^^^^^^^^^^^
 
 Predicate logic, also known as first-order logic, extends propositional logic by dealing with predicates and quantifiers. Unlike propositional logic, which operates on simple, unanalyzable propositions, predicate logic analyzes the internal structure of propositions.

@@ -31,10 +31,10 @@ from datetime import date
 extensions = [
     'sphinx.ext.todo',
     'sphinx.ext.mathjax',
-    'sphinxcontrib.bibtex',
-    'sphinx.ext.ifconfig',
-    'sphinx.ext.viewcode',
-    'sphinx_exercise'
+#    'sphinxcontrib.bibtex',
+#    'sphinx.ext.ifconfig',
+#    'sphinx.ext.viewcode',
+#    'sphinx_exercise'
 ]
 
 todo_include_todos = True
