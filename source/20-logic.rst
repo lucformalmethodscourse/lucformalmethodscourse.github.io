@@ -5,6 +5,8 @@ Logic Foundations
 
 .. todo:: Under construction for fall 2024
 
+.. https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf
+.. https://milde.users.sourceforge.net/LUCR/Math/mathpackages/amssymb-symbols.pdf
 
 Propositional logic
 ^^^^^^^^^^^^^^^^^^^
@@ -20,17 +22,17 @@ Propositions
 Logical Connectives
    These are operators used to form compound propositions:
 
-   - **Conjunction** (AND, denoted as :math:`\and`)
-     The compound proposition :math:`p \and q` is true only if both :math:`p` and :math:`q` are true.
+   - **Conjunction** (AND, denoted as :math:`\wedge`)
+     The compound proposition :math:`p \wedge q` is true only if both :math:`p` and :math:`q` are true.
 
-   - **Disjunction** (OR, denoted as :math:`\or`)
-     The compound proposition :math:`p \or q` is true if either :math:`p` or :math:`q` (or both) is true.
+   - **Disjunction** (OR, denoted as :math:`\vee`)
+     The compound proposition :math:`p \vee q` is true if either :math:`p` or :math:`q` (or both) is true.
 
-   - **Negation** (NOT, denoted as :math:`\not`)
-     The negation "¬p" is true if "p" is false.
+   - **Negation** (NOT, denoted as :math:`\neg`)
+     The negation :math:`\neg p` is true if :math:`p` is false.
 
-   - **Implication** (IF-THEN, denoted as :math:`\implies`)
-     The implication :math:`p \implies q` is true unless :math:`p` is true and :math:`q` is false.
+   - **Implication** (IF-THEN, denoted as :math:`\Rightarrow`)
+     The implication :math:`p \Rightarrow q` is true unless :math:`p` is true and :math:`q` is false.
 
    - **Biconditional** (IF AND ONLY IF, denoted as :math:`\iff`)
      The biconditional :math:`p \iff q` is true if both :math:`p` and :math:`q` are either true or false.
@@ -64,7 +66,7 @@ Here is an example involving Modus Ponens:
 
 **Logical Formulation**:
 
-1. Premise: :math:`p \implies q` (If it is sunny outside, then we will go for a walk.)
+1. Premise: :math:`p \Rightarrow q` (If it is sunny outside, then we will go for a walk.)
 2. Premise: :math:`p` (It is sunny outside.)
 3. Conclusion: :math:`q` (Therefore, we will go for a walk.)
 
@@ -92,10 +94,10 @@ Predicate
 Quantifiers
    Quantifiers are operators that specify the quantity of specimens in the domain of discourse that satisfy an open sentence (predicate).
 
-   Universal Quantifier ( ∀ )
+   Universal Quantifier (:math:`\forall`)
       Indicates that the statement holds for all elements in the domain.
 
-   Existential Quantifier ( ∃ )
+   Existential Quantifier (:math:`\exists`)
       Indicates the existence of at least one element in the domain that satisfies the statement.
 
 Domain of Discourse
@@ -112,7 +114,7 @@ Now, consider the statement:
 
 .. math::
 
-   \forall x P(x): All animals are cats
+   \forall x P(x): \text{All animals are cats}
 
 This statement is false if the domain includes animals other than cats.
 
@@ -124,7 +126,7 @@ Now, consider the statement:
 
 .. math::
 
-   \forall x (P(x) \implies Q(x)): All cats can meow.
+   \forall x (P(x) \Rightarrow Q(x)): \text{All cats can meow.}
 
 This statement implies that if an animal is a cat, then it can meow. It is a true statement in the context of our understanding of cats.
 
@@ -132,7 +134,7 @@ To negate this, we assert the existence of at least one cat that cannot meow, wh
 
 .. math::
 
-   \exists x (P(x) \and \not Q(x))
+   \exists x (P(x) \wedge \neg Q(x))
 
 In natural language, this translates to:
 

@@ -217,7 +217,10 @@ latex_elements = {
 
 # Additional stuff for the LaTeX preamble.
 #'preamble': '',
-'preamble': '''\geometry{papersize={7.5in,9.25in}}'''    
+'preamble': r'''
+\geometry{papersize={7.5in,9.25in}}
+\usepackage{amssymb}
+'''
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
