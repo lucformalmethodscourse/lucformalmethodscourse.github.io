@@ -16,16 +16,35 @@ At the unit testing level, the following techniques are of particular interest:
 Ad-hoc testing
     Also called example-based testing, where we provide one or more specific test cases, where we programmatically interact with the system under test (SUT) and then examine the result or effect of the interaction.
 
+    .. code-block:: scala
+
+        assert(isPalindrome("radar"))
+        assert(!isPalindrome("lidar"))
+
+
 Table-based testing
     Here, we provide a table of two or more columns corresponding to arguments and expected results of the function or method under test. This technique allows for a more concise representation of several similar ad-hoc tests.
+
+    .. code-block:: scala
+
+        val palindromeTable =
+          "string" | "result" |
+          "mom" ! true |
+          "dad" ! false |
+          "radar" ! true |
+          "lidar" ! false
+
+        palindromeTable |> (
+          (s, r) => assert(isPalindrome(s) == r)
+        )
+
 
 Property-based testing
     Here, we express the relationship between arguments and expected results as a universally quantified property. Typically, a property-based testing library automatically generates a certain number of argument and result values based on the property and executes each corresponding test.
 
+    .. math::
 
-.. math::
-
-  \forall \texttt{s} \in \text{String} : \texttt{isPalindrome(s)} \Leftrightarrow (\texttt{s} = \texttt{s.reverse})
+        \forall \texttt{s} \in \text{String} : \texttt{isPalindrome(s)} \Leftrightarrow (\texttt{s} = \texttt{s.reverse})
 
 
 Further Reading
