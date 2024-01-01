@@ -7,7 +7,7 @@ Sections: 335-001/488-001 Spring 2024
   - To earn points for group activities or other in-class activities, you are required to participate in class or make up for the work outside of class.
   - *Estimated workload: 9 to 12 hours per week including class time.*
 
-- *Class time and location (spring 2024):* Tue 16:15-18:45
+- *Class time and location (spring 2024):* Tue 16:15-18:45 in SES 123, LSC
 
 - *Communication:* All communication regarding this class takes place in the classroom (verbal) and MS Teams (written). Most will be in the team-level channel specific to this term. For individual or group-level concerns, you may use direct individual or group messages in MS Teams; my user ID is **klaufer@luc.edu**. *(To help me prioritize your class-related communication, please DO NOT use email!)*
 
