@@ -31,6 +31,7 @@ from datetime import date
 extensions = [
     'sphinx.ext.todo',
     'sphinx.ext.mathjax',
+    'sphinxcontrib.proof'
 #    'sphinxcontrib.bibtex',
 #    'sphinx.ext.ifconfig',
 #    'sphinx.ext.viewcode',

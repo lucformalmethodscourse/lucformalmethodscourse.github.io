@@ -7,7 +7,7 @@ In this chapter, we provide an outline of the course, along with a brief motivat
 
 
 Motivation
-~~~~~~~~~~
+^^^^^^^^^^
 
 As embedded and distributed systems are becoming ever more ubiquitous,
 we depend increasingly on the correctness of the software that
@@ -17,7 +17,7 @@ synthesis of software.
 
 
 Key learning outcomes
-~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^
 
 - An understanding of the role of formal methods in the construction
   of software systems
@@ -29,19 +29,22 @@ Key learning outcomes
 
 
 Course outline
-~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^
 
 To be expanded...
 
-- software requirements
+- software engineering context
+- logic foundations
 - design by contract
 - property-based testing
-- modeling and model-checking sequential systems 
-- modeling and model-checking concurrent systems 
+- modeling and model checking
+   - sequential systems 
+   - concurrent systems 
+- run-time verification
 
 
 Bloom's taxonomy
-~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^
 
 The letters refer to the successive levels of learning from the cognitive domain of `Bloom's taxonomy <http://en.wikipedia.org/wiki/Bloom's_taxonomy#Cognitive>`_:
 
