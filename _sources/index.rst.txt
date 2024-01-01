@@ -26,6 +26,7 @@ Please get started by reading the :doc:`10-overview`.
    :hidden:
 
    10-overview
+   15-softwareengineering
    20-logic
    30-testing
    40-modelchecking

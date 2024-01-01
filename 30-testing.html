@@ -7,15 +7,16 @@
 <meta content="white" media="(prefers-color-scheme: light)" name="theme-color"/>
 <meta content="black" metia="(prefers-color-scheme: dark)" name="theme-color"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>3. Software Testing | Loyola University Chicago COMP 335 Lecture Notes v24s.9</title>
-<meta content="3. Software Testing | Loyola University Chicago COMP 335 Lecture Notes v24s.9" property="og:title"/>
-<meta content="3. Software Testing | Loyola University Chicago COMP 335 Lecture Notes v24s.9" name="twitter:title"/>
+<title>4. Software Testing | Loyola University Chicago COMP 335 Lecture Notes v24s.10</title>
+<meta content="4. Software Testing | Loyola University Chicago COMP 335 Lecture Notes v24s.10" property="og:title"/>
+<meta content="4. Software Testing | Loyola University Chicago COMP 335 Lecture Notes v24s.10" name="twitter:title"/>
 <link href="_static/pygments.css?v=fa44fd50" rel="stylesheet" type="text/css"/>
 <link href="_static/theme.css?v=7112734b" rel="stylesheet" type="text/css"/>
+<link href="_static/proof.css?v=5beb2b09" rel="stylesheet" type="text/css"/>
 <link href="search.html" rel="search" title="Search"/>
 <link href="genindex.html" rel="index" title="Index"/>
-<link href="40-modelchecking.html" rel="next" title="4. Model Checking"/>
-<link href="20-logic.html" rel="prev" title="2. Logic Foundations"/>
+<link href="40-modelchecking.html" rel="next" title="5. Model Checking"/>
+<link href="20-logic.html" rel="prev" title="3. Logic Foundations"/>
 <script>
     <!-- Prevent Flash of wrong theme -->
       const userPreference = localStorage.getItem('darkMode');
@@ -34,7 +35,7 @@
       Skip to content
     </a><header class="sticky top-0 z-40 w-full border-b shadow-sm border-border supports-backdrop-blur:bg-background/60 bg-background/95 backdrop-blur"><div class="container flex items-center h-14">
 <div class="hidden mr-4 md:flex">
-<a class="flex items-center mr-6" href="index.html"><span class="hidden font-bold sm:inline-block text-clip whitespace-nowrap">Loyola University Chicago COMP 335 Lecture Notes v24s.9</span>
+<a class="flex items-center mr-6" href="index.html"><span class="hidden font-bold sm:inline-block text-clip whitespace-nowrap">Loyola University Chicago COMP 335 Lecture Notes v24s.10</span>
 </a></div><button @click="showSidebar = true" class="inline-flex items-center justify-center h-10 px-0 py-2 mr-2 text-base font-medium transition-colors rounded-md hover:text-accent-foreground hover:bg-transparent md:hidden" type="button">
 <svg aria-hidden="true" fill="currentColor" height="24" viewbox="0 96 960 960" width="24" xmlns="http://www.w3.org/2000/svg">
 <path d="M152.587 825.087q-19.152 0-32.326-13.174t-13.174-32.326q0-19.152 13.174-32.326t32.326-13.174h440q19.152 0 32.326 13.174t13.174 32.326q0 19.152-13.174 32.326t-32.326 13.174h-440Zm0-203.587q-19.152 0-32.326-13.174T107.087 576q0-19.152 13.174-32.326t32.326-13.174h320q19.152 0 32.326 13.174T518.087 576q0 19.152-13.174 32.326T472.587 621.5h-320Zm0-203.587q-19.152 0-32.326-13.174t-13.174-32.326q0-19.152 13.174-32.326t32.326-13.174h440q19.152 0 32.326 13.174t13.174 32.326q0 19.152-13.174 32.326t-32.326 13.174h-440ZM708.913 576l112.174 112.174q12.674 12.674 12.674 31.826t-12.674 31.826Q808.413 764.5 789.261 764.5t-31.826-12.674l-144-144Q600 594.391 600 576t13.435-31.826l144-144q12.674-12.674 31.826-12.674t31.826 12.674q12.674 12.674 12.674 31.826t-12.674 31.826L708.913 576Z"></path>
@@ -64,22 +65,23 @@
 </div>
 </header>
 <div class="flex-1"><div class="container flex-1 items-start md:grid md:grid-cols-[220px_minmax(0,1fr)] md:gap-6 lg:grid-cols-[240px_minmax(0,1fr)] lg:gap-10"><aside :aria-hidden="!showSidebar" :class="{ 'translate-x-0': showSidebar }" class="fixed inset-y-0 left-0 md:top-14 z-50 md:z-30 bg-background md:bg-transparent transition-all duration-100 -translate-x-full md:translate-x-0 ml-0 p-6 md:p-0 md:-ml-2 md:h-[calc(100vh-3.5rem)] w-5/6 md:w-full shrink-0 overflow-y-auto border-r border-border md:sticky" id="left-sidebar">
-<a class="!justify-start text-sm md:!hidden bg-background" href="index.html"><span class="font-bold text-clip whitespace-nowrap">Loyola University Chicago COMP 335 Lecture Notes v24s.9</span>
+<a class="!justify-start text-sm md:!hidden bg-background" href="index.html"><span class="font-bold text-clip whitespace-nowrap">Loyola University Chicago COMP 335 Lecture Notes v24s.10</span>
 </a>
 <div class="relative overflow-hidden md:overflow-auto my-4 md:my-0 h-[calc(100vh-8rem)] md:h-auto">
 <div class="overflow-y-auto h-full w-full relative pr-6"><nav class="table w-full min-w-full my-6 lg:my-8">
 <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="10-overview.html">1. Overview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="20-logic.html">2. Logic Foundations</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">3. Software Testing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="40-modelchecking.html">4. Model Checking</a></li>
-<li class="toctree-l1"><a class="reference internal" href="50-rtverification.html">5. Runtime Verification</a></li>
-<li class="toctree-l1"><a class="reference internal" href="70-summary.html">6. Summary</a></li>
-<li class="toctree-l1"><a class="reference internal" href="80-software.html">7. Appendix: Course Software</a></li>
-<li class="toctree-l1"><a class="reference internal" href="85-resources.html">8. Appendix: Additional Resources</a></li>
-<li class="toctree-l1"><a class="reference internal" href="90-syllabi.html">9. Appendix: Course Syllabi</a></li>
-<li class="toctree-l1"><a class="reference internal" href="95-todo.html">10. Appendix: TODO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="15-softwareengineering.html">2. Software Engineering Context</a></li>
+<li class="toctree-l1"><a class="reference internal" href="20-logic.html">3. Logic Foundations</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">4. Software Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="40-modelchecking.html">5. Model Checking</a></li>
+<li class="toctree-l1"><a class="reference internal" href="50-rtverification.html">6. Runtime Verification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="70-summary.html">7. Summary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="80-software.html">8. Appendix: Course Software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="85-resources.html">9. Appendix: Additional Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="90-syllabi.html">10. Appendix: Course Syllabi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="95-todo.html">11. Appendix: TODO</a></li>
 </ul>
 </nav>
 </div>
@@ -94,24 +96,113 @@
 <div class="w-full min-w-0 mx-auto">
 <nav aria-label="breadcrumbs" class="flex items-center mb-4 space-x-1 text-sm text-muted-foreground">
 <a class="overflow-hidden text-ellipsis whitespace-nowrap hover:text-foreground" href="index.html">
-<span class="hidden md:inline">Loyola University Chicago COMP 335 Lecture Notes v24s.9</span>
+<span class="hidden md:inline">Loyola University Chicago COMP 335 Lecture Notes v24s.10</span>
 <svg aria-label="Home" class="md:hidden" fill="currentColor" height="18" stroke="none" viewbox="0 96 960 960" width="18" xmlns="http://www.w3.org/2000/svg">
 <path d="M240 856h120V616h240v240h120V496L480 316 240 496v360Zm-80 80V456l320-240 320 240v480H520V696h-80v240H160Zm320-350Z"></path>
 </svg>
 </a>
-<div class="mr-1">/</div><span aria-current="page" class="font-medium text-foreground overflow-hidden text-ellipsis whitespace-nowrap"><span class="section-number">3. </span>Software Testing</span>
+<div class="mr-1">/</div><span aria-current="page" class="font-medium text-foreground overflow-hidden text-ellipsis whitespace-nowrap"><span class="section-number">4. </span>Software Testing</span>
 </nav>
 <div id="content" role="main">
 <section id="software-testing">
-<span id="chapter-testing"></span><h1><span class="section-number">3. </span>Software Testing<a class="headerlink" href="#software-testing" title="Link to this heading">¶</a></h1>
-<div class="admonition-todo admonition" id="id1">
-<p class="admonition-title">Todo</p>
-<p>Under construction for fall 2024</p>
-</div>
-<p>Testing is a vast software engineering topic, encompassing various levels—primarily unit testing, integration testing, system testing, and acceptance testing—along with many testing types, techniques, and tactics. For an overview of the subject of testing, please refer to the corresponding <a class="reference external" href="https://en.wikipedia.org/wiki/Software_testing">Wikipedia article</a>.</p>
+<span id="chapter-testing"></span><h1><span class="section-number">4. </span>Software Testing<a class="headerlink" href="#software-testing" title="Link to this heading">¶</a></h1>
+<p>Software testing is a critical process in software development, focusing on evaluating software to ensure it meets specified requirements and standards. It is instrumental in identifying defects, ensuring quality, and increasing confidence in the software’s functionality and performance.</p>
+<p>For an overview of the subject of testing, please refer to the corresponding <a class="reference external" href="https://en.wikipedia.org/wiki/Software_testing">Wikipedia article</a>.</p>
+<section id="purpose">
+<h2><span class="section-number">4.1. </span>Purpose<a class="headerlink" href="#purpose" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#purpose'">¶</a></h2>
+<p>The primary purposes of software testing are:</p>
+<dl class="simple">
+<dt>Gaining Information About Quality</dt><dd><p>Assessing the software’s quality by identifying defects, ensuring it behaves as expected, and meets user needs and requirements.</p>
+</dd>
+<dt>Increasing Confidence in Correctness</dt><dd><p>Verifying that the software performs its intended functions correctly, thereby building confidence among the stakeholders, including developers, clients, and users.</p>
+</dd>
+</dl>
+</section>
+<section id="focus-on-correctness">
+<h2><span class="section-number">4.2. </span>Focus on Correctness<a class="headerlink" href="#focus-on-correctness" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#focus-on-correctness'">¶</a></h2>
+<p>Software testing focuses on verifying the correctness of the software in relation to:</p>
+<p>Functional Requirements</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Testing whether the software performs its intended functions.</p></li>
+<li><p>Includes unit testing, integration testing, system testing, and acceptance testing.</p></li>
+</ul>
+</div></blockquote>
+<p>Dynamic Nonfunctional Requirements</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Assessing aspects like performance, scalability, reliability, and more.</p></li>
+<li><p>Involves performance testing, stress testing, load testing, reliability testing, and more.</p></li>
+</ul>
+</div></blockquote>
+</section>
+<section id="significance">
+<h2><span class="section-number">4.3. </span>Significance<a class="headerlink" href="#significance" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#significance'">¶</a></h2>
+<p>Software testing is vital because it:</p>
+<ul class="simple">
+<li><p>Identifies defects early in the development cycle, reducing the cost of bug fixes.</p></li>
+<li><p>Ensures that the software meets the business and technical requirements that guided its design and development.</p></li>
+<li><p>Provides assurance to the stakeholders that the software is reliable, secure, and high-performing.</p></li>
+</ul>
+</section>
+<section id="limitations-of-software-testing">
+<h2><span class="section-number">4.4. </span>Limitations of Software Testing<a class="headerlink" href="#limitations-of-software-testing" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#limitations-of-software-testing'">¶</a></h2>
+<p>Software testing, while crucial, has certain inherent limitations. These constraints impact the extent to which testing can assure software quality and correctness.</p>
+<dl class="simple">
+<dt>Testing is Not Usually Exhaustive</dt><dd><p>Testing typically cannot cover every possible scenario or input combination, making it not equivalent to a formal proof of correctness. This limitation means that even after extensive testing, there might still be undetected defects.</p>
+</dd>
+<dt>Manual Testing is Tedious and Not Easily Replicable</dt><dd><p>Manual testing requires significant effort and time, and it is prone to human error. Due to its tedious nature, it can be challenging to replicate precisely, leading to inconsistencies in test results.</p>
+</dd>
+<dt>Testing is Relative to the Correctness of Specification</dt><dd><p>The effectiveness of testing is contingent on the accuracy and completeness of the software specifications. If these specifications are incorrect or incomplete, testing based on them can miss critical defects. Thus, the correctness of the software is only as reliable as the specifications against which it is tested.</p>
+</dd>
+</dl>
+<p>These limitations underscore the need for a comprehensive approach to software quality assurance, combining rigorous testing with other methods like code reviews, static analysis, and formal verification techniques.</p>
+</section>
+<section id="alternatives-to-testing">
+<h2><span class="section-number">4.5. </span>Alternatives to Testing<a class="headerlink" href="#alternatives-to-testing" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#alternatives-to-testing'">¶</a></h2>
+<p>These are some alternatives and complementary approaches to software testing:</p>
+<dl>
+<dt>Transformational programming</dt><dd><p>Automatically derive correct executable program from specification</p>
+</dd>
+<dt>Static analysis</dt><dd><p>Formally proves the correctness of a system based on its source code.</p>
+</dd>
+<dt>Model checking</dt><dd><p>Assumes both the system and its specification are represented formally.
+The system is typically represented as a finite-state machine or other state-transition system.
+Model checking exhaustively verifies correctness w.r.t. a specification based on, e.g., temporal logic.
+This aproach is widely used in embedded systems.</p>
+<p>Examples of model checking tools: SPIN, TLA+, etc. (see also <a class="reference external" href="https://en.wikipedia.org/wiki/List_of_model_checking_tools">this Wikipedia article</a> on model checking tools)</p>
+<p>The effectiveness of model checking is still relative to the correctness of the given specification.</p>
+</dd>
+</dl>
+</section>
+<section id="testing-types-and-techniques">
+<h2><span class="section-number">4.6. </span>Testing Types and Techniques<a class="headerlink" href="#testing-types-and-techniques" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#testing-types-and-techniques'">¶</a></h2>
+<dl class="simple">
+<dt>Manual Testing</dt><dd><p>Performed by human testers who interact with the software to find defects.</p>
+</dd>
+<dt>Automated Testing</dt><dd><p>Uses tools and scripts to automatically execute tests and compare actual outcomes with expected results.</p>
+</dd>
+<dt>Black-Box Testing</dt><dd><p>Focuses on input and output without considering internal code structure.</p>
+</dd>
+<dt>White-Box Testing</dt><dd><p>Involves testing internal structures or workings of an application, as opposed to its functionality (i.e., looking inside the ‘box’).</p>
+</dd>
+</dl>
+</section>
+<section id="levels-of-testing">
+<h2><span class="section-number">4.7. </span>Levels of Testing<a class="headerlink" href="#levels-of-testing" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#levels-of-testing'">¶</a></h2>
+<p>Testing is a vast software engineering topic, encompassing various levels:</p>
+<ul class="simple">
+<li><p>unit testing</p></li>
+<li><p>integration testing</p></li>
+<li><p>system testing</p></li>
+<li><p>acceptance testing</p></li>
+</ul>
+<p>These levels are orthogonal to the various testing types, techniques, and tactics.</p>
+</section>
+<section id="unit-testing-techniques">
+<h2><span class="section-number">4.8. </span>Unit Testing Techniques<a class="headerlink" href="#unit-testing-techniques" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#unit-testing-techniques'">¶</a></h2>
 <p>The main value proposition of <a class="reference external" href="https://en.wikipedia.org/wiki/Test-driven_development">automated unit testing</a> is that it encourages frequent regression testing by making it painless.
-During the last two decades, this “test-infected” mindset has gradually entered the mainstream including introductory computer science courses.
-We argue that it can benefit and integrate seamlessly with HPC education.</p>
+During the last two decades, this “test-infected” mindset has gradually entered the mainstream including introductory computer science courses.</p>
 <p>At the unit testing level, the following techniques are of particular interest:</p>
 <dl>
 <dt>Ad-hoc testing</dt><dd><p>Also called example-based testing, where we provide one or more specific test cases, where we programmatically interact with the system under test (SUT) and then examine the result or effect of the interaction.</p>
@@ -139,8 +230,61 @@ We argue that it can benefit and integrate seamlessly with HPC education.</p>
 \[\forall \texttt{s} \in \text{String} : \texttt{isPalindrome(s)} \Leftrightarrow (\texttt{s} = \texttt{s.reverse})\]</div>
 </dd>
 </dl>
+</section>
+<section id="frameworks-and-tools">
+<h2><span class="section-number">4.9. </span>Frameworks and Tools<a class="headerlink" href="#frameworks-and-tools" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#frameworks-and-tools'">¶</a></h2>
+<p>Various frameworks and tools have arisen to make automated testing easier and more effective.</p>
+<ul class="simple">
+<li><p>Frameworks: “XUnit” and similar frameworks for a variety of languages</p></li>
+<li><p>Mocking</p></li>
+<li><p>Testing patterns</p></li>
+<li><p>Tools for GUI test automation, e.g. Selenium, Espresso</p></li>
+<li><p>Build and dependency management tools</p></li>
+<li><p>Continuous integration/deployment/delivery pipelines</p></li>
+</ul>
+<p>These topics are typically covered in the <a class="reference external" href="https://academics.cs.luc.edu/courses/comp370.html">COMP 370/470: Software Quality, Metrics, and Testing</a> course</p>
+</section>
+<section id="code-coverage-for-structure-based-testing">
+<h2><span class="section-number">4.10. </span>Code Coverage for Structure-Based Testing<a class="headerlink" href="#code-coverage-for-structure-based-testing" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#code-coverage-for-structure-based-testing'">¶</a></h2>
+<p>Code coverage is a way to measure how thoroughly we are testing.
+With the help of an appropriate tool, such as JaCoCo or scoverage, we can generate coverage metrics during the build process.</p>
+<p>Specific coverage metrics in ascending order of rigor include</p>
+<ul class="simple">
+<li><p>Function/method coverage</p></li>
+<li><p>Statement coverage</p></li>
+<li><p>Edge coverage</p></li>
+<li><p>Branch coverage</p></li>
+<li><p>Condition/predicate coverage</p></li>
+<li><p>Path coverage</p></li>
+</ul>
+</section>
+<section id="code-examples">
+<h2><span class="section-number">4.11. </span>Code Examples<a class="headerlink" href="#code-examples" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#code-examples'">¶</a></h2>
+<p><a class="reference external" href="https://github.com/lucformalmethodscourse/arrayqueue-java-sbt">arrayqueue-java-sbt</a></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>switch to <a class="reference external" href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Queue.html">java.util.Queue</a> (?)</p></li>
+<li><p>start with specification-based testing</p></li>
+<li><p>then add property-based testing</p></li>
+</ul>
+</div></blockquote>
+<p><a class="reference external" href="https://github.com/lucproglangcourse/consoleapp-java">consoleapp-java</a></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>testability requires modularity</p></li>
+<li><p>modularity complicates scalability</p></li>
+<li><p>start with specification-based testing</p></li>
+<li><p>discuss branch coverage issue</p></li>
+<li><p>then add property-based testing</p></li>
+</ul>
+</div></blockquote>
+</section>
+<section id="conclusion">
+<h2><span class="section-number">4.12. </span>Conclusion<a class="headerlink" href="#conclusion" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#conclusion'">¶</a></h2>
+<p>In conclusion, software testing is an integral part of the software development lifecycle. It not only ensures that the software is free from defects but also meets the functional and dynamic nonfunctional requirements, thereby increasing overall confidence in the software.</p>
+</section>
 <section id="further-reading">
-<h2><span class="section-number">3.1. </span>Further Reading<a class="headerlink" href="#further-reading" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#further-reading'">¶</a></h2>
+<h2><span class="section-number">4.13. </span>Further Reading<a class="headerlink" href="#further-reading" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#further-reading'">¶</a></h2>
 <p>We have covered various aspects of testing in other works, including</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://arxiv.org/abs/1705.02899">Managing Concurrency in Mobile User Interfaces with Examples in Android</a></p></li>
@@ -151,7 +295,19 @@ We argue that it can benefit and integrate seamlessly with HPC education.</p>
 </div></div><aside class="hidden text-sm xl:block" id="right-sidebar">
 <div class="sticky top-16 -mt-10 max-h-[calc(var(--vh)-4rem)] overflow-y-auto pt-6 space-y-2"><p class="font-medium">On this page</p>
 <ul>
-<li><a :data-current="activeSection === '#further-reading'" class="reference internal" href="#further-reading">3.1. Further Reading</a></li>
+<li><a :data-current="activeSection === '#purpose'" class="reference internal" href="#purpose">4.1. Purpose</a></li>
+<li><a :data-current="activeSection === '#focus-on-correctness'" class="reference internal" href="#focus-on-correctness">4.2. Focus on Correctness</a></li>
+<li><a :data-current="activeSection === '#significance'" class="reference internal" href="#significance">4.3. Significance</a></li>
+<li><a :data-current="activeSection === '#limitations-of-software-testing'" class="reference internal" href="#limitations-of-software-testing">4.4. Limitations of Software Testing</a></li>
+<li><a :data-current="activeSection === '#alternatives-to-testing'" class="reference internal" href="#alternatives-to-testing">4.5. Alternatives to Testing</a></li>
+<li><a :data-current="activeSection === '#testing-types-and-techniques'" class="reference internal" href="#testing-types-and-techniques">4.6. Testing Types and Techniques</a></li>
+<li><a :data-current="activeSection === '#levels-of-testing'" class="reference internal" href="#levels-of-testing">4.7. Levels of Testing</a></li>
+<li><a :data-current="activeSection === '#unit-testing-techniques'" class="reference internal" href="#unit-testing-techniques">4.8. Unit Testing Techniques</a></li>
+<li><a :data-current="activeSection === '#frameworks-and-tools'" class="reference internal" href="#frameworks-and-tools">4.9. Frameworks and Tools</a></li>
+<li><a :data-current="activeSection === '#code-coverage-for-structure-based-testing'" class="reference internal" href="#code-coverage-for-structure-based-testing">4.10. Code Coverage for Structure-Based Testing</a></li>
+<li><a :data-current="activeSection === '#code-examples'" class="reference internal" href="#code-examples">4.11. Code Examples</a></li>
+<li><a :data-current="activeSection === '#conclusion'" class="reference internal" href="#conclusion">4.12. Conclusion</a></li>
+<li><a :data-current="activeSection === '#further-reading'" class="reference internal" href="#further-reading">4.13. Further Reading</a></li>
 </ul>
 </div>
 </aside>
@@ -165,9 +321,10 @@ We argue that it can benefit and integrate seamlessly with HPC education.</p>
 </div>
 </footer>
 </div>
-<script src="_static/documentation_options.js?v=e20b5d75"></script>
+<script src="_static/documentation_options.js?v=cb2f4811"></script>
 <script src="_static/doctools.js?v=888ff710"></script>
 <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+<script src="_static/proof.js"></script>
 <script defer="defer" src="_static/theme.js?v=e8bd915e"></script>
 <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </body>
