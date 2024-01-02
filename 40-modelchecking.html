@@ -110,8 +110,65 @@
 <p class="admonition-title">Todo</p>
 <p>Under construction for fall 2024</p>
 </div>
+<section id="exercises">
+<h2><span class="section-number">5.1. </span>Exercises<a class="headerlink" href="#exercises" title="Link to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#exercises'">¶</a></h2>
+<div class="proof proof-type-exercise" id="id2">
+<div class="proof-title">
+<span class="proof-type">Exercise </span>
+<span class="proof-title-name">(Group Activity: River Crossing)</span>
+</div><div class="proof-content">
+<dl>
+<dt>Learning Objectives</dt><dd><p>An understanding of</p>
+<ul class="simple">
+<li><p>event-driven systems</p></li>
+<li><p>state diagrams</p></li>
+<li><p>modeling event-driven systems with TLA+</p></li>
+</ul>
+</dd>
+<dt>Description</dt><dd><p>The goal is to model a river crossing puzzle as an event-driven system using TLA+.</p>
+<p>You may work on the <a class="reference external" href="https://en.wikipedia.org/wiki/Wolf,_goat_and_cabbage_problem">wolf, goat, and cabbage puzzle</a>, or another puzzle from <a class="reference external" href="https://en.wikipedia.org/wiki/River_crossing_puzzle">this page</a>, or you can suggest some other, similar puzzle.</p>
+</dd>
+<dt>Submission</dt><dd><p>Each individual student who participated in the activity should submit a screenshot of their work completed by the end of the session.</p>
+</dd>
+</dl>
+</div></div><div class="proof proof-type-exercise" id="id3">
+<div class="proof-title">
+<span class="proof-type">Exercise </span>
+<span class="proof-title-name">(Group Activity: Bounded Buffer)</span>
+</div><div class="proof-content">
+<dl>
+<dt>Learning Objectives</dt><dd><p>An understanding of</p>
+<ul class="simple">
+<li><p>concurrent systems</p></li>
+<li><p>bounded buffers with multiple producers and consumers (MPMC)</p></li>
+</ul>
+</dd>
+<dt>Description</dt><dd><p>The goal is to model a system with a single, shared bounded buffer and multiple producers and consumers.</p>
+<ul class="simple">
+<li><p>The producers are workstations submitting print jobs to the shared print queue (buffer).</p></li>
+<li><p>The consumers are printers removing print jobs from the shared print queue.</p></li>
+<li><p>The shared print queue is a fixed-size, circular, array-based buffer as described in this lab.</p></li>
+</ul>
+<p>For now, we’ll hard-code the number of instances of producers and consumers, respectively.</p>
+<p>We will also define the number of jobs each workstation submits to range over various values so that we’ll get many combinations.</p>
+<p>Finally, we’ll define suitable temporal properties, e.g.</p>
+<ul class="simple">
+<li><p>termination: the print queue should eventually be empty</p></li>
+<li><p>eventual consistency: at the end, the total job count should be equal to the sum of the initial number of jobs each workstation was going to submit</p></li>
+</ul>
+</dd>
+<dt>Submission</dt><dd><p>Each individual student who participated in the activity should submit a screenshot of their work completed by the end of the session.</p>
+</dd>
+</dl>
+</div></div></section>
 </section>
-</div></div>
+</div></div><aside class="hidden text-sm xl:block" id="right-sidebar">
+<div class="sticky top-16 -mt-10 max-h-[calc(var(--vh)-4rem)] overflow-y-auto pt-6 space-y-2"><p class="font-medium">On this page</p>
+<ul>
+<li><a :data-current="activeSection === '#exercises'" class="reference internal" href="#exercises">5.1. Exercises</a></li>
+</ul>
+</div>
+</aside>
 </main>
 </div>
 </div><footer class="py-6 border-t border-border md:py-0">
