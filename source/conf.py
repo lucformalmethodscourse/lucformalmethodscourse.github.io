@@ -35,7 +35,6 @@ extensions = [
 #    'sphinxcontrib.bibtex',
 #    'sphinx.ext.ifconfig',
 #    'sphinx.ext.viewcode',
-#    'sphinx_exercise'
 ]
 
 todo_include_todos = True
@@ -327,3 +326,17 @@ epub_copyright = u'2022-Present, Konstantin Läufer'
 
 # Allow duplicate toc entries.
 #epub_tocdup = True
+
+proof_theorem_types = {
+"algorithm": "Algorithm",
+"conjecture": "Conjecture",
+"corollary": "Corollary",
+"definition": "Definition",
+"example": "Example",
+"lemma": "Lemma",
+"observation": "Observation",
+"proof": "Proof",
+"property": "Property",
+"theorem": "Theorem",
+"exercise": "Exercise"
+}
