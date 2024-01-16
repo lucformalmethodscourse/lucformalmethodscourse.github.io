@@ -73,12 +73,6 @@ Here is an example involving Modus Ponens:
 In this example, the premises lead to the conclusion using the Modus Ponens rule. If the first premise is true (it is sunny outside), and the second premise is also true (if it is sunny, we go for a walk), then the conclusion (we will go for a walk) logically follows.
 
 
-Further Reading
-"""""""""""""""
-
-See `wikipedia.org/wiki/Propositional_calculus <https://en.wikipedia.org/wiki/Propositional_calculus>`_ for more details.
-
-
 Predicate Logic
 ^^^^^^^^^^^^^^^
 
@@ -144,3 +138,10 @@ Recap
 """""
 
 Predicate logic allows for the expression of more complex and nuanced statements about the world compared to propositional logic. Its use of quantifiers and predicates enables detailed analysis of the properties of objects and their relationships.
+
+Further Reading
+^^^^^^^^^^^^^^^
+
+- `wikipedia.org/wiki/Propositional_calculus <https://en.wikipedia.org/wiki/Propositional_calculus>`_
+- `wikipedia.org/wiki/First-order_logic (predicate logic) <https://en.wikipedia.org/wiki/First-order_logic>`_
+- `Systems perspective of basic logic <https://curricula.cs.luc.edu/25-systems/content.html#basic-logic>`_
