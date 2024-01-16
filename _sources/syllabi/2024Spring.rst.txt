@@ -71,7 +71,7 @@ Sections: 335-001/488-001 Spring 2024
 
 - *Academic integrity:* `LUC <https://www.luc.edu/academics/catalog/undergrad/reg_academicintegrity.shtml>`_ | `CAS <https://www.luc.edu/cas/advising/academicintegritystatement/>`_ | `Grad <https://www.luc.edu/gradschool/academics_policies.shtml>`_
 - `Sakai site for this section (gradebook) <https://sakai.luc.edu/portal/site/COMP_371_001_4379_1216>`_
-- `MS Team <https://teams.microsoft.com/l/team/19%3aDdAzd6JoRNUFF1MpwtBFlR61Ku5_7eideyHC0mlXdXM1%40thread.tacv2/conversations?groupId=b0cada27-8037-4cf8-af8c-e9fee7218b89&tenantId=021f4fe3-2b9c-4824-8378-bbcf9ec5accb>`_ *(mandatory subscription and participation)*
+- `MS Team <https://teams.microsoft.com/l/team/19%3A44-YYAcitBpfQqX76W8B86j_LjVf0q2KaldLCwzZjQU1%40thread.tacv2/conversations?groupId=f07ad2a4-ed06-4b06-b96f-33d5a5ba41fc&tenantId=021f4fe3-2b9c-4824-8378-bbcf9ec5accb>`_ *(mandatory subscription and participation)*
 
 Important dates (tentative) for quizzes and tests
   - Week 5 - Tue 13 February: quiz 1
