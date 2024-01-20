@@ -139,7 +139,8 @@ Table-based testing
         val palindromeTable =
           "string" | "result" |
           "mom" ! true |
-          "dad" ! false |
+          "dad" ! true |
+          "uncle" ! false |
           "radar" ! true |
           "lidar" ! false
 
@@ -149,12 +150,27 @@ Table-based testing
 
 
 Property-based testing
-    Here, we express the relationship between arguments and expected results as a universally quantified property. Typically, a property-based testing library automatically generates a certain number of argument and result values based on the property and executes each corresponding test.
+    Here, we express the relationship between arguments and expected results as a universally quantified property. 
 
     .. math::
 
         \forall \texttt{s} \in \text{String} : \texttt{isPalindrome(s)} \Leftrightarrow (\texttt{s} = \texttt{s.reverse})
 
+    Using a suitable propert-based testing library, such as `jqwik <https://jqwik.net>`_, we can express this property as executable code.
+    Typically, such a library automatically generates a large number of argument values and then evaluates the property for each argument as a separate test. 
+    
+    .. code-block:: java
+
+        @Property
+        boolean isPalindromeWorks(@ForAll("isReversible") final String aString) {
+          return fixture.echoTwice(aString).length() == 2 * aString.length() + 1;
+        }
+
+        @Provide
+        Arbitrary<String> isReversible() {
+          return Arbitraries.strings().ofMaxLength(23)
+            .filter(s -> new StringBuilder(s).reverse().toString().equals(s));
+        }
 
 
 Frameworks and Tools

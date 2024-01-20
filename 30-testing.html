@@ -215,7 +215,8 @@ During the last two decades, this “test-infected” mindset has gradually ente
 <div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">palindromeTable</span><span class="w"> </span><span class="o">=</span>
 <span class="w">  </span><span class="s">"string"</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="s">"result"</span><span class="w"> </span><span class="o">|</span>
 <span class="w">  </span><span class="s">"mom"</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="o">|</span>
-<span class="w">  </span><span class="s">"dad"</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="kc">false</span><span class="w"> </span><span class="o">|</span>
+<span class="w">  </span><span class="s">"dad"</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="o">|</span>
+<span class="w">  </span><span class="s">"uncle"</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="kc">false</span><span class="w"> </span><span class="o">|</span>
 <span class="w">  </span><span class="s">"radar"</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="o">|</span>
 <span class="w">  </span><span class="s">"lidar"</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="kc">false</span>
 
@@ -225,9 +226,23 @@ During the last two decades, this “test-infected” mindset has gradually ente
 </pre></div>
 </div>
 </dd>
-<dt>Property-based testing</dt><dd><p>Here, we express the relationship between arguments and expected results as a universally quantified property. Typically, a property-based testing library automatically generates a certain number of argument and result values based on the property and executes each corresponding test.</p>
+<dt>Property-based testing</dt><dd><p>Here, we express the relationship between arguments and expected results as a universally quantified property.</p>
 <div class="math notranslate nohighlight">
 \[\forall \texttt{s} \in \text{String} : \texttt{isPalindrome(s)} \Leftrightarrow (\texttt{s} = \texttt{s.reverse})\]</div>
+<p>Using a suitable propert-based testing library, such as <a class="reference external" href="https://jqwik.net">jqwik</a>, we can express this property as executable code.
+Typically, such a library automatically generates a large number of argument values and then evaluates the property for each argument as a separate test.</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="nd">@Property</span>
+<span class="kt">boolean</span><span class="w"> </span><span class="nf">isPalindromeWorks</span><span class="p">(</span><span class="nd">@ForAll</span><span class="p">(</span><span class="s">"isReversible"</span><span class="p">)</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">aString</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">fixture</span><span class="p">.</span><span class="na">echoTwice</span><span class="p">(</span><span class="n">aString</span><span class="p">).</span><span class="na">length</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">aString</span><span class="p">.</span><span class="na">length</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nd">@Provide</span>
+<span class="n">Arbitrary</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="nf">isReversible</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">Arbitraries</span><span class="p">.</span><span class="na">strings</span><span class="p">().</span><span class="na">ofMaxLength</span><span class="p">(</span><span class="mi">23</span><span class="p">)</span>
+<span class="w">    </span><span class="p">.</span><span class="na">filter</span><span class="p">(</span><span class="n">s</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">StringBuilder</span><span class="p">(</span><span class="n">s</span><span class="p">).</span><span class="na">reverse</span><span class="p">().</span><span class="na">toString</span><span class="p">().</span><span class="na">equals</span><span class="p">(</span><span class="n">s</span><span class="p">));</span>
+<span class="p">}</span>
+</pre></div>
+</div>
 </dd>
 </dl>
 </section>
