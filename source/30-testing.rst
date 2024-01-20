@@ -162,14 +162,8 @@ Property-based testing
     .. code-block:: java
 
         @Property
-        boolean isPalindromeWorks(@ForAll("isReversible") final String aString) {
-          return fixture.echoTwice(aString).length() == 2 * aString.length() + 1;
-        }
-
-        @Provide
-        Arbitrary<String> isReversible() {
-          return Arbitraries.strings().ofMaxLength(23)
-            .filter(s -> new StringBuilder(s).reverse().toString().equals(s));
+        boolean isPalindromeWorks(@ForAll final String s) {
+          return isPalindrome(s) == new StringBuilder(s).reverse().toString().equals(s);
         }
 
 
