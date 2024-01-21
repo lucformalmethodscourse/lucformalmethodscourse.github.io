@@ -1,7 +1,8 @@
 .. _chapter-logic:
 
-Foundations
------------
+Foundations in Discrete Structures
+----------------------------------
+
 
 .. todo:: Under construction for fall 2024
 
