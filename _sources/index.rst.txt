@@ -27,7 +27,7 @@ Please get started by reading the :doc:`10-overview`.
 
    10-overview
    15-softwareengineering
-   20-logic
+   20-foundations
    30-testing
    40-modelchecking
    50-rtverification

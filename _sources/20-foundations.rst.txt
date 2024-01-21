@@ -1,7 +1,7 @@
 .. _chapter-logic:
 
-Logic Foundations
------------------
+Foundations
+-----------
 
 .. todo:: Under construction for fall 2024
 
@@ -139,9 +139,14 @@ Recap
 
 Predicate logic allows for the expression of more complex and nuanced statements about the world compared to propositional logic. Its use of quantifiers and predicates enables detailed analysis of the properties of objects and their relationships.
 
+
+.. todo:: Add material on Sets, Proofs, and Induction
+
+
 Further Reading
 ^^^^^^^^^^^^^^^
 
 - `wikipedia.org/wiki/Propositional_calculus <https://en.wikipedia.org/wiki/Propositional_calculus>`_
 - `wikipedia.org/wiki/First-order_logic (predicate logic) <https://en.wikipedia.org/wiki/First-order_logic>`_
 - `Systems perspective of basic logic <https://curricula.cs.luc.edu/25-systems/content.html#basic-logic>`_
+- `Helpful notes on Discrete Structures <https://lgreco.github.io/cdp/COMP163/notes.html>`_
