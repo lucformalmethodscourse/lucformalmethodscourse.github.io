@@ -145,7 +145,7 @@ Table-based testing (also known as data-driven testing)
           "dad"    ! true |
           "kid"    ! false |
           "abba"   ! true |
-	  "appl"   ! false |
+          "appl"   ! false |
           "uncle"  ! false |
           "radar"  ! true |
           "lidar"  ! false |
