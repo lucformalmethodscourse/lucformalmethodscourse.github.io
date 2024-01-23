@@ -131,7 +131,7 @@ Ad-hoc testing
         assert(!isPalindrome("lidar"))
 
 
-Table-based testing
+Table-based testing (also known as data-driven testing)
     Here, we provide a table of two or more columns corresponding to arguments and expected results of the function or method under test. This technique allows for a more concise representation of several similar ad-hoc tests.
 
     .. code-block:: scala
