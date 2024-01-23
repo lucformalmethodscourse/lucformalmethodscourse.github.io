@@ -19,7 +19,7 @@ Sections: 335-001/488-001 Spring 2024
 
   - Tue 18:50-19:30 after class in IES 123
   - Wed 13:00-15:00 and Fri 14:00-15:45 in Doyle Hall 203 (LSC) or online (`by appointment via Calendly <https://calendly.com/laufer>`_)
-  - TA office hours Thu 15:00-16:00 in Doyle Hall 011 (garden level)
+  - TA office hours Mon and Thu 15:00-16:00 in Doyle Hall 011 (garden level)
   
 - *Required materials:*
 
