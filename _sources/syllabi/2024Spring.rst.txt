@@ -13,24 +13,24 @@ Sections: 335-001/488-001 Spring 2024
 
 - *Instructor:* `Konstantin Läufer <http://laufer.cs.luc.edu>`_ | `GitHub <https://github.com/klaeufer>`_ | `Google Scholar <http://scholar.google.com/citations?user=Rs0f_nMAAAAJ>`_ | `Rate My Prof <https://www.ratemyprofessors.com/ShowRatings.jsp?tid=287274>`_
 
-- *TA:* TBD
+- *TA:* Haosen Han
 
 - *Office hours:*
 
   - Tue 18:50-19:30 after class in IES 123
   - Wed 13:00-15:00 and Fri 14:00-15:45 in Doyle Hall 203 (LSC) or online (`by appointment via Calendly <https://calendly.com/laufer>`_)
-  - TA office hours TBD
+  - TA office hours Thu 15:00-16:00 in Doyle Hall 011 (garden level)
   
 - *Required materials:*
 
   - :ref:`appendix-software`
   - `These lecture notes <../>`_
+  - `Notes on Discrete Structures <https://lgreco.github.io/cdp/COMP163/notes.html>`_
   - `Notes on Hoare Logic <https://www.cs.cmu.edu/~aldrich/courses/15-819O-13sp/resources/hoare-logic.pdf>`_
-  - `PlusCal User's Manual <https://lamport.azurewebsites.net/tla/p-manual.pdf>`_
-  - `Learning TLA <https://old.learntla.com>`_
-  - `An Introduction to Regular Expressions <https://learning.oreilly.com/library/view/an-introduction-to/9781492082569>`_
   - `Effective Software Testing <https://learning.oreilly.com/library/view/effective-software-testing/9781633439931>`_ (chapters 2-5) 
+  - `Learning TLA <https://learntla.com>`_
   - `Practical TLA+: Planning Driven Development <https://learning.oreilly.com/library/view/practical-tla-planning/9781484238295>`_
+  - `An Introduction to Regular Expressions <https://learning.oreilly.com/library/view/an-introduction-to/9781492082569>`_
 
 - *Additional resources:* :ref:`appendix-resources`
 
