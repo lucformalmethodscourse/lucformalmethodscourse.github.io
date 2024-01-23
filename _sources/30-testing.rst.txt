@@ -138,12 +138,14 @@ Table-based testing (also known as data-driven testing)
 
         val palindromeTable =
           "string" | "result" |
-          "a"      | true |
-          "aa"     | true |
-          "ab"     | false |
+          "a"      ! true |
+          "aa"     ! true |
+          "ab"     ! false |
           "mom"    ! true |
           "dad"    ! true |
+          "kid"    ! false |
           "abba"   ! true |
+	  "appl"   ! false |
           "uncle"  ! false |
           "radar"  ! true |
           "lidar"  ! false |
