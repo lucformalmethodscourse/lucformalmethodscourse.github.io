@@ -180,7 +180,7 @@ The following test outcomes are usually possible:
 - The test passes, usually indicated as a green checkmark.
 - An assertion in the test fails, usually indicated as a yellow exclamation mark.
 - There is a runtime error before reaching any assertions, usually indicated as a red "x".
-- The test does not terminate.
+- The test times out or does not terminate at all.
 - The testing tool or entire system crashes; these outcomes are uncommon in today's managed code environments.
 
 
