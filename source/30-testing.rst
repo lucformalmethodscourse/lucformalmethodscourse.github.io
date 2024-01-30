@@ -120,6 +120,7 @@ Unit Testing Techniques
 The main value proposition of `automated unit testing <https://en.wikipedia.org/wiki/Test-driven_development>`_ is that it encourages frequent regression testing by making it painless.
 During the last two decades, this “test-infected” mindset has gradually entered the mainstream including introductory computer science courses.
 
+
 At the unit testing level, the following techniques are of particular interest:
 
 Ad-hoc testing
@@ -172,6 +173,15 @@ Property-based testing
         boolean isPalindromeWorks(@ForAll final String s) {
           return isPalindrome(s) == new StringBuilder(s).reverse().toString().equals(s);
         }
+
+
+The following test outcomes are usually possible:
+
+- The test passes, usually indicated as a green checkmark.
+- An assertion in the test fails, usually indicated as a yellow exclamation mark.
+- There is a runtime error before reaching any assertions, usually indicated as a red "x".
+- The test does not terminate.
+- The testing tool or entire system crashes; these outcomes are uncommon in today's managed code environments.
 
 
 Frameworks and Tools
