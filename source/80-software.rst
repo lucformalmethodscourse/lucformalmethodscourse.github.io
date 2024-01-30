@@ -43,7 +43,7 @@ To launch, visit `gitpod.io <https://gitpod.io>`_ and log in using your GitHub a
 - For each new workspace, using the installed `SDKMAN! <https://sdkman.io>`_, perform a one-time installation of java and `sbt <https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Linux.html>`_; 
 - In case your workspace no longer recognizes the `sbt` command, reinstall via the command
 
-  .. code-block:: bash
+  .. code-block:: console
 
     sdk install sbt
 
