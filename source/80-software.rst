@@ -117,7 +117,7 @@ Recommended Visual Studio Code extensions
 Install via extensions tool the VS Code toolbar:
 
 - Scala/Metals - required for sbt-based Java projects
-- You should also disable the official Java extensions while working on sbt-based Java projects
+- You should also disable the official Microsoft or Red Hat Java extensions while working on sbt-based Java projects
 - `TLA+ Nightly <https://github.com/tlaplus/vscode-tlaplus>`_ - required for model development and checking 
 - Conceal - recommended for nicer rendering of mathematical symbols in TLA+ (see `here <https://github.com/tonsky/FiraCode/wiki/VS-Code-Instructions>`_ and `here <https://github.com/coq-community/vsc-conceal>`_ for instructions)
 
