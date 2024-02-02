@@ -1,5 +1,6 @@
-sphinx 
-sphinxawesome-theme == 5.0.0-rc.1
+sphinx
+sphinx-rtd-theme
 sphinxcontrib-bibtex
+furo
 sphinxcontrib-proof
 sphinx-exercise
