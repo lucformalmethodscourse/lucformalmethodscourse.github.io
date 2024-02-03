@@ -121,67 +121,129 @@ The main value proposition of `automated unit testing <https://en.wikipedia.org/
 During the last two decades, this “test-infected” mindset has gradually entered the mainstream including introductory computer science courses.
 
 
-At the unit testing level, the following techniques are of particular interest:
+Unit Test Outcomes
+""""""""""""""""""
 
-Ad-hoc testing
-    Also called example-based testing, where we provide one or more specific test cases, where we programmatically interact with the system under test (SUT) and then examine the result or effect of the interaction.
-
-    .. code-block:: scala
-
-        assert(isPalindrome("radar"))
-        assert(!isPalindrome("lidar"))
-
-
-Table-based testing (also known as data-driven testing)
-    Here, we provide a table of two or more columns corresponding to arguments and expected results of the function or method under test. This technique allows for a more concise representation of several similar ad-hoc tests.
-
-    .. code-block:: scala
-
-        val palindromeTable =
-          "string" | "result" |
-          "a"      ! true |
-          "aa"     ! true |
-          "ab"     ! false |
-          "mom"    ! true |
-          "dad"    ! true |
-          "kid"    ! false |
-          "abba"   ! true |
-          "appl"   ! false |
-          "uncle"  ! false |
-          "radar"  ! true |
-          "lidar"  ! false |
-          "hannah" | true
-
-        palindromeTable |> (
-          (s, r) => assert(isPalindrome(s) == r)
-        )
-
-
-Property-based testing
-    Here, we express the relationship between arguments and expected results as a universally quantified property. 
-
-    .. math::
-
-        \forall \texttt{s} \in \text{String} : \texttt{isPalindrome(s)} \Leftrightarrow (\texttt{s} = \texttt{s.reverse})
-
-    Using a suitable propert-based testing library, such as `jqwik <https://jqwik.net>`_, we can express this property as executable code.
-    Typically, such a library automatically generates a large number of argument values and then evaluates the property for each argument as a separate test. 
-    
-    .. code-block:: java
-
-        @Property
-        boolean isPalindromeWorks(@ForAll final String s) {
-          return isPalindrome(s) == new StringBuilder(s).reverse().toString().equals(s);
-        }
-
-
-The following test outcomes are usually possible:
+The following unit test outcomes are usually possible for any given test:
 
 - The test passes, usually indicated as a green checkmark.
 - An assertion in the test fails, usually indicated as a yellow exclamation mark.
 - There is a runtime error before reaching any assertions, usually indicated as a red "x".
 - The test times out or does not terminate at all.
 - The testing tool or entire system crashes; these outcomes are uncommon in today's managed code environments.
+
+
+At the unit testing level, the following techniques are of particular interest:
+
+
+Ad-hoc testing
+""""""""""""""
+
+Also called example-based testing, where we provide one or more specific test cases, where we programmatically interact with the system under test (SUT) and then examine the result or effect of the interaction.
+
+.. code-block:: scala
+
+    assert(isPalindrome("radar"))
+    assert(!isPalindrome("lidar"))
+
+
+Table-Based Testing (also known as data-driven testing)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+Here, we provide a table of two or more columns corresponding to arguments and expected results of the function or method under test. This technique allows for a more concise representation of several similar ad-hoc tests.
+
+.. code-block:: scala
+
+    val palindromeTable =
+      "string" | "result" |
+      "a"      ! true |
+      "aa"     ! true |
+      "ab"     ! false |
+      "mom"    ! true |
+      "dad"    ! true |
+      "kid"    ! false |
+      "abba"   ! true |
+      "appl"   ! false |
+      "uncle"  ! false |
+      "radar"  ! true |
+      "lidar"  ! false |
+      "hannah" | true
+
+    palindromeTable |> (
+      (s, r) => assert(isPalindrome(s) == r)
+    )
+
+
+Property-Based Testing
+""""""""""""""""""""""
+
+Here, we express the relationship between arguments and expected results as a universally quantified property. 
+
+.. math::
+
+    \forall \texttt{s} \in \text{String} : \texttt{isPalindrome(s)} \Leftrightarrow (\texttt{s} = \texttt{s.reverse})
+
+Using a suitable propert-based testing library, such as `jqwik <https://jqwik.net>`_, we can express this property as executable code.
+Typically, such a library automatically generates a large number of argument values and then evaluates the property for each argument as a separate test. 
+
+.. code-block:: java
+
+    @Property
+    boolean isPalindromeWorks(@ForAll final String s) {
+      return isPalindrome(s) == new StringBuilder(s).reverse().toString().equals(s);
+    }
+
+
+Stateless Testing
+"""""""""""""""""
+
+Orthogonal to the techniques discussed so far, stateless testing refers to the simple case where the function or method-under-test (MUT) is *stateless*, i.e., its result depends solely on its arguments and, possibly, the instance variables of an *immutable* object.
+Accordingly, stateless tests are typically simple and consist of these steps:
+
+- If we are testing a method, create an instance of the class providing the MUT. 
+- Invoke the method. 
+- Express assertions on the result.
+
+
+Stateful Testing
+""""""""""""""""
+
+In contrast to stateless testing, this refers to cases where we the system-under-test (SUT) is a stateful object and we want to test the correctness of the SUT in response to both *observer* and *mutator* methods.
+The challenge is that the space of possible interactions with a stateful object can blow up quickly if we want to test thoroughly.
+
+For example, this test represents only one possible scenario involving the stateful `offer` and `poll` methods of a bounded buffer.
+
+.. code-block:: java
+
+    @Test
+    void testOffer2ThenPoll2() {
+      final var value1 = "hello";
+      final var value2 = "world";
+      assertTrue(fixture.offer(value1));
+      assertTrue(fixture.offer(value2));
+      assertEquals(value1, fixture.poll());
+      assertEquals(value2, fixture.poll());
+      assertTrue(fixture.isEmpty());
+    }
+
+Some testing libraries, however, support property-based stateful testing that exercise arbitrary scenarios involving the desired methods. 
+
+Using the `jqwik` library, assuming the action classes for invoking specific methods are defined separately, the following code will generate and exercise a large number of interactions involving the `offer` and `poll` methods.
+
+.. code-block:: java
+
+    @Provide
+    Arbitrary<ActionChain<SimpleQueue<String>>> simpleQueueActions() {
+      return ActionChain
+        .<SimpleQueue<String>>startWith(() -> new FixedArrayQueue<String>(5))
+        .withAction(new OfferAction())
+        .withAction(new PollAction());
+    }
+
+    @Property
+    void checkSimpleQueue(@ForAll("simpleQueueActions") final ActionChain<SimpleQueue<String>> chain) {
+      chain.run();
+    }
 
 
 Frameworks and Tools

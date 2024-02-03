@@ -301,15 +301,29 @@ This aproach is widely used in embedded systems.</p>
 <h2><span class="section-number">4.8. </span>Unit Testing Techniques<a class="headerlink" href="#unit-testing-techniques" title="Link to this heading"></a></h2>
 <p>The main value proposition of <a class="reference external" href="https://en.wikipedia.org/wiki/Test-driven_development">automated unit testing</a> is that it encourages frequent regression testing by making it painless.
 During the last two decades, this “test-infected” mindset has gradually entered the mainstream including introductory computer science courses.</p>
+<section id="unit-test-outcomes">
+<h3><span class="section-number">4.8.1. </span>Unit Test Outcomes<a class="headerlink" href="#unit-test-outcomes" title="Link to this heading"></a></h3>
+<p>The following unit test outcomes are usually possible for any given test:</p>
+<ul class="simple">
+<li><p>The test passes, usually indicated as a green checkmark.</p></li>
+<li><p>An assertion in the test fails, usually indicated as a yellow exclamation mark.</p></li>
+<li><p>There is a runtime error before reaching any assertions, usually indicated as a red “x”.</p></li>
+<li><p>The test times out or does not terminate at all.</p></li>
+<li><p>The testing tool or entire system crashes; these outcomes are uncommon in today’s managed code environments.</p></li>
+</ul>
 <p>At the unit testing level, the following techniques are of particular interest:</p>
-<dl>
-<dt>Ad-hoc testing</dt><dd><p>Also called example-based testing, where we provide one or more specific test cases, where we programmatically interact with the system under test (SUT) and then examine the result or effect of the interaction.</p>
+</section>
+<section id="ad-hoc-testing">
+<h3><span class="section-number">4.8.2. </span>Ad-hoc testing<a class="headerlink" href="#ad-hoc-testing" title="Link to this heading"></a></h3>
+<p>Also called example-based testing, where we provide one or more specific test cases, where we programmatically interact with the system under test (SUT) and then examine the result or effect of the interaction.</p>
 <div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="n">assert</span><span class="p">(</span><span class="n">isPalindrome</span><span class="p">(</span><span class="s">&quot;radar&quot;</span><span class="p">))</span>
 <span class="n">assert</span><span class="p">(</span><span class="o">!</span><span class="n">isPalindrome</span><span class="p">(</span><span class="s">&quot;lidar&quot;</span><span class="p">))</span>
 </pre></div>
 </div>
-</dd>
-<dt>Table-based testing (also known as data-driven testing)</dt><dd><p>Here, we provide a table of two or more columns corresponding to arguments and expected results of the function or method under test. This technique allows for a more concise representation of several similar ad-hoc tests.</p>
+</section>
+<section id="table-based-testing-also-known-as-data-driven-testing">
+<h3><span class="section-number">4.8.3. </span>Table-Based Testing (also known as data-driven testing)<a class="headerlink" href="#table-based-testing-also-known-as-data-driven-testing" title="Link to this heading"></a></h3>
+<p>Here, we provide a table of two or more columns corresponding to arguments and expected results of the function or method under test. This technique allows for a more concise representation of several similar ad-hoc tests.</p>
 <div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">palindromeTable</span><span class="w"> </span><span class="o">=</span>
 <span class="w">  </span><span class="s">&quot;string&quot;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="s">&quot;result&quot;</span><span class="w"> </span><span class="o">|</span>
 <span class="w">  </span><span class="s">&quot;a&quot;</span><span class="w">      </span><span class="o">!</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="o">|</span>
@@ -330,8 +344,10 @@ During the last two decades, this “test-infected” mindset has gradually ente
 <span class="p">)</span>
 </pre></div>
 </div>
-</dd>
-<dt>Property-based testing</dt><dd><p>Here, we express the relationship between arguments and expected results as a universally quantified property.</p>
+</section>
+<section id="property-based-testing">
+<h3><span class="section-number">4.8.4. </span>Property-Based Testing<a class="headerlink" href="#property-based-testing" title="Link to this heading"></a></h3>
+<p>Here, we express the relationship between arguments and expected results as a universally quantified property.</p>
 <div class="math-wrapper docutils container">
 <div class="math notranslate nohighlight">
 \[\forall \texttt{s} \in \text{String} : \texttt{isPalindrome(s)} \Leftrightarrow (\texttt{s} = \texttt{s.reverse})\]</div>
@@ -344,16 +360,51 @@ Typically, such a library automatically generates a large number of argument val
 <span class="p">}</span>
 </pre></div>
 </div>
-</dd>
-</dl>
-<p>The following test outcomes are usually possible:</p>
+</section>
+<section id="stateless-testing">
+<h3><span class="section-number">4.8.5. </span>Stateless Testing<a class="headerlink" href="#stateless-testing" title="Link to this heading"></a></h3>
+<p>Orthogonal to the techniques discussed so far, stateless testing refers to the simple case where the function or method-under-test (MUT) is <em>stateless</em>, i.e., its result depends solely on its arguments and, possibly, the instance variables of an <em>immutable</em> object.
+Accordingly, stateless tests are typically simple and consist of these steps:</p>
 <ul class="simple">
-<li><p>The test passes, usually indicated as a green checkmark.</p></li>
-<li><p>An assertion in the test fails, usually indicated as a yellow exclamation mark.</p></li>
-<li><p>There is a runtime error before reaching any assertions, usually indicated as a red “x”.</p></li>
-<li><p>The test times out or does not terminate at all.</p></li>
-<li><p>The testing tool or entire system crashes; these outcomes are uncommon in today’s managed code environments.</p></li>
+<li><p>If we are testing a method, create an instance of the class providing the MUT.</p></li>
+<li><p>Invoke the method.</p></li>
+<li><p>Express assertions on the result.</p></li>
 </ul>
+</section>
+<section id="stateful-testing">
+<h3><span class="section-number">4.8.6. </span>Stateful Testing<a class="headerlink" href="#stateful-testing" title="Link to this heading"></a></h3>
+<p>In contrast to stateless testing, this refers to cases where we the system-under-test (SUT) is a stateful object and we want to test the correctness of the SUT in response to both <em>observer</em> and <em>mutator</em> methods.
+The challenge is that the space of possible interactions with a stateful object can blow up quickly if we want to test thoroughly.</p>
+<p>For example, this test represents only one possible scenario involving the stateful <cite>offer</cite> and <cite>poll</cite> methods of a bounded buffer.</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="nd">@Test</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">testOffer2ThenPoll2</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">final</span><span class="w"> </span><span class="kd">var</span><span class="w"> </span><span class="n">value1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;hello&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="kd">final</span><span class="w"> </span><span class="kd">var</span><span class="w"> </span><span class="n">value2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;world&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="n">assertTrue</span><span class="p">(</span><span class="n">fixture</span><span class="p">.</span><span class="na">offer</span><span class="p">(</span><span class="n">value1</span><span class="p">));</span>
+<span class="w">  </span><span class="n">assertTrue</span><span class="p">(</span><span class="n">fixture</span><span class="p">.</span><span class="na">offer</span><span class="p">(</span><span class="n">value2</span><span class="p">));</span>
+<span class="w">  </span><span class="n">assertEquals</span><span class="p">(</span><span class="n">value1</span><span class="p">,</span><span class="w"> </span><span class="n">fixture</span><span class="p">.</span><span class="na">poll</span><span class="p">());</span>
+<span class="w">  </span><span class="n">assertEquals</span><span class="p">(</span><span class="n">value2</span><span class="p">,</span><span class="w"> </span><span class="n">fixture</span><span class="p">.</span><span class="na">poll</span><span class="p">());</span>
+<span class="w">  </span><span class="n">assertTrue</span><span class="p">(</span><span class="n">fixture</span><span class="p">.</span><span class="na">isEmpty</span><span class="p">());</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Some testing libraries, however, support property-based stateful testing that exercise arbitrary scenarios involving the desired methods.</p>
+<p>Using the <cite>jqwik</cite> library, assuming the action classes for invoking specific methods are defined separately, the following code will generate and exercise a large number of interactions involving the <cite>offer</cite> and <cite>poll</cite> methods.</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="nd">@Provide</span>
+<span class="n">Arbitrary</span><span class="o">&lt;</span><span class="n">ActionChain</span><span class="o">&lt;</span><span class="n">SimpleQueue</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;&gt;&gt;</span><span class="w"> </span><span class="nf">simpleQueueActions</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">ActionChain</span>
+<span class="w">    </span><span class="p">.</span><span class="o">&lt;</span><span class="n">SimpleQueue</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;&gt;</span><span class="n">startWith</span><span class="p">(()</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">FixedArrayQueue</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+<span class="w">    </span><span class="p">.</span><span class="na">withAction</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">OfferAction</span><span class="p">())</span>
+<span class="w">    </span><span class="p">.</span><span class="na">withAction</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">PollAction</span><span class="p">());</span>
+<span class="p">}</span>
+
+<span class="nd">@Property</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">checkSimpleQueue</span><span class="p">(</span><span class="nd">@ForAll</span><span class="p">(</span><span class="s">&quot;simpleQueueActions&quot;</span><span class="p">)</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">ActionChain</span><span class="o">&lt;</span><span class="n">SimpleQueue</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">chain</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">chain</span><span class="p">.</span><span class="na">run</span><span class="p">();</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
 </section>
 <section id="frameworks-and-tools">
 <h2><span class="section-number">4.9. </span>Frameworks and Tools<a class="headerlink" href="#frameworks-and-tools" title="Link to this heading"></a></h2>
@@ -480,7 +531,15 @@ With the help of an appropriate tool, such as JaCoCo or scoverage, we can genera
 <li><a class="reference internal" href="#alternatives-to-testing">4.5. Alternatives to Testing</a></li>
 <li><a class="reference internal" href="#testing-types-and-techniques">4.6. Testing Types and Techniques</a></li>
 <li><a class="reference internal" href="#levels-of-testing">4.7. Levels of Testing</a></li>
-<li><a class="reference internal" href="#unit-testing-techniques">4.8. Unit Testing Techniques</a></li>
+<li><a class="reference internal" href="#unit-testing-techniques">4.8. Unit Testing Techniques</a><ul>
+<li><a class="reference internal" href="#unit-test-outcomes">4.8.1. Unit Test Outcomes</a></li>
+<li><a class="reference internal" href="#ad-hoc-testing">4.8.2. Ad-hoc testing</a></li>
+<li><a class="reference internal" href="#table-based-testing-also-known-as-data-driven-testing">4.8.3. Table-Based Testing (also known as data-driven testing)</a></li>
+<li><a class="reference internal" href="#property-based-testing">4.8.4. Property-Based Testing</a></li>
+<li><a class="reference internal" href="#stateless-testing">4.8.5. Stateless Testing</a></li>
+<li><a class="reference internal" href="#stateful-testing">4.8.6. Stateful Testing</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#frameworks-and-tools">4.9. Frameworks and Tools</a></li>
 <li><a class="reference internal" href="#code-coverage-for-structure-based-testing">4.10. Code Coverage for Structure-Based Testing</a></li>
 <li><a class="reference internal" href="#code-examples">4.11. Code Examples</a></li>
