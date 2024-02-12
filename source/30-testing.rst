@@ -269,6 +269,7 @@ With the help of an appropriate tool, such as JaCoCo or scoverage, we can genera
 
 Specific coverage metrics in ascending order of rigor include
 
+- Module/class coverage
 - Function/method coverage
 - Statement coverage
 - Edge coverage
