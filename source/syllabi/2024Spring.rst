@@ -74,13 +74,13 @@ Sections: 335-001/488-001 Spring 2024
 - `MS Team <https://teams.microsoft.com/l/team/19%3A44-YYAcitBpfQqX76W8B86j_LjVf0q2KaldLCwzZjQU1%40thread.tacv2/conversations?groupId=f07ad2a4-ed06-4b06-b96f-33d5a5ba41fc&tenantId=021f4fe3-2b9c-4824-8378-bbcf9ec5accb>`_ *(mandatory subscription and participation)*
 
 Important dates (tentative) for quizzes and tests
-  - Week 5 - Tue 13 February: quiz 1
+  - Week 5 - Tue 13 February: quiz 0
   - Week 7 - Tue 27 February: test 1
   - Week 8 - Tue 5 February: **NO CLASS (spring break)**
-  - Week 10 - Tue 19 March: quiz 2
+  - Week 10 - Tue 19 March: quiz 1
   - Week 11 - Fri 29 March: *last day to withdraw with W instead of WF*
   - Week 12 - Fri 2 April: test 2
-  - Week 16 (finals week) - Tue 30 April: *quiz 3 followed by class session*
+  - Week 16 (finals week) - Tue 30 April: *quiz 2 followed by class session*
 
 Recording of class meetings
   In this class, software may be used to record live class discussions. As a student in this class, your participation in live class discussions will be recorded. These recordings will be made available only to students enrolled in the class, to assist those who cannot attend the live session or to serve as a resource for those who would like to review content that was presented. All recordings will become unavailable to students in the class when the course has concluded. The use of all video recordings will be in keeping with the University Privacy Statement shown below.
