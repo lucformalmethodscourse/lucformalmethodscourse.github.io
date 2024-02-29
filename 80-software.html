@@ -308,14 +308,23 @@
 </ul>
 </section>
 </section>
-<section id="recommended-visual-studio-code-extensions">
-<h2><span class="section-number">8.3. </span>Recommended Visual Studio Code extensions<a class="headerlink" href="#recommended-visual-studio-code-extensions" title="Link to this heading"></a></h2>
+<section id="recommended-visual-studio-code-extensions-and-settings">
+<h2><span class="section-number">8.3. </span>Recommended Visual Studio Code extensions and settings<a class="headerlink" href="#recommended-visual-studio-code-extensions-and-settings" title="Link to this heading"></a></h2>
 <p>Install via extensions tool the VS Code toolbar:</p>
 <ul class="simple">
 <li><p>Scala/Metals - required for sbt-based Java projects</p></li>
 <li><p>You should also disable the official Microsoft or Red Hat Java extensions while working on sbt-based Java projects</p></li>
 <li><p><a class="reference external" href="https://github.com/tlaplus/vscode-tlaplus">TLA+ Nightly</a> - required for model development and checking</p></li>
 <li><p>Conceal - recommended for nicer rendering of mathematical symbols in TLA+ (see <a class="reference external" href="https://github.com/tonsky/FiraCode/wiki/VS-Code-Instructions">here</a> and <a class="reference external" href="https://github.com/coq-community/vsc-conceal">here</a> for instructions)</p></li>
+</ul>
+<p>When running VS Code locally, autosave isn’t on by default, and you need to save your files manually: When there is a solid circle on the file’s tab, it’s not saved yet.
+I strongly recommend turning on autosave so your local instance of VS Code works the same way as browser-based instances:</p>
+<ul>
+<li><p>click the cogwheel in the bottom left corner to open settings</p></li>
+<li><p>type “autosave” in the search box</p></li>
+<li><p>look for the actual setting and choose onFocusChange</p>
+<img alt="Autosave setting in VS Code" class="align-center" src="_images/autosave.png" />
+</li>
 </ul>
 </section>
 <section id="github">
@@ -415,7 +424,7 @@ For security and privacy reasons, be sure to update it frequently.</p>
 <li><a class="reference internal" href="#choices-of-local-development-environments">8.2.4. Choices of local development environments</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#recommended-visual-studio-code-extensions">8.3. Recommended Visual Studio Code extensions</a></li>
+<li><a class="reference internal" href="#recommended-visual-studio-code-extensions-and-settings">8.3. Recommended Visual Studio Code extensions and settings</a></li>
 <li><a class="reference internal" href="#github">8.4. GitHub</a></li>
 <li><a class="reference internal" href="#remote-participation">8.5. Remote participation</a></li>
 </ul>
