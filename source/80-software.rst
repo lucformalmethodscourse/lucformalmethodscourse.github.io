@@ -111,8 +111,8 @@ Choices of local development environments
   - etc.
 
 
-Recommended Visual Studio Code extensions
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Recommended Visual Studio Code extensions and settings
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Install via extensions tool the VS Code toolbar:
 
@@ -120,6 +120,17 @@ Install via extensions tool the VS Code toolbar:
 - You should also disable the official Microsoft or Red Hat Java extensions while working on sbt-based Java projects
 - `TLA+ Nightly <https://github.com/tlaplus/vscode-tlaplus>`_ - required for model development and checking 
 - Conceal - recommended for nicer rendering of mathematical symbols in TLA+ (see `here <https://github.com/tonsky/FiraCode/wiki/VS-Code-Instructions>`_ and `here <https://github.com/coq-community/vsc-conceal>`_ for instructions)
+
+When running VS Code locally, autosave isn't on by default, and you need to save your files manually: When there is a solid circle on the file's tab, it's not saved yet. 
+I strongly recommend turning on autosave so your local instance of VS Code works the same way as browser-based instances:
+
+- click the cogwheel in the bottom left corner to open settings
+- type "autosave" in the search box
+- look for the actual setting and choose onFocusChange
+
+  .. image:: images/autosave.png
+     :alt: Autosave setting in VS Code
+     :align: center
 
 
 GitHub
