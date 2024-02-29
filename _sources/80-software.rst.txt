@@ -114,7 +114,7 @@ Choices of local development environments
 Recommended Visual Studio Code extensions and settings
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Install via extensions tool the VS Code toolbar:
+Install via the extensions tool in the VS Code toolbar:
 
 - Scala/Metals - required for sbt-based Java projects
 - You should also disable the official Microsoft or Red Hat Java extensions while working on sbt-based Java projects
