@@ -31,6 +31,7 @@ Sections: 335-001/488-001 Spring 2024
   - `Learning TLA <https://learntla.com>`_
   - `Practical TLA+: Planning Driven Development <https://learning.oreilly.com/library/view/practical-tla-planning/9781484238295>`_
   - `An Introduction to Regular Expressions <https://learning.oreilly.com/library/view/an-introduction-to/9781492082569>`_
+  - `Läufer and Thiruvathukal's book chapter on concurrency <https://arxiv.org/abs/1705.02899>`_
 
 - *Additional resources:* :ref:`appendix-resources`
 
