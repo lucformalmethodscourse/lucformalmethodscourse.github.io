@@ -40,13 +40,15 @@ Sections: 335-001/488-001 Spring 2024
   Additive point system *(tentative):*
 
   - 18 points: *quizzes* 1-3 6 each
-  - 24 points: two *tests*, 12 each
+  - 12 points: test 1
+  - 16 points: test 2
   - 3 individual project 0a
   - 5 individual project 0b
-  - 10 individual project 1
-  - 12 individual project 2
-  - 18 group project 3
-  - 12 points: two *group activities*, 6 each
+  - 10 individual project 1a
+  - 10 individual project 1b
+  - 16 individual project 2a
+  - 16 group project 2b
+  - 12 points: four *group activities*, 3 each
   - 5 points: individual or group presentation on a topic to be discussed *(required for grad students, extra credit for undergrad students)*
   - 5 points: *participation* (in-class and online, including announcements of and reports from relevant professional events, GitHub issues and PRs for course examples, etc.)
   - 5 points: starting baseline for undergrads
@@ -54,21 +56,21 @@ Sections: 335-001/488-001 Spring 2024
 
   *(Percentage effort on each group project will be measured by an end-of-term questionnaire. Group project grades and/or final course grades may be adjusted to account for significant discrepancies in effort among group members.)*    
 
-  **Max total: 112 points plus extra credit**
+  **Max total: 128 points plus extra credit**
 
   *Grading schema (in points):*
 
-  - A 100 points
-  - A- 96
-  - B+ 92
-  - B 88
-  - B- 84
-  - C+ 80
-  - C 75
-  - C- 70
-  - D+ 65
-  - D 60
-  - F < 60
+  - A 114 points
+  - A- 109
+  - B+ 105
+  - B 100
+  - B- 96
+  - C+ 91
+  - C 86
+  - C- 80
+  - D+ 74
+  - D 68
+  - F < 68
 
 - *Academic integrity:* `LUC <https://www.luc.edu/academics/catalog/undergrad/reg_academicintegrity.shtml>`_ | `CAS <https://www.luc.edu/cas/advising/academicintegritystatement/>`_ | `Grad <https://www.luc.edu/gradschool/academics_policies.shtml>`_
 - `Sakai site for this section (gradebook) <https://sakai.luc.edu/portal/site/COMP_371_001_4379_1216>`_
