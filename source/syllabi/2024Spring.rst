@@ -37,7 +37,7 @@ Sections: 335-001/488-001 Spring 2024
 
 - *Grading:*
 
-  Additive point system *(tentative):*
+  Additive point system *(final):*
 
   - 18 points: *quizzes* 1-3 6 each
   - 12 points: test 1
