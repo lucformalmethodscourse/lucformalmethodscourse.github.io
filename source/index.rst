@@ -1,9 +1,12 @@
 Lecture Notes: Formal Methods in Software Engineering
 =====================================================
 
-`Comp 335 <https://academics.cs.luc.edu/courses/comp335.html>`_
+COMP 335/435
 | `Department of Computer Science <http://luc.edu/cs>`_
 | `Loyola University Chicago <http://luc.edu>`_
+
+You have reached the home of the Formal Methods in Software Engineering course (COMP 335/435) in the Computer Science Department of Loyola University Chicago.
+
 
 *Welcome! Wöllkomme! ¡Bienvenidos/as! Benvenuti/e!*
 
