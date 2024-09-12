@@ -5,7 +5,7 @@ Lecture Notes: Formal Methods in Software Engineering
 | `Department of Computer Science <http://luc.edu/cs>`_
 | `Loyola University Chicago <http://luc.edu>`_
 
-*Welcome! Willkomme! ¡Bienvenidos/as! Benvenuti/e!*
+*Welcome! Wöllkomme! ¡Bienvenidos/as! Benvenuti/e!*
 
 .. warning::
 
