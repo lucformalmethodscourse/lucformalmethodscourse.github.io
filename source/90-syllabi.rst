@@ -14,5 +14,6 @@ Course: COMP 335/488 Formal Methods in Software Engineering
 - Official course description: `Comp 335 <https://academics.cs.luc.edu/courses/comp335.html>`_
 
 
+.. include:: syllabi/2025Spring.rst
 .. include:: syllabi/2024Spring.rst
 .. include:: syllabi/2022Fall.rst
