@@ -3,7 +3,7 @@
 Model Checking
 --------------
 
-.. todo:: Under construction for fall 2025
+.. todo:: Under construction for spring 2025
 
 For an overview, please review our `IEEE FIE 2024 paper and presentation <https://doi.org/10.6084/m9.figshare.27226500>`_.
 
