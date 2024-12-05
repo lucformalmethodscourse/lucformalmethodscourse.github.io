@@ -8,7 +8,7 @@ COMP 335/435
 You have reached the home of the Formal Methods in Software Engineering course (COMP 335/435) in the Computer Science Department of Loyola University Chicago.
 
 
-*Welcome! Wöllkomme! ¡Bienvenidos/as! Benvenuti/e!*
+*Welcome! Willkumme! ¡Bienvenidos/as! Benvenuti/e!*
 
 .. warning::
 
