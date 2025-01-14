@@ -10,9 +10,8 @@ Course: COMP 335/488 Formal Methods in Software Engineering
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Prerequisites: 
-  `COMP 272 <https://academics.cs.luc.edu/courses/comp272.html>`_/`400C <https://academics.cs.luc.edu/courses/comp400c.html>`_
-- Official course description: `Comp 335 <https://academics.cs.luc.edu/courses/comp335.html>`_
-
+  COMP 272/400C
+- Official course descriptions: `undergraduate <https://catalog.luc.edu/undergraduate/arts-sciences/#coursestext>`_/`graduate <https://catalog.luc.edu/graduate-professional/graduate-school/#coursestext>`_
 
 .. include:: syllabi/2025Spring.rst
 .. include:: syllabi/2024Spring.rst
