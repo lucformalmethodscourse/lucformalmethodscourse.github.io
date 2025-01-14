@@ -4,7 +4,7 @@ Appendix: Course Software
 -------------------------
 
 
-.. todo:: Under construction for spring 2024!
+.. todo:: Not current! Under construction for spring 2025!
 
 
 You can choose either or both of the following options.
