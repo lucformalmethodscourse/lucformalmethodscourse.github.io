@@ -7,11 +7,11 @@ Sections: 335-001/435-001 Spring 2025
   - To earn points for group activities or other in-class activities, you are required to participate during class time (in person or remotely) or make up for the work outside of class.
   - If you have a scheduled absence, I will make an effort to record all lectures for later viewing through Sakai/Panopto. In addition, some prerecorded videos are available through Panopto.
   - I will make an effort to record all lectures for later viewing through Sakai/Panopto. In addition, some prerecorded videos are available through Panopto.
-  - The university's statement about the observation of religious holidays is available [here](https://www.luc.edu/academicaffairs/homenews/honoringstudentreligiousobservances.shtml).
+  - The university's statement about the observation of religious holidays is available at `luc.edu/academicaffairs/homenews/honoringstudentreligiousobservances.shtml <https://www.luc.edu/academicaffairs/homenews/honoringstudentreligiousobservances.shtml>`_.
 
 - *Estimated workload: 9 to 12 hours per week including class time.*
 
-- *Class time and location (spring 2025):* Tue 16:15-18:45 in Cuneo 114 (LSC)
+- *Class time and location (spring 2025):* Tue 16:15-18:45 in Crown Center 114 (LSC)
 
 - *Communication:* All communication regarding this class takes place in the classroom (verbal) and MS Teams (written). Most will be in the team-level channel specific to this term. For individual or group-level concerns, you may use direct individual or group messages in MS Teams; my user ID is **klaufer@luc.edu**. *(To help me prioritize your class-related communication, please DO NOT use email!)*
 
@@ -21,8 +21,8 @@ Sections: 335-001/435-001 Spring 2025
 
 - *Office hours:*
 
-  - Tue 18:50-19:30 after class in IES 123
-  - Wed 13:00-15:00 and Fri 14:00-15:45 in Doyle Hall 203 (LSC) or online (`by appointment via Calendly <https://calendly.com/laufer>`_)
+  - Tue 18:50-19:30 after class in Crown Center 114 (LSC)
+  - Wed 14:00-15:45 and Fri 14:00-15:45 in Doyle Hall 203 (LSC) or online (`by appointment via Calendly <https://calendly.com/laufer>`_)
   - TA office hours TBD
   
 - *Required materials:*
@@ -78,7 +78,7 @@ Sections: 335-001/435-001 Spring 2025
 
 - *Academic integrity:* `LUC <https://www.luc.edu/academics/catalog/undergrad/reg_academicintegrity.shtml>`_ | `CAS <https://www.luc.edu/cas/advising/academicintegritystatement/>`_ | `Grad <https://www.luc.edu/gradschool/academics_policies.shtml>`_
 - `Sakai site for this section (gradebook) <https://sakai.luc.edu/portal/site/COMP_371_001_4379_1216>`_
-- `MS Team <https://teams.microsoft.com/l/team/19%3A44-YYAcitBpfQqX76W8B86j_LjVf0q2KaldLCwzZjQU1%40thread.tacv2/conversations?groupId=f07ad2a4-ed06-4b06-b96f-33d5a5ba41fc&tenantId=021f4fe3-2b9c-4824-8378-bbcf9ec5accb>`_ *(mandatory subscription and participation)*
+- `MS Team <https://teams.microsoft.com/l/channel/19%3AXnbDutseIPiBfQpl1YAMgo4N3bprcwf08QKxD8tXTNU1%40thread.tacv2/General?groupId=e1746657-1dc6-4198-aa44-ebe0a49bfc09&tenantId=021f4fe3-2b9c-4824-8378-bbcf9ec5accb>`_ *(mandatory subscription and participation)*
 
 Important dates (tentative) for quizzes and tests
   - Week 5 - Tue 13 February: quiz 0
