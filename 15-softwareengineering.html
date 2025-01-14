@@ -7,7 +7,7 @@
 
     <!-- Generated with Sphinx 8.1.3 and Furo 2024.08.06 -->
         <title>2. Software Engineering Context - Loyola University Chicago COMP 335 Lecture Notes v25s.1</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=354aac6f" />
     <link rel="stylesheet" type="text/css" href="_static/proof.css?v=5beb2b09" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=302659d7" />
@@ -357,8 +357,107 @@
 <p>Each of these requirements plays a vital role in the success and usability of the software. Properly defining and addressing these requirements ensures a high-quality product that meets user needs and expectations.</p>
 </section>
 </section>
+<section id="the-software-supply-chain">
+<h2><span class="section-number">2.4. </span>The Software Supply Chain<a class="headerlink" href="#the-software-supply-chain" title="Link to this heading"></a></h2>
+<p>The software supply chain encompasses all the steps and components involved in
+creating, distributing, and using software. It’s analogous to a physical
+product’s supply chain, where raw materials are transformed into finished
+goods. In software, these “raw materials” are source code, libraries,
+frameworks, tools, and other software components.</p>
+<p>Key stages in the software supply chain include:</p>
+<ol class="arabic simple">
+<li><p>Development: Writing source code, using libraries and frameworks.</p></li>
+<li><p>Building: Compiling, linking, and packaging the software.</p></li>
+<li><p>Distribution: Publishing and distributing the software (e.g., through
+package repositories).</p></li>
+<li><p>Deployment: Installing and running the software in a production
+environment.</p></li>
+<li><p>Maintenance: Updating and patching the software.</p></li>
+</ol>
+<section id="dependency-management">
+<h3><span class="section-number">2.4.1. </span>Dependency Management<a class="headerlink" href="#dependency-management" title="Link to this heading"></a></h3>
+<p>Dependency management is a critical part of the supply chain.
+Modern software development heavily relies on reusing existing code in the form
+of libraries and frameworks (dependencies). Dependency management tools
+automate the process of:</p>
+<ul class="simple">
+<li><p>Declaring Dependencies: Specifying which libraries a project needs.</p></li>
+<li><p>Resolving Dependencies: Finding and downloading the correct versions of
+required libraries and their own dependencies (transitive dependencies).</p></li>
+<li><p>Managing Versions: Handling different versions of libraries and ensuring
+compatibility.</p></li>
+<li><p>Building the Project: Integrating the dependencies into the build process.</p></li>
+</ul>
+<p>In the Java ecosystem, build tools such as Maven, Gradle, or sbt provide dependency management:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">pom.xml</span></code>: Maven uses a <code class="docutils literal notranslate"><span class="pre">pom.xml</span></code> (Project Object Model) file to define
+project metadata, including dependencies.</p></li>
+<li><p>Repositories: Maven uses repositories (e.g., Maven Central) to store and
+distribute libraries (JAR files).</p></li>
+<li><p>Dependency Declaration: Dependencies are declared using <code class="docutils literal notranslate"><span class="pre">&lt;dependency&gt;</span></code>
+elements in the <code class="docutils literal notranslate"><span class="pre">pom.xml</span></code> file, specifying the group ID, artifact ID,
+and version.</p></li>
+<li><p>Transitive Dependencies: Maven automatically resolves transitive
+dependencies (dependencies of your dependencies).</p></li>
+<li><p>Version Management: Maven provides mechanisms for managing versions,
+including specifying exact versions, version ranges, and snapshot
+versions.</p></li>
+<li><p>Build Lifecycle: Maven defines a build lifecycle (e.g., compile, test,
+package, install, deploy) that automates the build process, including
+dependency resolution.</p></li>
+</ul>
+<p>Similarly, in the JavaScript ecosystem, the Node Package Manager (npm) manages dependencies:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">package.json</span></code>: npm uses a <code class="docutils literal notranslate"><span class="pre">package.json</span></code> file to define project
+metadata, including dependencies.</p></li>
+<li><p>npm Registry: npm uses the npm registry to store and distribute packages.</p></li>
+<li><p>Dependency Declaration: Dependencies are declared in the <code class="docutils literal notranslate"><span class="pre">dependencies</span></code>
+or <code class="docutils literal notranslate"><span class="pre">devDependencies</span></code> sections of the <code class="docutils literal notranslate"><span class="pre">package.json</span></code> file, specifying
+the package name and version or version range.</p></li>
+<li><p>Transitive Dependencies: npm also resolves transitive dependencies.</p></li>
+<li><p>Version Management: npm uses semantic versioning (semver) to manage
+versions and provides mechanisms for specifying version ranges and locking
+dependencies to specific versions.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">package-lock.json</span></code> (or <code class="docutils literal notranslate"><span class="pre">yarn.lock</span></code>): npm (and Yarn) generate lock files
+(<code class="docutils literal notranslate"><span class="pre">package-lock.json</span></code> or <code class="docutils literal notranslate"><span class="pre">yarn.lock</span></code>) to ensure consistent builds across
+different environments by locking down the exact versions of all
+dependencies.</p></li>
+</ul>
+</section>
+<section id="a-prominent-supply-chain-failure-leftpad">
+<h3><span class="section-number">2.4.2. </span>A Prominent Supply Chain Failure: leftpad<a class="headerlink" href="#a-prominent-supply-chain-failure-leftpad" title="Link to this heading"></a></h3>
+<p>The 2016 <a class="reference external" href="https://qz.com/646467/how-one-programmer-broke-the-internet-by-deleting-a-tiny-piece-of-code">leftpad incident</a> illustrates the vulnerability of the software supply chain.
+(See also <a class="reference external" href="https://en.wikipedia.org/wiki/Npm_left-pad_incident">this reference</a>.)</p>
+<ul class="simple">
+<li><p>Dependency Removal: The removal of a small, seemingly insignificant
+package (<code class="docutils literal notranslate"><span class="pre">leftpad</span></code>) from the npm registry had a cascading effect on
+thousands of projects that depended on it (directly or indirectly).</p></li>
+<li><p>Lack of Version Pinning: Many projects were not using version pinning
+(locking down the exact version of <code class="docutils literal notranslate"><span class="pre">leftpad</span></code>), which meant they were
+relying on the latest version. When the package was removed, their builds
+broke.</p></li>
+<li><p>Impact on Downstream Projects: The incident highlighted how a small issue
+in one part of the supply chain can have a significant impact on
+downstream projects.</p></li>
+</ul>
+</section>
+<section id="lessons-learned-and-connections-to-formal-methods">
+<h3><span class="section-number">2.4.3. </span>Lessons Learned and Connections to Formal Methods<a class="headerlink" href="#lessons-learned-and-connections-to-formal-methods" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Formal Specification: A formal specification of <code class="docutils literal notranslate"><span class="pre">leftpad</span></code>’s behavior
+could have helped prevent unexpected changes or removals.</p></li>
+<li><p>Dependency Management Best Practices: The incident emphasized the
+importance of using version pinning and other dependency management best
+practices.</p></li>
+<li><p>Formal Verification of Dependencies: More advanced formal methods could be
+used to verify the compatibility and correctness of dependencies.</p></li>
+<li><p>Software Composition Analysis (SCA): Modern SCA tools can analyze project
+dependencies and identify potential vulnerabilities or licensing issues.</p></li>
+</ul>
+</section>
+</section>
 <section id="formal-methods-in-software-engineering">
-<h2><span class="section-number">2.4. </span>Formal Methods in Software Engineering<a class="headerlink" href="#formal-methods-in-software-engineering" title="Link to this heading"></a></h2>
+<h2><span class="section-number">2.5. </span>Formal Methods in Software Engineering<a class="headerlink" href="#formal-methods-in-software-engineering" title="Link to this heading"></a></h2>
 <p>Formal methods in software engineering refer to a set of techniques and tools for specifying, developing, and verifying software systems with respect to their requirements.
 These methods are based on formal mathematical principles and logic, providing a rigorous framework for software design and analysis.</p>
 <div class="proof proof-type-definition" id="id6">
@@ -371,7 +470,7 @@ These methods are based on formal mathematical principles and logic, providing a
     </div><div class="proof-content">
 <p><em>Formal methods</em> involve the use of mathematical models to represent the desired properties and behavior of a software system. These models are used to prove correctness, check for errors, and ensure that the system adheres to its specifications.</p>
 </div></div><section id="key-features">
-<h3><span class="section-number">2.4.1. </span>Key Features<a class="headerlink" href="#key-features" title="Link to this heading"></a></h3>
+<h3><span class="section-number">2.5.1. </span>Key Features<a class="headerlink" href="#key-features" title="Link to this heading"></a></h3>
 <dl class="simple">
 <dt>Mathematical Rigor</dt><dd><p>Utilizing mathematical logic and discrete mathematics to model software systems.</p>
 </dd>
@@ -384,7 +483,7 @@ These methods are based on formal mathematical principles and logic, providing a
 </dl>
 </section>
 <section id="importance">
-<h3><span class="section-number">2.4.2. </span>Importance<a class="headerlink" href="#importance" title="Link to this heading"></a></h3>
+<h3><span class="section-number">2.5.2. </span>Importance<a class="headerlink" href="#importance" title="Link to this heading"></a></h3>
 <p>Formal methods are particularly valuable in:</p>
 <ul class="simple">
 <li><p>Developing critical systems where failure can have severe consequences (e.g., aerospace, nuclear, and medical systems).</p></li>
@@ -393,7 +492,7 @@ These methods are based on formal mathematical principles and logic, providing a
 </ul>
 </section>
 <section id="challenges">
-<h3><span class="section-number">2.4.3. </span>Challenges<a class="headerlink" href="#challenges" title="Link to this heading"></a></h3>
+<h3><span class="section-number">2.5.3. </span>Challenges<a class="headerlink" href="#challenges" title="Link to this heading"></a></h3>
 <p>While beneficial, formal methods can be:</p>
 <ul class="simple">
 <li><p>Time-consuming and require specialized expertise.</p></li>
@@ -402,7 +501,7 @@ These methods are based on formal mathematical principles and logic, providing a
 </ul>
 </section>
 <section id="id1">
-<h3><span class="section-number">2.4.4. </span>Recap<a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
+<h3><span class="section-number">2.5.4. </span>Recap<a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
 <p>Formal methods offer a high degree of assurance for software correctness and reliability. Their application is most effective in high-stakes domains where system failure is not an option. Despite their complexity and resource-intensive nature, these methods continue to be an important area of research and application in software engineering.</p>
 </section>
 </section>
@@ -473,11 +572,17 @@ These methods are based on formal mathematical principles and logic, providing a
 <li><a class="reference internal" href="#recap">2.3.4. Recap</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#formal-methods-in-software-engineering">2.4. Formal Methods in Software Engineering</a><ul>
-<li><a class="reference internal" href="#key-features">2.4.1. Key Features</a></li>
-<li><a class="reference internal" href="#importance">2.4.2. Importance</a></li>
-<li><a class="reference internal" href="#challenges">2.4.3. Challenges</a></li>
-<li><a class="reference internal" href="#id1">2.4.4. Recap</a></li>
+<li><a class="reference internal" href="#the-software-supply-chain">2.4. The Software Supply Chain</a><ul>
+<li><a class="reference internal" href="#dependency-management">2.4.1. Dependency Management</a></li>
+<li><a class="reference internal" href="#a-prominent-supply-chain-failure-leftpad">2.4.2. A Prominent Supply Chain Failure: leftpad</a></li>
+<li><a class="reference internal" href="#lessons-learned-and-connections-to-formal-methods">2.4.3. Lessons Learned and Connections to Formal Methods</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#formal-methods-in-software-engineering">2.5. Formal Methods in Software Engineering</a><ul>
+<li><a class="reference internal" href="#key-features">2.5.1. Key Features</a></li>
+<li><a class="reference internal" href="#importance">2.5.2. Importance</a></li>
+<li><a class="reference internal" href="#challenges">2.5.3. Challenges</a></li>
+<li><a class="reference internal" href="#id1">2.5.4. Recap</a></li>
 </ul>
 </li>
 </ul>

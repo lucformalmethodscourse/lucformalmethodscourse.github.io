@@ -7,7 +7,7 @@
 
     <!-- Generated with Sphinx 8.1.3 and Furo 2024.08.06 -->
         <title>4. Software Testing - Loyola University Chicago COMP 335 Lecture Notes v25s.1</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=354aac6f" />
     <link rel="stylesheet" type="text/css" href="_static/proof.css?v=5beb2b09" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=302659d7" />
@@ -505,12 +505,32 @@ With the help of an appropriate tool, such as JaCoCo or scoverage, we can genera
 </ul>
 </div></blockquote>
 </section>
+<section id="limitations-of-testing-revisited">
+<h2><span class="section-number">4.12. </span>Limitations of Testing (Revisited)<a class="headerlink" href="#limitations-of-testing-revisited" title="Link to this heading"></a></h2>
+<p>Let’s consider this example from <a class="reference external" href="https://www.hillelwayne.com/post/lpl/">Hillel Wayne’s blog</a>.</p>
+<div class="highlight-typescript notranslate"><div class="highlight"><pre><span></span><span class="nx">def</span><span class="w"> </span><span class="nx">add</span><span class="p">(</span><span class="nx">x</span><span class="o">:</span><span class="w"> </span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="nx">y</span><span class="o">:</span><span class="w"> </span><span class="kt">int</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kr">int</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">x</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mf">12976</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">y</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mf">14867</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">y</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">y</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Possible questions include:</p>
+<ul class="simple">
+<li><p>What is this function intended to do?</p></li>
+<li><p>What does it actually do?</p></li>
+<li><p>To what extent can testing help?</p></li>
+<li><p>Is there any technique related to testing that can actually help?</p></li>
+<li><p>Can formal methods help?</p></li>
+</ul>
+</section>
 <section id="conclusion">
-<h2><span class="section-number">4.12. </span>Conclusion<a class="headerlink" href="#conclusion" title="Link to this heading"></a></h2>
+<h2><span class="section-number">4.13. </span>Conclusion<a class="headerlink" href="#conclusion" title="Link to this heading"></a></h2>
 <p>In conclusion, software testing is an integral part of the software development lifecycle. It not only ensures that the software is free from defects but also meets the functional and dynamic nonfunctional requirements, thereby increasing overall confidence in the software.</p>
 </section>
 <section id="further-reading">
-<h2><span class="section-number">4.13. </span>Further Reading<a class="headerlink" href="#further-reading" title="Link to this heading"></a></h2>
+<h2><span class="section-number">4.14. </span>Further Reading<a class="headerlink" href="#further-reading" title="Link to this heading"></a></h2>
 <p>We have covered various aspects of testing in other works, including</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://arxiv.org/abs/1705.02899">Managing Concurrency in Mobile User Interfaces with Examples in Android</a></p></li>
@@ -594,8 +614,9 @@ With the help of an appropriate tool, such as JaCoCo or scoverage, we can genera
 <li><a class="reference internal" href="#frameworks-and-tools">4.9. Frameworks and Tools</a></li>
 <li><a class="reference internal" href="#code-coverage-for-structure-based-testing">4.10. Code Coverage for Structure-Based Testing</a></li>
 <li><a class="reference internal" href="#code-examples">4.11. Code Examples</a></li>
-<li><a class="reference internal" href="#conclusion">4.12. Conclusion</a></li>
-<li><a class="reference internal" href="#further-reading">4.13. Further Reading</a></li>
+<li><a class="reference internal" href="#limitations-of-testing-revisited">4.12. Limitations of Testing (Revisited)</a></li>
+<li><a class="reference internal" href="#conclusion">4.13. Conclusion</a></li>
+<li><a class="reference internal" href="#further-reading">4.14. Further Reading</a></li>
 </ul>
 </li>
 </ul>
