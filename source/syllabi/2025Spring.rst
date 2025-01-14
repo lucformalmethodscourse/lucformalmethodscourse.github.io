@@ -77,7 +77,7 @@ Sections: 335-001/435-001 Spring 2025
   - F < 68
 
 - *Academic integrity:* `LUC <https://www.luc.edu/academics/catalog/undergrad/reg_academicintegrity.shtml>`_ | `CAS <https://www.luc.edu/cas/advising/academicintegritystatement/>`_ | `Grad <https://www.luc.edu/gradschool/academics_policies.shtml>`_
-- `Sakai site for this section (gradebook) <https://sakai.luc.edu/portal/site/COMP_371_001_4379_1216>`_
+- `Sakai site for this section (gradebook) <https://sakai.luc.edu/portal/site/COMP_335_001_5828_1252>`_
 - `MS Team <https://teams.microsoft.com/l/channel/19%3AXnbDutseIPiBfQpl1YAMgo4N3bprcwf08QKxD8tXTNU1%40thread.tacv2/General?groupId=e1746657-1dc6-4198-aa44-ebe0a49bfc09&tenantId=021f4fe3-2b9c-4824-8378-bbcf9ec5accb>`_ *(mandatory subscription and participation)*
 
 Important dates (tentative) for quizzes and tests
