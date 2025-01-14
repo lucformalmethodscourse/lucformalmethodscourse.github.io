@@ -296,6 +296,29 @@ Code Examples
   - then add property-based testing
 
 
+Limitations of Testing (Revisited)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Let's consider this example from `Hillel Wayne's blog <https://www.hillelwayne.com/post/lpl/>`_.
+
+.. code-block:: typescript
+
+  def add(x: int, y: int): int {
+    if (x == 12976 && y == 14867) {
+      return x - y;
+    }
+    return x + y;
+  }
+
+Possible questions include:
+
+- What is this function intended to do?
+- What does it actually do?
+- To what extent can testing help?
+- Is there any technique related to testing that can actually help?
+- Can formal methods help?
+
+
 Conclusion
 ^^^^^^^^^^
 
