@@ -49,8 +49,8 @@ Sections: 335-001/435-001 Spring 2025
   - 10 points: test 2
   - 43 points: individual and group projects
 
-    - 3 individual project 0a Java
-    - 5 individual project 0b Java
+    - 3 individual project 0a JUnit
+    - 5 individual project 0b JUnit
     - 5 individual project 1a jqwik
     - 6 individual project 1b jqwik
     - 8 group project 2 Alloy
