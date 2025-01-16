@@ -6,7 +6,7 @@
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="9. Appendix: Additional Resources" href="85-resources.html" /><link rel="prev" title="7. Summary" href="70-summary.html" />
 
     <!-- Generated with Sphinx 8.1.3 and Furo 2024.08.06 -->
-        <title>8. Appendix: Course Software - Loyola University Chicago COMP 335 Lecture Notes v25s.1</title>
+        <title>8. Appendix: Course Software - Loyola University Chicago COMP 335 Lecture Notes v25sp.2</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=354aac6f" />
     <link rel="stylesheet" type="text/css" href="_static/proof.css?v=5beb2b09" />
@@ -167,7 +167,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="index.html"><div class="brand">Loyola University Chicago COMP 335 Lecture Notes v25s.1</div></a>
+      <a href="index.html"><div class="brand">Loyola University Chicago COMP 335 Lecture Notes v25sp.2</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -191,7 +191,7 @@
       <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
   
   
-  <span class="sidebar-brand-text">Loyola University Chicago COMP 335 Lecture Notes v25s.1</span>
+  <span class="sidebar-brand-text">Loyola University Chicago COMP 335 Lecture Notes v25sp.2</span>
   
 </a><form class="sidebar-search-container" method="get" action="search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -254,10 +254,6 @@
         <article role="main" id="furo-main-content">
           <section id="appendix-course-software">
 <span id="appendix-software"></span><h1><span class="section-number">8. </span>Appendix: Course Software<a class="headerlink" href="#appendix-course-software" title="Link to this heading"></a></h1>
-<div class="admonition-todo admonition" id="id1">
-<p class="admonition-title">Todo</p>
-<p>Not current! Under construction for spring 2025!</p>
-</div>
 <p>You can choose either or both of the following options.</p>
 <section id="cloud-based-development-environment">
 <h2><span class="section-number">8.1. </span>Cloud-based development environment<a class="headerlink" href="#cloud-based-development-environment" title="Link to this heading"></a></h2>
@@ -275,41 +271,37 @@
 <li><p>requires good network connection</p></li>
 <li><p>might lack some code completion features</p></li>
 <li><p>free plan might be underresourced (CPUs, RAM, disk space, etc.)</p></li>
+<li><p>lack of integration with external GUI-based tools</p></li>
 </ul>
 </section>
-<section id="gitpod-recommended">
-<h3><span class="section-number">8.1.3. </span>Gitpod (recommended)<a class="headerlink" href="#gitpod-recommended" title="Link to this heading"></a></h3>
-<p>Gitpod is a cloud-based development environment based on Visual Studio Code running on Ubuntu LTS.</p>
-<p>To launch, visit <a class="reference external" href="https://gitpod.io">gitpod.io</a> and log in using your GitHub account.</p>
-<ul>
-<li><p>The first time around, create a new workspace and paste the URL of the GitHub project you want to work on in the new workspace; you can also select a project from the dropdown menu.</p></li>
-<li><p>After that, your GitHub landing page will show your workspace(s); inactive workspaces are deleted after a certain amount of time.</p></li>
-<li><p>For each new workspace, using the installed <a class="reference external" href="https://sdkman.io">SDKMAN!</a>, perform a one-time installation of java and <a class="reference external" href="https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Linux.html">sbt</a>;</p></li>
-<li><p>In case your workspace no longer recognizes the <cite>sbt</cite> command, reinstall via the command</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">sdk install sbt</span>
-</pre></div>
-</div>
-</li>
-<li><p>Install the VS Code extensions listed below.</p></li>
-<li><p>Now you should be able to work on the project by following the instructions in the readme.</p></li>
+<section id="github-codespaces-recommended">
+<h3><span class="section-number">8.1.3. </span>GitHub Codespaces (recommended)<a class="headerlink" href="#github-codespaces-recommended" title="Link to this heading"></a></h3>
+<p>GitHub Codespaces is a cloud-based, containerized development environment based on Visual Studio Code running on Ubuntu LTS and closely integrated with GitHub.</p>
+<p>To use Codespaces,</p>
+<ul class="simple">
+<li><p>log into using your GitHub account and navigate to the desired repository</p></li>
+<li><p>look for the blue “code” button and open the drop-down menu</p></li>
+<li><p>select the Codespaces tab</p></li>
+<li><p>create a new Codespace for this repo or open an existing one already linked to this repo</p></li>
 </ul>
+<p>For more information, please refer to <a class="reference external" href="https://docs.github.com/en/codespaces">this reference</a>.</p>
 </section>
 </section>
 <section id="locally-installed-development-environment">
 <h2><span class="section-number">8.2. </span>Locally installed development environment<a class="headerlink" href="#locally-installed-development-environment" title="Link to this heading"></a></h2>
 <p>This option will give you an advanced development environment with code completion, type info, etc.</p>
-<section id="id2">
-<h3><span class="section-number">8.2.1. </span>Pros<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
+<section id="id1">
+<h3><span class="section-number">8.2.1. </span>Pros<a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
 <ul class="simple">
-<li><p>provides powerful capabilities, including code completion</p></li>
+<li><p>provides powerful capabilities, including code completion and refactoring</p></li>
 <li><p>does not require network connection once installed</p></li>
 </ul>
 </section>
-<section id="id3">
-<h3><span class="section-number">8.2.2. </span>Cons<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
+<section id="id2">
+<h3><span class="section-number">8.2.2. </span>Cons<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>might be slow on older machines</p></li>
-<li><p>need to maintain on each machine you use</p></li>
+<li><p>need to maintain on each machine you use, but can use <em>settings sync</em> to keep settings and extensions consistent</p></li>
 <li><p>it can be challenging to match the versions of the various packages</p></li>
 <li><p>GitHub account access might be tedious to configure</p></li>
 <li><p>possible difficulty managing coexisting Java versions</p></li>
@@ -318,15 +310,15 @@
 <section id="required-packages">
 <h3><span class="section-number">8.2.3. </span>Required packages<a class="headerlink" href="#required-packages" title="Link to this heading"></a></h3>
 <ul class="simple">
-<li><p><a class="reference external" href="http://www.oracle.com/technetwork/java/javase/downloads/">Java 17 LTS recommended</a> (newer versions might have compatibility issues with certain sbt plugins)</p></li>
+<li><p><a class="reference external" href="https://www.oracle.com/java/technologies/downloads/#java21">Java 21 LTS recommended</a></p></li>
 <li><p><a class="reference external" href="http://git-scm.com/">Git</a> distributed version control system (usually preinstalled on Mac OS and Linux)</p>
 <ul>
 <li><p>recommended installation option on Windows: <em>Use Git and optional Unix tools from the Windows Command Prompt</em></p></li>
 <li><p>optional on any platform, especially when not an IDE: <a class="reference external" href="https://git-scm.com/downloads/guis">some GUI-based Git client</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference external" href="https://www.scala-sbt.org/1.x/docs/Setup.html">sbt</a> Scala build tool</p></li>
-<li><p><em>Mac and Linux users are strongly encouraged to use</em> <a class="reference external" href="https://sdkman.io/">SDKMAN!</a> <em>to manage their Java, sbt, VisualVM, and other command-line development tools.</em></p></li>
+<li><p><a class="reference external" href="https://maven.apache.org/">Maven</a> build and dependency management tool for the Java ecosystem</p></li>
+<li><p><em>Mac and Linux users are strongly encouraged to use</em> <a class="reference external" href="https://sdkman.io/">SDKMAN!</a> <em>to manage their Java, Maven, VisualVM, and other command-line development tools.</em></p></li>
 </ul>
 </section>
 <section id="choices-of-local-development-environments">
@@ -335,20 +327,18 @@
 <li><p><a class="reference external" href="https://code.visualstudio.com/">Visual Studio Code</a> (recommended for PlusCal/TLA+ development, supports Java development)</p>
 <ul>
 <li><p>need to install the actively developed <a class="reference external" href="https://github.com/tlaplus/vscode-tlaplus">TLA+ extension</a></p></li>
-<li><p>if you see false syntax errors in your Java source editor in an sbt project, try disabling the “Extension pack for Java” and related extensions for your current workspace</p></li>
-<li><p>if you’re not seeing arrows in the source file for running the tests, try importing the build in Metals (big “M” near the bottom of the leftmost column)</p></li>
 <li><p>see below for recommended VS Code extensions</p></li>
 </ul>
 </li>
 <li><p><a class="reference external" href="https://www.jetbrains.com/idea/download/">IntelliJ IDEA CE</a> integrated development environment (alternative for Java development)</p>
 <ul>
-<li><p>has an unofficial TLA+ plugin</p></li>
+<li><p>has unofficial Alloy and TLA+ plugins</p></li>
 <li><p>check specific prerequisites for your platform</p></li>
 <li><p>for the following steps, make sure you have no projects open and are looking at the welcome window as in the attached screenshot</p></li>
-<li><p><em>JDK configuration</em>: IntelliJ IDEA &gt; Configure &gt; Project Defaults &gt; Project Structure &gt; Platform Settings &gt; SDKs &gt; + &gt; JDK &gt; navigate to the installation directory of your Java 17 JDK &gt; OK</p></li>
+<li><p><em>JDK configuration</em>: IntelliJ IDEA &gt; Configure &gt; Project Defaults &gt; Project Structure &gt; Platform Settings &gt; SDKs &gt; + &gt; JDK &gt; navigate to the installation directory of your Java 21 JDK &gt; OK</p></li>
 </ul>
 </li>
-<li><p>conventional text editor (OK for general development but not recommended for working with PlusCal/TLA+, though one can use them with the standalone <a class="reference external" href="http://lamport.azurewebsites.net/tla/tla.html">TLA Toolbox</a>)</p>
+<li><p>conventional text editor (OK for general development but not recommended for working with Alloy or PlusCal/TLA+, though one can use them with the standalone <a class="reference external" href="http://lamport.azurewebsites.net/tla/tla.html">TLA Toolbox</a>)</p>
 <ul>
 <li><p>Emacs</p></li>
 <li><p>vim</p></li>
@@ -360,12 +350,16 @@
 </section>
 <section id="recommended-visual-studio-code-extensions-and-settings">
 <h2><span class="section-number">8.3. </span>Recommended Visual Studio Code extensions and settings<a class="headerlink" href="#recommended-visual-studio-code-extensions-and-settings" title="Link to this heading"></a></h2>
+<p>For consistency across VS Code installations, including Codespaces, enable settings sync using your GitHub or Microsoft/LUC account.</p>
 <p>Install via the extensions tool in the VS Code toolbar:</p>
 <ul class="simple">
-<li><p>Scala/Metals - required for sbt-based Java projects</p></li>
-<li><p>You should also disable the official Microsoft or Red Hat Java extensions while working on sbt-based Java projects</p></li>
-<li><p><a class="reference external" href="https://github.com/tlaplus/vscode-tlaplus">TLA+ Nightly</a> - required for model development and checking</p></li>
-<li><p>Conceal - recommended for nicer rendering of mathematical symbols in TLA+ (see <a class="reference external" href="https://github.com/tonsky/FiraCode/wiki/VS-Code-Instructions">here</a> and <a class="reference external" href="https://github.com/coq-community/vsc-conceal">here</a> for instructions)</p></li>
+<li><p>Live Preview</p></li>
+<li><p>Live Share</p></li>
+<li><p>Extension Pack for Java</p></li>
+<li><p>Alloy</p></li>
+<li><p>Alloy VSCode</p></li>
+<li><p>TLA+</p></li>
+<li><p>Conceal, recommended for nicer rendering of mathematical symbols in TLA+ (see <a class="reference external" href="https://github.com/tonsky/FiraCode/wiki/VS-Code-Instructions">here</a> and <a class="reference external" href="https://github.com/coq-community/vsc-conceal">here</a> for instructions)</p></li>
 </ul>
 <p>When running VS Code locally, autosave isn’t on by default, and you need to save your files manually: When there is a solid circle on the file’s tab, it’s not saved yet.
 I strongly recommend turning on autosave so your local instance of VS Code works the same way as browser-based instances:</p>
@@ -385,7 +379,7 @@ I strongly recommend turning on autosave so your local instance of VS Code works
 <li><p>Get the <a class="reference external" href="https://education.github.com/pack/join">GitHub Student Developer Pack</a> using your official <code class="docutils literal notranslate"><span class="pre">&#64;luc.edu</span></code> address. This will give you free unlimited private repositories.</p></li>
 <li><p>Find and follow a few practitioners you respect. For example, I follow <a class="reference external" href="https://github.com/klaeufer/following">these developers</a>. You’ll probably recognize a number of them.</p></li>
 <li><p>Review <a class="reference external" href="https://guides.github.com/activities/contributing-to-open-source">these notes</a> to understand the community-based development process.</p></li>
-<li><p>For credit toward class participation, create some meaningful <a class="reference external" href="https://guides.github.com/features/issues">GitHub issues</a> and/or <a class="reference external" href="https://help.github.com/articles/using-pull-requests">GitHub pull requests</a> for one or more of our <a class="reference external" href="https://github.com/lucproglangcourse">course examples</a>. (Make sure to navigate to the original repos as these forks do not have their own issue trackers). These can be functional or nonfunctional enhancements, requests for clarification, etc.</p></li>
+<li><p>For credit toward class participation, create some meaningful <a class="reference external" href="https://guides.github.com/features/issues">GitHub issues</a> and/or <a class="reference external" href="https://help.github.com/articles/using-pull-requests">GitHub pull requests</a> for one or more of our <a class="reference external" href="https://github.com/lucformalmethodscourse">course examples</a>. (Make sure to navigate to the original repos as these forks do not have their own issue trackers). These can be functional or nonfunctional enhancements, requests for clarification, etc.</p></li>
 <li><p>To enhance your visibility in the professional community, start doing the same for some open-source projects you are interested in.</p></li>
 </ul>
 <p>You may find both of these cheat sheets useful:</p>
@@ -464,12 +458,12 @@ For security and privacy reasons, be sure to update it frequently.</p>
 <li><a class="reference internal" href="#cloud-based-development-environment">8.1. Cloud-based development environment</a><ul>
 <li><a class="reference internal" href="#pros">8.1.1. Pros</a></li>
 <li><a class="reference internal" href="#cons">8.1.2. Cons</a></li>
-<li><a class="reference internal" href="#gitpod-recommended">8.1.3. Gitpod (recommended)</a></li>
+<li><a class="reference internal" href="#github-codespaces-recommended">8.1.3. GitHub Codespaces (recommended)</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#locally-installed-development-environment">8.2. Locally installed development environment</a><ul>
-<li><a class="reference internal" href="#id2">8.2.1. Pros</a></li>
-<li><a class="reference internal" href="#id3">8.2.2. Cons</a></li>
+<li><a class="reference internal" href="#id1">8.2.1. Pros</a></li>
+<li><a class="reference internal" href="#id2">8.2.2. Cons</a></li>
 <li><a class="reference internal" href="#required-packages">8.2.3. Required packages</a></li>
 <li><a class="reference internal" href="#choices-of-local-development-environments">8.2.4. Choices of local development environments</a></li>
 </ul>
@@ -490,7 +484,7 @@ For security and privacy reasons, be sure to update it frequently.</p>
   </div>
 </div><script src="_static/jquery.js?v=5d32c60e"></script>
     <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-    <script src="_static/documentation_options.js?v=d35e5260"></script>
+    <script src="_static/documentation_options.js?v=84707646"></script>
     <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/scripts/furo.js?v=5fa4622c"></script>
