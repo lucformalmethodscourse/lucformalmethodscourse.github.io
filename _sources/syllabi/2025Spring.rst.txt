@@ -17,13 +17,13 @@ Sections: 335-001/435-001 Spring 2025
 
 - *Instructor:* `Konstantin Läufer <http://laufer.cs.luc.edu>`_ | `GitHub <https://github.com/klaeufer>`_ | `Google Scholar <http://scholar.google.com/citations?user=Rs0f_nMAAAAJ>`_ | `Rate My Prof <https://www.ratemyprofessors.com/ShowRatings.jsp?tid=287274>`_
 
-- *TA:* TBD
+- *TA:* Nick Synovic (please see Sakai for contact info)
 
 - *Office hours:*
 
   - Tue 18:50-19:30 after class in Crown Center 114 (LSC)
   - Wed 14:00-15:45 and Fri 14:00-15:45 in Doyle Hall 203 (LSC) or online (`by appointment via Calendly <https://calendly.com/laufer>`_)
-  - TA office hours TBD
+  - TA office hours: please see Sakai for details
   
 - *Required materials:*
 
