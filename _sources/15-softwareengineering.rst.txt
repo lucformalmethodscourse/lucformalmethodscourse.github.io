@@ -184,6 +184,18 @@ The 2016 `leftpad incident <https://qz.com/646467/how-one-programmer-broke-the-i
     downstream projects.
 
 
+A Prominent Supply Chain Security Vulnerability: log4j
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+`Log4j <https://logging.apache.org/log4j/>`_ is a widely used *Java-based logging library* developed by the Apache Software Foundation. 
+Known for its configurability, Log4j allows developers to define logging levels (e.g., DEBUG, INFO, WARN, ERROR) and customize how and where logs are output using configuration files.
+
+The `Log4j software supply chain vulnerability <https://en.wikipedia.org/wiki/Log4Shell>`_, widely known as *Log4Shell*, was a critical zero-day exploit discovered in December 2021 in Log4j v2. This vulnerability (CVE-2021-44228) allowed attackers to execute arbitrary code on affected systems by exploiting how Log4j handled user-supplied input. 
+
+The vulnerability highlighted significant risks in the software supply chain, particularly in open-source dependencies, where a flaw in a widely adopted library can propagate vulnerabilities to countless downstream applications. 
+Mitigation involved rapidly updating Log4j to patched versions and applying runtime protections, while the incident underscored the urgent need for enhanced software supply chain security practices.
+
+
 Lessons Learned and Connections to Formal Methods
 """""""""""""""""""""""""""""""""""""""""""""""""
 
