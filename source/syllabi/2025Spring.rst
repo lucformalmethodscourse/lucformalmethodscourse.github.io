@@ -59,7 +59,7 @@ Sections: 335-001/435-001 Spring 2025
 
   - 12 points: four group activities, 3 each
 
-    - property-based testing with jqwik
+    - formal specification of leftpad
     - formal software design with Alloy
     - behavioral modeling with TLA+
     - concurrency explorations with TLA+
