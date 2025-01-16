@@ -39,42 +39,53 @@ Sections: 335-001/435-001 Spring 2025
 
 - *Additional resources:* :ref:`appendix-resources`
 
-- *Grading (tentative):*
+- *Grading:*
 
   Additive point system *(tentative):*
 
-  - 18 points: *quizzes* 1-3 6 each
-  - 12 points: test 1
-  - 16 points: test 2
-  - 3 individual project 0a
-  - 5 individual project 0b
-  - 10 individual project 1a
-  - 10 individual project 1b
-  - 16 individual project 2a
-  - 16 group project 2b
-  - 12 points: four *group activities*, 3 each
-  - 5 points: individual or group presentation on a topic to be discussed *(required for grad students, extra credit for undergrad students)*
-  - 5 points: *participation* (in-class and online, including announcements of and reports from relevant professional events, GitHub issues and PRs for course examples, etc.)
-  - 5 points: starting baseline for undergrads
-  - 1 point extra credit: submission of course evaluation (submit screenshot of confirmation of submission) 
+  - 5 points undergraduate starting point (to line up with graduate grading schema)
+  - 15 points: quizzes 1-3 5 each
+  - 10 points: test 1
+  - 10 points: test 2
+  - 43 points: individual and group projects
+
+    - 3 individual project 0a Java
+    - 5 individual project 0b Java
+    - 5 individual project 1a jqwik
+    - 6 individual project 1b jqwik
+    - 8 group project 2 Alloy
+    - 8 group project 3 TLA+
+    - 8 group project 4 TLA+
+
+  - 12 points: four group activities, 3 each
+
+    - property-based testing with jqwik
+    - formal software design with Alloy
+    - behavioral modeling with TLA+
+    - concurrency explorations with TLA+
+
+  - 5 points: participation (in-class and online, including announcements of and reports from relevant professional events, GitHub issues and PRs for course examples, etc.)
+  - 1 point extra credit: submission of course evaluation (submit screenshot of confirmation of submission)
+  - 5 points extra credit for undergraduates (required for graduate students): individual or group presentation on a topic to be discussed
+  - Other extra credit opportunities TBA
 
   *(Percentage effort on each group project will be measured by an end-of-term questionnaire. Group project grades and/or final course grades may be adjusted to account for significant discrepancies in effort among group members.)*    
 
-  **Max total: 128 points plus extra credit**
+  **Max total: 100 points plus extra credit**
 
   *Grading schema (in points):*
 
-  - A 114 points
-  - A- 109
-  - B+ 105
-  - B 100
-  - B- 96
-  - C+ 91
-  - C 86
+  - A 94 points
+  - A- 90
+  - B+ 87
+  - B 84
+  - B- 80
+  - C+ 87
+  - C 84
   - C- 80
-  - D+ 74
-  - D 68
-  - F < 68
+  - D+ 67
+  - D 60
+  - F < 60
 
 - *Academic integrity:* `LUC <https://www.luc.edu/academics/catalog/undergrad/reg_academicintegrity.shtml>`_ | `CAS <https://www.luc.edu/cas/advising/academicintegritystatement/>`_ | `Grad <https://www.luc.edu/gradschool/academics_policies.shtml>`_
 - `Sakai site for this section (gradebook) <https://sakai.luc.edu/portal/site/COMP_335_001_5828_1252>`_
