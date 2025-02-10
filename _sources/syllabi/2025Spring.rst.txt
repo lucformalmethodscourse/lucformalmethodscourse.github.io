@@ -52,7 +52,7 @@ Sections: 335-001/435-001 Spring 2025
     - 3 individual project 0a JUnit
     - 5 individual project 0b JUnit
     - 5 individual project 1a jqwik
-    - 6 individual project 1b jqwik
+    - 6 group project 1b jqwik
     - 8 group project 2 Alloy
     - 8 group project 3 TLA+
     - 8 group project 4 TLA+

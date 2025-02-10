@@ -32,6 +32,7 @@ Please get started by reading the :doc:`10-overview`.
    15-softwareengineering
    20-foundations
    30-testing
+   35-specification
    40-modelchecking
    50-rtverification
    70-summary
