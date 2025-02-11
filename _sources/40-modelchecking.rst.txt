@@ -8,7 +8,7 @@ Model Checking
 For an overview, please review these resources:
 
 - `IEEE FIE 2024 paper and presentation <https://doi.org/10.6084/m9.figshare.27226500>`_
-- `Colab notebook with microwave example <https://doi.org/10.6084/m9.figshare.27122916>`
+- `Colab notebook with microwave example <https://doi.org/10.6084/m9.figshare.27122916>`_
 
 In addition, various TLA+ examples are available here:
 
