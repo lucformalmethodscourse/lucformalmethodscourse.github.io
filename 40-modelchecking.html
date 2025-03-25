@@ -5,8 +5,8 @@
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="7. Runtime Verification" href="50-rtverification.html" /><link rel="prev" title="5. Formal Specification" href="35-specification.html" />
 
-    <!-- Generated with Sphinx 8.2.1 and Furo 2024.08.06 -->
-        <title>6. Model Checking - Loyola University Chicago COMP 335 Lecture Notes v25sp.11</title>
+    <!-- Generated with Sphinx 8.2.3 and Furo 2024.08.06 -->
+        <title>6. Model Checking - Loyola University Chicago COMP 335 Lecture Notes v25sp.12</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=354aac6f" />
     <link rel="stylesheet" type="text/css" href="_static/proof.css?v=5beb2b09" />
@@ -167,7 +167,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="index.html"><div class="brand">Loyola University Chicago COMP 335 Lecture Notes v25sp.11</div></a>
+      <a href="index.html"><div class="brand">Loyola University Chicago COMP 335 Lecture Notes v25sp.12</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -191,7 +191,7 @@
       <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
   
   
-  <span class="sidebar-brand-text">Loyola University Chicago COMP 335 Lecture Notes v25sp.11</span>
+  <span class="sidebar-brand-text">Loyola University Chicago COMP 335 Lecture Notes v25sp.12</span>
   
 </a><form class="sidebar-search-container" method="get" action="search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -269,8 +269,44 @@
 <li><p><a class="reference external" href="https://github.com/lucformalmethodscourse">https://github.com/lucformalmethodscourse</a></p></li>
 <li><p><a class="reference external" href="https://github.com/tlaplus/Examples">https://github.com/tlaplus/Examples</a></p></li>
 </ul>
+<section id="extended-example-ticket-vending-machine">
+<h2><span class="section-number">6.1. </span>Extended example: ticket vending machine<a class="headerlink" href="#extended-example-ticket-vending-machine" title="Link to this heading"></a></h2>
+<p>The objective is to write and check a TLA+ specification for a ticket vending machine that sells one-way train tickets to several known destinations.</p>
+<p>We’ll make some simplifying assumptions: All tickets to the same destination have the same fare, but the fare may vary across destinations. The machine is initially loaded with zero or more tickets for each known destination, and zero or more coins in its internal bank.</p>
+<p>When in operation, the machine responds to the following external actions:</p>
+<ul class="simple">
+<li><p>Passenger deposits a coin.</p></li>
+<li><p>Passenger selects a destination. If they have deposited enough coins, the corresponding ticket is delivered, the money needed to pay for it is retained by the machine, and any amount of extra money they may have deposited is returned to them (the machine gives change.) Otherwise, nothing happens.</p></li>
+<li><p>Passenger selects “cancel.” Any coins they have deposited so far are returned.</p></li>
+</ul>
+<p>Your specification should allow you to use TLC to check the property that the total value of tickets still in the machine plus money in its internal bank is invariant during operation. Actually, this isn’t quite true: you’ll need to come up with a more precise invariant that is true.</p>
+<p><em>For simplicity, assume that tickets all cost some multiple of $1, and the machine only accepts dollar coins.</em></p>
+<section id="additional-thoughts">
+<h3><span class="section-number">6.1.1. </span>Additional thoughts<a class="headerlink" href="#additional-thoughts" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>The set of destinations and their fares should be CONSTANTS. Represent destinations as a set of model values. Represent fares as a function from destinations to Nat (you’ll need to make your spec EXTEND Naturals). Hint: to describe a concrete function given by the ordered pairs {(d1, r1),(d2, r2), … ,(dn, rn)} as the value of a constant, use the notation ( d1 :&gt; r1 &#64;&#64; d2 :&gt; r2 &#64;&#64; … &#64;&#64; dn :&gt; rn ).</p></li>
+<li><p>The VARIABLES should include the currently available tickets (a function from destinations to Nat), the current internal bank (a Nat for each kind of coin), and the amount deposited so far (again, a Nat for each kind of coin).</p></li>
+<li><p>The initial values of these variables should be specified as CONSTANTS too (except for the coins deposited so far, which can be initialized to zero).</p></li>
+<li><p>There should be three actions; the Next action should just be a disjunction of these.</p></li>
+<li><p>You may find the following higher-order operator (familiar from functional languages) useful for computing the value of the tickets in the machine:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="o">*</span> <span class="n">Operator</span> <span class="n">to</span> <span class="n">fold</span> <span class="n">over</span> <span class="n">a</span> <span class="nb">set</span> <span class="n">s</span> <span class="n">using</span> <span class="n">function</span> <span class="n">f</span> <span class="ow">and</span> <span class="n">initial</span> <span class="n">value</span> <span class="n">i</span> <span class="o">*</span><span class="p">)</span>
+<span class="n">Fold</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">_</span><span class="p">,</span><span class="n">_</span><span class="p">),</span><span class="n">i</span><span class="p">,</span><span class="n">s</span><span class="p">)</span> <span class="o">==</span>
+<span class="n">LET</span> <span class="n">DFold</span> <span class="p">[</span><span class="n">s0</span> \<span class="ow">in</span> <span class="n">SUBSET</span> <span class="n">s</span><span class="p">]</span> <span class="o">==</span>
+    <span class="n">LET</span> <span class="n">elt</span> <span class="o">==</span> <span class="n">CHOOSE</span> <span class="n">e</span> \<span class="ow">in</span> <span class="n">s0</span> <span class="p">:</span> <span class="n">TRUE</span> <span class="n">IN</span>
+    <span class="n">IF</span> <span class="n">s0</span> <span class="o">=</span> <span class="p">{}</span> <span class="n">THEN</span> <span class="n">i</span> <span class="n">ELSE</span> <span class="n">f</span><span class="p">(</span><span class="n">elt</span><span class="p">,</span> <span class="n">DFold</span><span class="p">[</span><span class="n">s0</span> \<span class="p">{</span><span class="n">elt</span><span class="p">}])</span>
+<span class="n">IN</span>
+    <span class="n">DFold</span><span class="p">[</span><span class="n">s</span><span class="p">]</span>
+
+<span class="p">(</span><span class="o">*</span> <span class="n">Example</span><span class="p">:</span> <span class="n">compute</span> <span class="nb">sum</span> <span class="n">of</span> <span class="n">a</span> <span class="nb">set</span> <span class="o">*</span><span class="p">)</span>
+<span class="n">Sum</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">==</span> <span class="n">Fold</span><span class="p">(</span><span class="n">LAMBDA</span> <span class="n">e</span><span class="p">,</span><span class="n">r</span> <span class="p">:</span> <span class="n">e</span> <span class="o">+</span> <span class="n">r</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">s</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>See also <a class="reference external" href="https://people.cs.aau.dk/~kgl/ESV04/exercises/#Exercise_25">this reference</a> for more ideas to consider and discuss.</p>
+</section>
+</section>
 <section id="exercises">
-<h2><span class="section-number">6.1. </span>Exercises<a class="headerlink" href="#exercises" title="Link to this heading"></a></h2>
+<h2><span class="section-number">6.2. </span>Exercises<a class="headerlink" href="#exercises" title="Link to this heading"></a></h2>
 <div class="proof proof-type-exercise" id="id2">
 
     <div class="proof-title">
@@ -384,7 +420,11 @@
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">6. Model Checking</a><ul>
-<li><a class="reference internal" href="#exercises">6.1. Exercises</a></li>
+<li><a class="reference internal" href="#extended-example-ticket-vending-machine">6.1. Extended example: ticket vending machine</a><ul>
+<li><a class="reference internal" href="#additional-thoughts">6.1.1. Additional thoughts</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#exercises">6.2. Exercises</a></li>
 </ul>
 </li>
 </ul>
@@ -398,7 +438,7 @@
   </div>
 </div><script src="_static/jquery.js?v=5d32c60e"></script>
     <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-    <script src="_static/documentation_options.js?v=ed2d285b"></script>
+    <script src="_static/documentation_options.js?v=dad5a231"></script>
     <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/scripts/furo.js?v=5fa4622c"></script>
