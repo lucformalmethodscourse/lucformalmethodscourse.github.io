@@ -148,3 +148,5 @@ Exercises
 
     Submission
         Each individual student who participated in the activity should submit a screenshot of their work completed by the end of the session.
+
+A nice collection of model-checking exercises is available `here <https://homes.cs.aau.dk/~kgl/esv04/exercises/>`_.
