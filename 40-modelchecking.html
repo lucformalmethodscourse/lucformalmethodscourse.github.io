@@ -6,7 +6,7 @@
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="7. Runtime Verification" href="50-rtverification.html" /><link rel="prev" title="5. Formal Specification" href="35-specification.html" />
 
     <!-- Generated with Sphinx 8.2.3 and Furo 2024.08.06 -->
-        <title>6. Model Checking - Loyola University Chicago COMP 335 Lecture Notes v25sp.12</title>
+        <title>6. Model Checking - Loyola University Chicago COMP 335 Lecture Notes v25sp.13</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=354aac6f" />
     <link rel="stylesheet" type="text/css" href="_static/proof.css?v=5beb2b09" />
@@ -167,7 +167,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="index.html"><div class="brand">Loyola University Chicago COMP 335 Lecture Notes v25sp.12</div></a>
+      <a href="index.html"><div class="brand">Loyola University Chicago COMP 335 Lecture Notes v25sp.13</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -191,7 +191,7 @@
       <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
   
   
-  <span class="sidebar-brand-text">Loyola University Chicago COMP 335 Lecture Notes v25sp.12</span>
+  <span class="sidebar-brand-text">Loyola University Chicago COMP 335 Lecture Notes v25sp.13</span>
   
 </a><form class="sidebar-search-container" method="get" action="search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -269,8 +269,41 @@
 <li><p><a class="reference external" href="https://github.com/lucformalmethodscourse">https://github.com/lucformalmethodscourse</a></p></li>
 <li><p><a class="reference external" href="https://github.com/tlaplus/Examples">https://github.com/tlaplus/Examples</a></p></li>
 </ul>
+<section id="use-case-finding-a-solution-to-a-puzzle">
+<h2><span class="section-number">6.1. </span>Use case: finding a solution to a puzzle<a class="headerlink" href="#use-case-finding-a-solution-to-a-puzzle" title="Link to this heading"></a></h2>
+<p>In these use cases, we use model checking to falsify an invariant corresponding to the absence of a solution.
+If there is a solution, the model checker finds one.</p>
+<p>Examples:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/lucformalmethodscourse/diehard-tla">Jug puzzle from Die Hard 3</a></p></li>
+<li><p><a class="reference external" href="https://github.com/lucformalmethodscourse/rivercrossing-tla">River crossing puzzles</a></p></li>
+</ul>
+</section>
+<section id="use-case-verifying-an-interactive-event-based-system">
+<h2><span class="section-number">6.2. </span>Use case: verifying an interactive, event-based system<a class="headerlink" href="#use-case-verifying-an-interactive-event-based-system" title="Link to this heading"></a></h2>
+<p>In these use cases, we use model checking to verify safety and liveness properties of event-based systems.
+These systems typically respond to external and internal stimuli (events), such as pressing a button, inserting a coin, an internal timer counting down, etc.
+In response to these events, the systems undergo state changes.</p>
+<p>As an example of a safety property from the user’s (consumer’s) point of view, a microwave oven should not allow radiation to occur with the door open.
+As an example of a liveness property, once the microwave oven is running, it should stop running within a finite amount of time.</p>
+<p>Examples:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/lucformalmethodscourse/microwave-tla">Microwave oven</a></p></li>
+<li><p><a class="reference external" href="https://github.com/lucformalmethodscourse/vendingmachine-tla">Vending machine</a></p></li>
+</ul>
+</section>
+<section id="use-case-checking-the-thread-safety-of-a-concurrent-system-with-explicit-threads">
+<h2><span class="section-number">6.3. </span>Use case: checking the thread safety of a concurrent system with explicit threads<a class="headerlink" href="#use-case-checking-the-thread-safety-of-a-concurrent-system-with-explicit-threads" title="Link to this heading"></a></h2>
+<p>In these use cases, we model threads explicitly as finite state machines based on the underlying control flow graph.</p>
+<p>Examples:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/lucformalmethodscourse/simpleconcurrency-tla">Shared variable updated by multiple concurrent threads</a></p></li>
+<li><p>Data structure shared among multiple concurrent clients (TODO)</p></li>
+</ul>
+<p>These references contain more background material on <a class="reference external" href="https://arxiv.org/abs/1705.02899">concurrency in general</a> and the <a class="reference external" href="https://lucproglangcourse.github.io/concurrency.html#understanding-the-extent-of-nondeterminism">extent of nondeterminism resulting from concurrent activities in a system</a>, which can quickly become unwieldy even with a small number of concurrent threads.</p>
+</section>
 <section id="extended-example-ticket-vending-machine">
-<h2><span class="section-number">6.1. </span>Extended example: ticket vending machine<a class="headerlink" href="#extended-example-ticket-vending-machine" title="Link to this heading"></a></h2>
+<h2><span class="section-number">6.4. </span>Extended example: ticket vending machine<a class="headerlink" href="#extended-example-ticket-vending-machine" title="Link to this heading"></a></h2>
 <p>The objective is to write and check a TLA+ specification for a ticket vending machine that sells one-way train tickets to several known destinations.</p>
 <p>We’ll make some simplifying assumptions: All tickets to the same destination have the same fare, but the fare may vary across destinations. The machine is initially loaded with zero or more tickets for each known destination, and zero or more coins in its internal bank.</p>
 <p>When in operation, the machine responds to the following external actions:</p>
@@ -282,7 +315,7 @@
 <p>Your specification should allow you to use TLC to check the property that the total value of tickets still in the machine plus money in its internal bank is invariant during operation. Actually, this isn’t quite true: you’ll need to come up with a more precise invariant that is true.</p>
 <p><em>For simplicity, assume that tickets all cost some multiple of $1, and the machine only accepts dollar coins.</em></p>
 <section id="additional-thoughts">
-<h3><span class="section-number">6.1.1. </span>Additional thoughts<a class="headerlink" href="#additional-thoughts" title="Link to this heading"></a></h3>
+<h3><span class="section-number">6.4.1. </span>Additional thoughts<a class="headerlink" href="#additional-thoughts" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>The set of destinations and their fares should be CONSTANTS. Represent destinations as a set of model values. Represent fares as a function from destinations to Nat (you’ll need to make your spec EXTEND Naturals). Hint: to describe a concrete function given by the ordered pairs {(d1, r1),(d2, r2), … ,(dn, rn)} as the value of a constant, use the notation ( d1 :&gt; r1 &#64;&#64; d2 :&gt; r2 &#64;&#64; … &#64;&#64; dn :&gt; rn ).</p></li>
 <li><p>The VARIABLES should include the currently available tickets (a function from destinations to Nat), the current internal bank (a Nat for each kind of coin), and the amount deposited so far (again, a Nat for each kind of coin).</p></li>
@@ -306,7 +339,7 @@
 </section>
 </section>
 <section id="exercises">
-<h2><span class="section-number">6.2. </span>Exercises<a class="headerlink" href="#exercises" title="Link to this heading"></a></h2>
+<h2><span class="section-number">6.5. </span>Exercises<a class="headerlink" href="#exercises" title="Link to this heading"></a></h2>
 <div class="proof proof-type-exercise" id="id2">
 
     <div class="proof-title">
@@ -420,11 +453,14 @@
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">6. Model Checking</a><ul>
-<li><a class="reference internal" href="#extended-example-ticket-vending-machine">6.1. Extended example: ticket vending machine</a><ul>
-<li><a class="reference internal" href="#additional-thoughts">6.1.1. Additional thoughts</a></li>
+<li><a class="reference internal" href="#use-case-finding-a-solution-to-a-puzzle">6.1. Use case: finding a solution to a puzzle</a></li>
+<li><a class="reference internal" href="#use-case-verifying-an-interactive-event-based-system">6.2. Use case: verifying an interactive, event-based system</a></li>
+<li><a class="reference internal" href="#use-case-checking-the-thread-safety-of-a-concurrent-system-with-explicit-threads">6.3. Use case: checking the thread safety of a concurrent system with explicit threads</a></li>
+<li><a class="reference internal" href="#extended-example-ticket-vending-machine">6.4. Extended example: ticket vending machine</a><ul>
+<li><a class="reference internal" href="#additional-thoughts">6.4.1. Additional thoughts</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#exercises">6.2. Exercises</a></li>
+<li><a class="reference internal" href="#exercises">6.5. Exercises</a></li>
 </ul>
 </li>
 </ul>
@@ -438,7 +474,7 @@
   </div>
 </div><script src="_static/jquery.js?v=5d32c60e"></script>
     <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-    <script src="_static/documentation_options.js?v=dad5a231"></script>
+    <script src="_static/documentation_options.js?v=7ead2628"></script>
     <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/scripts/furo.js?v=5fa4622c"></script>
