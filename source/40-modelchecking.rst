@@ -16,6 +16,47 @@ In addition, various TLA+ examples are available here:
 - https://github.com/tlaplus/Examples
 
 
+Use case: finding a solution to a puzzle
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+In these use cases, we use model checking to falsify an invariant corresponding to the absence of a solution.
+If there is a solution, the model checker finds one.
+
+Examples:
+
+- `Jug puzzle from Die Hard 3 <https://github.com/lucformalmethodscourse/diehard-tla>`_
+- `River crossing puzzles <https://github.com/lucformalmethodscourse/rivercrossing-tla>`_
+
+
+Use case: verifying an interactive, event-based system
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+In these use cases, we use model checking to verify safety and liveness properties of event-based systems.
+These systems typically respond to external and internal stimuli (events), such as pressing a button, inserting a coin, an internal timer counting down, etc.
+In response to these events, the systems undergo state changes.
+
+As an example of a safety property from the user's (consumer's) point of view, a microwave oven should not allow radiation to occur with the door open.
+As an example of a liveness property, once the microwave oven is running, it should stop running within a finite amount of time.
+
+Examples:
+
+- `Microwave oven <https://github.com/lucformalmethodscourse/microwave-tla>`_
+- `Vending machine <https://github.com/lucformalmethodscourse/vendingmachine-tla>`_
+
+Use case: checking the thread safety of a concurrent system with explicit threads
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+In these use cases, we model threads explicitly as finite state machines based on the underlying control flow graph.
+
+Examples:
+
+- `Shared variable updated by multiple concurrent threads <https://github.com/lucformalmethodscourse/simpleconcurrency-tla>`_
+- Data structure shared among multiple concurrent clients (TODO)
+
+These references contain more background material on `concurrency in general <https://arxiv.org/abs/1705.02899>`_ and the `extent of nondeterminism resulting from concurrent activities in a system <https://lucproglangcourse.github.io/concurrency.html#understanding-the-extent-of-nondeterminism>`_, which can quickly become unwieldy even with a small number of concurrent threads.
+
+
+
 Extended example: ticket vending machine
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
