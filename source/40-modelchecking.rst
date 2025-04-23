@@ -26,6 +26,7 @@ Examples:
 
 - `Jug puzzle from Die Hard 3 <https://github.com/lucformalmethodscourse/diehard-tla>`_
 - `River crossing puzzles <https://github.com/lucformalmethodscourse/rivercrossing-tla>`_
+- `Towers of Hanoi puzzle <https://github.com/lucformalmethodscourse/hanoisimple-tla>`_
 
 
 Use case: verifying an interactive, event-based system
