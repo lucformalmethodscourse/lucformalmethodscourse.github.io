@@ -62,6 +62,14 @@ Releases
    `GitHub Releases <https://github.com/lucformalmethodscourse/lucformalmethodscourse.github.io/releases/latest>`_
 
 
+
+AI Disclosure
+-------------
+
+AI Disclosure: This text contains a mix of original writing and programming with strategic use of ChatGPT via intentional prompting. Some examples will be available in our repository with an appropriate build configurations and tests. We may also make some prompts and analyses available, similar to what my colleagues have done for their recent ongoing study of ChatGPT and Systems Programming. See https://doi.org/10.6084/m9.figshare.22257274.
+
+
+
 .. todo:: Indices and tables (put at end of TOC above)
 
    * :ref:`genindex`
