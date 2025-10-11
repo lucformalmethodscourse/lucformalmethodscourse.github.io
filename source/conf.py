@@ -35,9 +35,10 @@ extensions = [
     'sphinx.ext.todo',
     'sphinx.ext.mathjax',
     'sphinxcontrib.bibtex',
-    'sphinxcontrib.proof'
+    'sphinxcontrib.proof',
 #    'sphinx.ext.ifconfig',
 #    'sphinx.ext.viewcode',
+    'sphinx_reredirects'
 ]
 
 todo_include_todos = True
@@ -342,4 +343,10 @@ proof_theorem_types = {
 "property": "Property",
 "theorem": "Theorem",
 "exercise": "Exercise"
+}
+
+# -- Options for sphinx_reredirect (redirects from outside)
+
+redirects = {
+     "testing.html": "30-testing.html"
 }

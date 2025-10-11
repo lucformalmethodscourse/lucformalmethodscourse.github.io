@@ -1,6 +1,7 @@
 sphinx
+sphinx-reredirects
 sphinx-rtd-theme
 sphinxcontrib-bibtex
-furo
 sphinxcontrib-proof
 sphinx-exercise
+furo
