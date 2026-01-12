@@ -1,4 +1,4 @@
-Sections: 335-001/488-335 Spring 2025
+Sections: 335-001/488-335 Spring 2026
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - *General format:*
@@ -11,7 +11,7 @@ Sections: 335-001/488-335 Spring 2025
 
 - *Estimated workload: 9 to 12 hours per week including class time.*
 
-- *Class time and location (spring 2025):* Tue 16:15-18:45 in Crown Center 114 (LSC)
+- *Class time and location (spring 2026):* Tue 16:15-18:45 in Cuneo 104 (LSC)
 
 - *Communication:* All communication regarding this class takes place in the classroom (verbal) and MS Teams (written). Most will be in the team-level channel specific to this term. For individual or group-level concerns, you may use direct individual or group messages in MS Teams; my user ID is **klaufer@luc.edu**. *(To help me prioritize your class-related communication, please DO NOT use email!)*
 
@@ -21,8 +21,8 @@ Sections: 335-001/488-335 Spring 2025
 
 - *Office hours:*
 
-  - Tue 18:50-19:30 after class in Crown Center 114 (LSC)
-  - Wed 14:00-15:45 and Fri 14:00-15:45 in Doyle Hall 203 (LSC) or online (`by appointment via Calendly <https://calendly.com/laufer>`_)
+  - Tue 18:50-19:30 after class in Cuneo 104 (LSC)
+  - Wed 14:00-15:45 and Fri 14:00-15:45 in Doyle Hall 307 (LSC) or online (`by appointment via Calendly <https://calendly.com/laufer>`_)
   - TA office hours: please see Sakai for details
   
 - *Required materials:*
@@ -88,19 +88,20 @@ Sections: 335-001/488-335 Spring 2025
   - F < 60
 
 - *Academic integrity:* `LUC <https://www.luc.edu/academics/catalog/undergrad/reg_academicintegrity.shtml>`_ | `CAS <https://www.luc.edu/cas/advising/academicintegritystatement/>`_ | `Grad <https://www.luc.edu/gradschool/academics_policies.shtml>`_
-- `Sakai site for this section (gradebook) <https://sakai.luc.edu/portal/site/COMP_335_001_5828_1252>`_
-- `MS Team <https://teams.microsoft.com/l/channel/19%3AXnbDutseIPiBfQpl1YAMgo4N3bprcwf08QKxD8tXTNU1%40thread.tacv2/General?groupId=e1746657-1dc6-4198-aa44-ebe0a49bfc09&tenantId=021f4fe3-2b9c-4824-8378-bbcf9ec5accb>`_ *(mandatory subscription and participation)*
+- `Sakai site for this section (gradebook) <https://sakai.luc.edu/portal/site/COMP_335_001_4238_1262>`_
+- `MS Team <https://teams.microsoft.com/l/channel/19%3A24ed7a46f9a94bf090b9f05a022680fd%40thread.tacv2/Spring%202026?groupId=e1746657-1dc6-4198-aa44-ebe0a49bfc09&tenantId=021f4fe3-2b9c-4824-8378-bbcf9ec5accb>`_ *(mandatory subscription and participation)*
 
 Important dates (tentative) for quizzes and tests
-  - Week 4 - Tue 4 February: quiz 1
-  - Week 7 - Tue 25 February: test 1
-  - Week 8 - Tue 4 March: **NO CLASS (spring break)**
-  - Week 10 - Tue 18 March: quiz 2
-  - Week 11 - Mon 24 March: *last day to withdraw with W instead of WF*
-  - Week 13 - Tue 8 April: test 2
-  - Week 16 (finals week) - Tue 29 April: *quiz 3 followed by class session*
+  - Week 4 - Tue 3 February: quiz 1
+  - Week 7 - Tue 24 February: test 1
+  - Week 8 - Tue 3 March: **NO CLASS (spring break)**
+  - Week 10 - Tue 17 March: quiz 2
+  - Week 11 - Mon 23 March: *last day to withdraw with W instead of WF*
+  - Week 11 - Tue 24 March: **ASYNC CLASS - details TBD**
+  - Week 13 - Tue 7 April: test 2
+  - Week 16 (finals week) - Tue 28 April: *quiz 3 followed by class session*
 
-- *Recording of class meetings:* In this class, software will be used to record live class discussions. As a student in this class, your participation in live class discussions will be recorded. These recordings will be made available only to students enrolled in the class, to assist those who cannot attend the live session or to serve as a resource for those who would like to review content that was presented. All recordings will become unavailable to students in the class when the course has concluded. The use of all video recordings will be in keeping with the University Privacy Statement shown below.
+- *Recording of class meetings:* In this class, software may be used to record live class discussions. As a student in this class, your participation in live class discussions may be recorded. These recordings will be made available only to students enrolled in the class, to assist those who cannot attend the live session or to serve as a resource for those who would like to review content that was presented. All recordings will become unavailable to students in the class when the course has concluded. The use of all video recordings will be in keeping with the University Privacy Statement shown below.
 
 - *Privacy Statement:* Assuring privacy among faculty and students engaged in online and face-to-face instructional activities helps promote open and robust conversations and mitigates concerns that comments made within the context of the class will be shared beyond the classroom. As such, recordings of instructional activities occurring in online or face-to-face classes may be used solely for internal class purposes by the faculty member and students registered for the course, and only during the period in which the course is offered. Students will be informed of such recordings by a statement in the syllabus for the course in which they will be recorded. Instructors who wish to make subsequent use of recordings that include student activity may do so only with informed written consent of the students involved or if all student activity is removed from the recording. Recordings including student activity that have been initiated by the instructor may be retained by the instructor only for individual use.
 
