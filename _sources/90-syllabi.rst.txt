@@ -6,7 +6,7 @@ Appendix: Course Syllabi
 These are the official course syllabi for the most recent section(s) of this course.
 
 
-Course: COMP 335/488 Formal Methods in Software Engineering
+Course: COMP 335/435 Formal Methods in Software Engineering
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Prerequisites: 
