@@ -8,7 +8,7 @@ We will use Alloy, a lightweight modeling language based on relational logic, to
 We focus on modeling data structures, defining constraints, specifying operations, and reasoning about system behavior using Alloy's built-in analysis tools.
 
 
-.. note:: This chapter is in its initial stages for spring 2025 and subject to ongoing revisions!
+.. note:: This chapter is in its initial stages for spring 2026 and subject to ongoing revisions!
 
 
 More details, including additional examples, are available in the book `Formal Software Design with Alloy 6 <https://haslab.github.io/formal-software-design>`_.

@@ -3,7 +3,7 @@
 Model Checking
 --------------
 
-.. todo:: Under construction for spring 2025
+.. todo:: Under construction for spring 2026
 
 For an overview, please review these resources:
 
