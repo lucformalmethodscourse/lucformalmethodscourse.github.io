@@ -35,6 +35,11 @@ Dynamic Nonfunctional Requirements
    - Assessing aspects like performance, scalability, reliability, and more.
    - Involves performance testing, stress testing, load testing, reliability testing, and more.
 
+Static Nonfunctional Requirements
+
+   - Although primarily addressed through static analysis, some aspects can be indirectly tested, e.g., security testing and usability.
+   - Architectural conformance can also be partially verified through testing; `this example <https://github.com/lucproglangcourse/stopwatch-java/blob/main/src/test/java/edu/luc/etl/cs313/android/simplestopwatch/architecture/PackageDependencyTest.java>`_ based on `ArchUnit <https://www.archunit.org/>`_ illustrates this approach.
+
 
 Significance
 ^^^^^^^^^^^^
@@ -183,7 +188,7 @@ Here, we express the relationship between arguments and expected results as a un
 
     \forall \texttt{s} \in \text{String} : \texttt{isPalindrome(s)} \Leftrightarrow (\texttt{s} = \texttt{s.reverse})
 
-Using a suitable propert-based testing library, such as `jqwik <https://jqwik.net>`_, we can express this property as executable code.
+Using a suitable property-based testing library, such as `jqwik <https://jqwik.net>`_, we can express this property as executable code.
 Typically, such a library automatically generates a large number of argument values and then evaluates the property for each argument as a separate test. 
 
 .. code-block:: java
