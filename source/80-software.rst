@@ -86,8 +86,8 @@ Choices of local development environments
 
 - `Visual Studio Code <https://code.visualstudio.com/>`_ (recommended for PlusCal/TLA+ development, supports Java development)
 
-  - need to install the actively developed `TLA+ extension <https://github.com/tlaplus/vscode-tlaplus>`_
-  - see below for recommended VS Code extensions
+  - has official `Alloy <https://marketplace.visualstudio.com/items?itemName=ArashSahebolamri.alloy>`_ and `TLA+ <https://github.com/tlaplus/vscode-tlaplus>`_ extensions
+  - see below for other recommended VS Code extensions
 
 - `IntelliJ IDEA CE <https://www.jetbrains.com/idea/download/>`_ integrated development environment (alternative for Java development)
 
