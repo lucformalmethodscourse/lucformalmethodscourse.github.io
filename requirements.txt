@@ -5,3 +5,4 @@ sphinxcontrib-bibtex
 sphinxcontrib-proof
 sphinx-exercise
 furo
+sphinx-copybutton
