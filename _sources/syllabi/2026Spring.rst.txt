@@ -97,7 +97,6 @@ Important dates (tentative) for quizzes and tests
   - Week 8 - Tue 3 March: **NO CLASS (spring break)**
   - Week 10 - Tue 17 March: quiz 2
   - Week 11 - Mon 23 March: *last day to withdraw with W instead of WF*
-  - Week 11 - Tue 24 March: **ASYNC CLASS - details TBD**
   - Week 13 - Tue 7 April: test 2
   - Week 16 (finals week) - Tue 28 April: *quiz 3 followed by class session*
 
