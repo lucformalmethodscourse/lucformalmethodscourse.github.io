@@ -98,7 +98,8 @@ Important dates (tentative) for quizzes and tests
   - Week 10 - Tue 17 March: quiz 2
   - Week 11 - Mon 23 March: *last day to withdraw with W instead of WF*
   - Week 13 - Tue 7 April: test 2
-  - Week 16 (finals week) - Tue 28 April: *quiz 3 followed by class session*
+  - Week 15 - Tue 21 April: quiz 3
+  - Week 16 - Tue 28 April (finals week): **NO FINAL EXAM OR CLASS SESSION**
 
 - *Recording of class meetings:* In this class, software may be used to record live class discussions. As a student in this class, your participation in live class discussions may be recorded. These recordings will be made available only to students enrolled in the class, to assist those who cannot attend the live session or to serve as a resource for those who would like to review content that was presented. All recordings will become unavailable to students in the class when the course has concluded. The use of all video recordings will be in keeping with the University Privacy Statement shown below.
 
