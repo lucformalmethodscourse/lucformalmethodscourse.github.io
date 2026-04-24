@@ -58,7 +58,7 @@ Examples:
 - `Shared variable updated by multiple concurrent threads <https://github.com/lucformalmethodscourse/simpleconcurrency-tla>`_
 - Data structure shared among multiple concurrent clients (TODO)
 
-These references contain more background material on `concurrency in general <https://arxiv.org/abs/1705.02899>`_ and the `extent of nondeterminism resulting from concurrent activities in a system <https://lucproglangcourse.github.io/concurrency.html#understanding-the-extent-of-nondeterminism>`_, which can quickly become unwieldy even with a small number of concurrent threads.
+These references contain more background material on `concurrency in general <https://arxiv.org/abs/1705.02899>`_ and the `extent of nondeterminism resulting from concurrent activities in a system <https://lucproglangcourse.github.io/60-concurrency.html#understanding-the-extent-of-nondeterminism>`_, which can quickly become unwieldy even with a small number of concurrent threads.
 
 
 
