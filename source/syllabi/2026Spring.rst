@@ -87,7 +87,7 @@ Sections: 335-001/488-335 Spring 2026
   - D 60
   - F < 60
 
-- *Academic integrity:* `LUC <https://www.luc.edu/academics/catalog/undergrad/reg_academicintegrity.shtml>`_ | `CAS <https://www.luc.edu/cas/advising/academicintegritystatement/>`_ | `Grad <https://www.luc.edu/gradschool/academics_policies.shtml>`_
+- *Academic integrity:* `LUC <https://www.luc.edu/academics/catalog/undergrad/reg_academicintegrity.shtml>`_ | `CAS <https://www.luc.edu/cas/academicadvising/academicintegrityappeal/>`_ | `Grad <https://www.luc.edu/gradschool/academics_policies.shtml>`_
 - `Sakai site for this section (gradebook) <https://sakai.luc.edu/portal/site/COMP_335_001_4238_1262>`_
 - `MS Team <https://teams.microsoft.com/l/channel/19%3A24ed7a46f9a94bf090b9f05a022680fd%40thread.tacv2/Spring%202026?groupId=e1746657-1dc6-4198-aa44-ebe0a49bfc09&tenantId=021f4fe3-2b9c-4824-8378-bbcf9ec5accb>`_ *(mandatory subscription and participation)*
 
