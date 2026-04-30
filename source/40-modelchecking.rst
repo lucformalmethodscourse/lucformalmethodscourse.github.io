@@ -3,8 +3,6 @@
 Model Checking
 --------------
 
-.. todo:: Under construction for spring 2026
-
 For an overview, please review these resources:
 
 - `IEEE FIE 2024 paper and presentation <https://doi.org/10.6084/m9.figshare.27226500>`_
@@ -14,6 +12,8 @@ In addition, various TLA+ examples are available here:
 
 - https://github.com/lucformalmethodscourse
 - https://github.com/tlaplus/Examples
+
+The official TLA+ book, *Specifying Systems*, is available for download `here <https://lamport.azurewebsites.net/tla/book.html>`_.
 
 
 Use case: finding a solution to a puzzle

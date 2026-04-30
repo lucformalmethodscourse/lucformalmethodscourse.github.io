@@ -4,8 +4,6 @@ Foundations in Discrete Structures
 ----------------------------------
 
 
-.. todo:: Under construction for spring 2026
-
 .. https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf
 .. https://milde.users.sourceforge.net/LUCR/Math/mathpackages/amssymb-symbols.pdf
 
