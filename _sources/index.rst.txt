@@ -12,7 +12,7 @@ You have reached the home of the Formal Methods in Software Engineering course (
 
 .. warning::
 
-   These notes are still under construction for spring 2026, so expect a few rough edges. But we're getting closer!
+   These notes are currently under construction for spring 2027, so expect a few rough edges. But we're getting closer!
    Your contributions are *highly welcome!*
    Please submit `issues <https://github.com/lucformalmethodscourse/lucformalmethodscourse.github.io/issues>`_
    and `pull requests <https://github.com/lucformalmethodscourse/lucformalmethodscourse.github.io/pulls>`_.
