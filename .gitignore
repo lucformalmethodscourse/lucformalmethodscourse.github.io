@@ -8,3 +8,4 @@ examples/
 *.bak
 Pipfile*
 .venv/
+.vscode/
