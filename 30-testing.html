@@ -6,7 +6,7 @@
 <link rel="index" title="Index" href="genindex.html"><link rel="search" title="Search" href="search.html"><link rel="next" title="5. Formal Specification" href="35-specification.html"><link rel="prev" title="3. Foundations in Discrete Structures" href="20-foundations.html">
 
     <!-- Generated with Sphinx 9.0.4 and Furo 2025.12.19 -->
-        <title>4. Software Testing - Loyola University Chicago COMP 335 Lecture Notes v26sp.15</title>
+        <title>4. Software Testing - Loyola University Chicago COMP 335 Lecture Notes v27sp.1</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=7bdb33bb" />
     <link rel="stylesheet" type="text/css" href="_static/proof.css?v=5beb2b09" />
@@ -163,7 +163,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="index.html"><div class="brand">Loyola University Chicago COMP 335 Lecture Notes v26sp.15</div></a>
+      <a href="index.html"><div class="brand">Loyola University Chicago COMP 335 Lecture Notes v27sp.1</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -184,7 +184,7 @@
       
       <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
   
-  <span class="sidebar-brand-text">Loyola University Chicago COMP 335 Lecture Notes v26sp.15</span>
+  <span class="sidebar-brand-text">Loyola University Chicago COMP 335 Lecture Notes v27sp.1</span>
   
 </a><form class="sidebar-search-container" method="get" action="search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -365,8 +365,8 @@ During the last two decades, this “test-infected” mindset has gradually ente
 <section id="ad-hoc-testing">
 <h3><span class="section-number">4.8.2. </span>Ad-hoc testing<a class="headerlink" href="#ad-hoc-testing" title="Link to this heading"></a></h3>
 <p>Also called example-based testing, where we provide one or more specific test cases, where we programmatically interact with the system under test (SUT) and then examine the result or effect of the interaction.</p>
-<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="n">assert</span><span class="p">(</span><span class="n">isPalindrome</span><span class="p">(</span><span class="s">&quot;radar&quot;</span><span class="p">))</span>
-<span class="n">assert</span><span class="p">(</span><span class="o">!</span><span class="n">isPalindrome</span><span class="p">(</span><span class="s">&quot;lidar&quot;</span><span class="p">))</span>
+<div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="n">assert</span><span class="p">(</span><span class="n">isPalindrome</span><span class="p">(</span><span class="s">"radar"</span><span class="p">))</span>
+<span class="n">assert</span><span class="p">(</span><span class="o">!</span><span class="n">isPalindrome</span><span class="p">(</span><span class="s">"lidar"</span><span class="p">))</span>
 </pre></div>
 </div>
 </section>
@@ -374,19 +374,19 @@ During the last two decades, this “test-infected” mindset has gradually ente
 <h3><span class="section-number">4.8.3. </span>Table-Based Testing (also known as data-driven testing)<a class="headerlink" href="#table-based-testing-also-known-as-data-driven-testing" title="Link to this heading"></a></h3>
 <p>Here, we provide a table of two or more columns corresponding to arguments and expected results of the function or method under test. This technique allows for a more concise representation of several similar ad-hoc tests.</p>
 <div class="highlight-scala notranslate"><div class="highlight"><pre><span></span><span class="kd">val</span><span class="w"> </span><span class="n">palindromeTable</span><span class="w"> </span><span class="o">=</span>
-<span class="w">  </span><span class="s">&quot;string&quot;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="s">&quot;result&quot;</span><span class="w"> </span><span class="o">|</span>
-<span class="w">  </span><span class="s">&quot;a&quot;</span><span class="w">      </span><span class="o">!</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="o">|</span>
-<span class="w">  </span><span class="s">&quot;aa&quot;</span><span class="w">     </span><span class="o">!</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="o">|</span>
-<span class="w">  </span><span class="s">&quot;ab&quot;</span><span class="w">     </span><span class="o">!</span><span class="w"> </span><span class="kc">false</span><span class="w"> </span><span class="o">|</span>
-<span class="w">  </span><span class="s">&quot;mom&quot;</span><span class="w">    </span><span class="o">!</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="o">|</span>
-<span class="w">  </span><span class="s">&quot;dad&quot;</span><span class="w">    </span><span class="o">!</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="o">|</span>
-<span class="w">  </span><span class="s">&quot;kid&quot;</span><span class="w">    </span><span class="o">!</span><span class="w"> </span><span class="kc">false</span><span class="w"> </span><span class="o">|</span>
-<span class="w">  </span><span class="s">&quot;abba&quot;</span><span class="w">   </span><span class="o">!</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="o">|</span>
-<span class="w">  </span><span class="s">&quot;appl&quot;</span><span class="w">   </span><span class="o">!</span><span class="w"> </span><span class="kc">false</span><span class="w"> </span><span class="o">|</span>
-<span class="w">  </span><span class="s">&quot;uncle&quot;</span><span class="w">  </span><span class="o">!</span><span class="w"> </span><span class="kc">false</span><span class="w"> </span><span class="o">|</span>
-<span class="w">  </span><span class="s">&quot;radar&quot;</span><span class="w">  </span><span class="o">!</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="o">|</span>
-<span class="w">  </span><span class="s">&quot;lidar&quot;</span><span class="w">  </span><span class="o">!</span><span class="w"> </span><span class="kc">false</span><span class="w"> </span><span class="o">|</span>
-<span class="w">  </span><span class="s">&quot;hannah&quot;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">true</span>
+<span class="w">  </span><span class="s">"string"</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="s">"result"</span><span class="w"> </span><span class="o">|</span>
+<span class="w">  </span><span class="s">"a"</span><span class="w">      </span><span class="o">!</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="o">|</span>
+<span class="w">  </span><span class="s">"aa"</span><span class="w">     </span><span class="o">!</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="o">|</span>
+<span class="w">  </span><span class="s">"ab"</span><span class="w">     </span><span class="o">!</span><span class="w"> </span><span class="kc">false</span><span class="w"> </span><span class="o">|</span>
+<span class="w">  </span><span class="s">"mom"</span><span class="w">    </span><span class="o">!</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="o">|</span>
+<span class="w">  </span><span class="s">"dad"</span><span class="w">    </span><span class="o">!</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="o">|</span>
+<span class="w">  </span><span class="s">"kid"</span><span class="w">    </span><span class="o">!</span><span class="w"> </span><span class="kc">false</span><span class="w"> </span><span class="o">|</span>
+<span class="w">  </span><span class="s">"abba"</span><span class="w">   </span><span class="o">!</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="o">|</span>
+<span class="w">  </span><span class="s">"appl"</span><span class="w">   </span><span class="o">!</span><span class="w"> </span><span class="kc">false</span><span class="w"> </span><span class="o">|</span>
+<span class="w">  </span><span class="s">"uncle"</span><span class="w">  </span><span class="o">!</span><span class="w"> </span><span class="kc">false</span><span class="w"> </span><span class="o">|</span>
+<span class="w">  </span><span class="s">"radar"</span><span class="w">  </span><span class="o">!</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="o">|</span>
+<span class="w">  </span><span class="s">"lidar"</span><span class="w">  </span><span class="o">!</span><span class="w"> </span><span class="kc">false</span><span class="w"> </span><span class="o">|</span>
+<span class="w">  </span><span class="s">"hannah"</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">true</span>
 
 <span class="n">palindromeTable</span><span class="w"> </span><span class="o">|&gt;</span><span class="w"> </span><span class="p">(</span>
 <span class="w">  </span><span class="p">(</span><span class="n">s</span><span class="p">,</span><span class="w"> </span><span class="n">r</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">assert</span><span class="p">(</span><span class="n">isPalindrome</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">r</span><span class="p">)</span>
@@ -427,8 +427,8 @@ The challenge is that the space of possible interactions with a stateful object 
 <p>For example, this test represents only one possible scenario involving the stateful <cite>offer</cite> and <cite>poll</cite> methods of a bounded buffer.</p>
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="nd">@Test</span>
 <span class="kt">void</span><span class="w"> </span><span class="nf">testOffer2ThenPoll2</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kd">final</span><span class="w"> </span><span class="kd">var</span><span class="w"> </span><span class="n">value1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;hello&quot;</span><span class="p">;</span>
-<span class="w">  </span><span class="kd">final</span><span class="w"> </span><span class="kd">var</span><span class="w"> </span><span class="n">value2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;world&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="kd">final</span><span class="w"> </span><span class="kd">var</span><span class="w"> </span><span class="n">value1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"hello"</span><span class="p">;</span>
+<span class="w">  </span><span class="kd">final</span><span class="w"> </span><span class="kd">var</span><span class="w"> </span><span class="n">value2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"world"</span><span class="p">;</span>
 <span class="w">  </span><span class="n">assertTrue</span><span class="p">(</span><span class="n">fixture</span><span class="p">.</span><span class="na">offer</span><span class="p">(</span><span class="n">value1</span><span class="p">));</span>
 <span class="w">  </span><span class="n">assertTrue</span><span class="p">(</span><span class="n">fixture</span><span class="p">.</span><span class="na">offer</span><span class="p">(</span><span class="n">value2</span><span class="p">));</span>
 <span class="w">  </span><span class="n">assertEquals</span><span class="p">(</span><span class="n">value1</span><span class="p">,</span><span class="w"> </span><span class="n">fixture</span><span class="p">.</span><span class="na">poll</span><span class="p">());</span>
@@ -448,7 +448,7 @@ The challenge is that the space of possible interactions with a stateful object 
 <span class="p">}</span>
 
 <span class="nd">@Property</span>
-<span class="kt">void</span><span class="w"> </span><span class="nf">checkSimpleQueue</span><span class="p">(</span><span class="nd">@ForAll</span><span class="p">(</span><span class="s">&quot;simpleQueueActions&quot;</span><span class="p">)</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">ActionChain</span><span class="o">&lt;</span><span class="n">SimpleQueue</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">chain</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">checkSimpleQueue</span><span class="p">(</span><span class="nd">@ForAll</span><span class="p">(</span><span class="s">"simpleQueueActions"</span><span class="p">)</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">ActionChain</span><span class="o">&lt;</span><span class="n">SimpleQueue</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">chain</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="n">chain</span><span class="p">.</span><span class="na">run</span><span class="p">();</span>
 <span class="p">}</span>
 </pre></div>
@@ -629,7 +629,7 @@ With the help of an appropriate tool, such as JaCoCo or scoverage, we can genera
   </div>
 </div><script src="_static/jquery.js?v=5d32c60e"></script>
     <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-    <script src="_static/documentation_options.js?v=6bea8913"></script>
+    <script src="_static/documentation_options.js?v=921984e1"></script>
     <script src="_static/doctools.js?v=fd6eb6e6"></script>
     <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="_static/scripts/furo.js?v=46bd48cc"></script>
