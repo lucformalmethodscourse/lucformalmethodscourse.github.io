@@ -1,0 +1,14 @@
+[project]
+name = "lucformalmethodscourse"
+version = "0.1.0"
+requires-python = ">=3.14"
+dependencies = [
+    "furo>=2025.12.19",
+    "sphinx>=9.2.0",
+    "sphinx-copybutton>=0.5.2",
+    "sphinx-exercise>=1.2.2",
+    "sphinx-reredirects>=1.1.0",
+    "sphinx-rtd-theme>=3.1.0",
+    "sphinxcontrib-bibtex>=2.7.0",
+    "sphinxcontrib-proof>=1.8.0",
+]
