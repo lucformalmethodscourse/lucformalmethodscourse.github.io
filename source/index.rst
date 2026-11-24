@@ -30,11 +30,14 @@ But those agencies are clear that language choice is no cure-all, and a White Ho
 
 **That's where this course comes in.** DARPA reports that formal methods have already made quadcopters, helicopters, and automobiles resistant to cyberattack, and that broad adoption is the next hurdle. You can help clear it.
 
+**Formal methods are also at the center of the AI revolution.** When AI models recently cracked longstanding open math problems—including the Jacobian conjecture, Navier-Stokes, and the Riemann hypothesis—they relied on Lean, a dependently typed functional language and proof assistant, to machine-check every logical step down to the axioms. That same technology lets you verify that critical software and AI-generated code actually do what they claim.
+
 What you'll do
 ^^^^^^^^^^^^^^
 
 - **Say what you mean.** Learn to state precisely what a system must (and must not) do, using formal specification built on the discrete-math foundations you already know.
 - **Explore every possibility.** Use model checking to examine all the ways a design can behave, including the rare corner cases tests miss.
+- **Prove it with Lean.** Get hands-on experience with the proof assistant powering 2026's AI-enabled math breakthroughs to machine-verify properties that testing and model checking alone can't cover.
 - **Watch it run.** Apply runtime verification to check, while a program executes, that it keeps its promises.
 - **Connect it to practice.** See where these techniques fit alongside testing in everyday software engineering.
 
