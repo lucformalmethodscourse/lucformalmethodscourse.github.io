@@ -48,6 +48,11 @@ You'll learn a way of thinking that outlasts any framework or language: asking "
 
 **If you've ever shipped code and wondered "but what did I miss?", this course gives you better tools than hope.**
 
+Go further with undergraduate research
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Curious how formal methods and AI meet in practice? Our AI4FM project studies how language models can help write and verify formal specifications—building directly on the tools and ideas in this course. Several undergraduates already co-author papers and build open datasets with our team. All you need to bring is curiosity, patience for detail, and a willingness to stick with tough problems.
+
 See it in action: the microwave oven
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
