@@ -51,7 +51,7 @@ You'll learn a way of thinking that outlasts any framework or language: asking "
 Go further with undergraduate research
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Curious how formal methods and AI meet in practice? Our AI4FM project studies how language models can help write and verify formal specifications—building directly on the tools and ideas in this course. Several undergraduates already co-author papers and build open datasets with our team. All you need to bring is curiosity, patience for detail, and a willingness to stick with tough problems.
+Curious how formal methods and AI meet in practice? Our [AI4FM project](http://ai4fm.cs.luc.edu/) studies how language models can help write and verify formal specifications—building directly on the tools and ideas in this course. Several undergraduates already co-author papers and build open datasets with our team. All you need to bring is curiosity, patience for detail, and a willingness to stick with tough problems.
 
 See it in action: the microwave oven
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
