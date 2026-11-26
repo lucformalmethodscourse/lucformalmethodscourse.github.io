@@ -46,7 +46,7 @@ What you'll take with you
 
 You'll learn a way of thinking that outlasts any framework or language: asking "what exactly must be true, and how do I know it is?" Whether you build web services, embedded systems, or AI-assisted code, that question makes you a sharper engineer. It's also a rare skill, because the White House report itself notes that formal methods are still not widely deployed.
 
-**If you've ever shipped code and wondered "but what did I miss?", this course gives you better tools than hope.**
+**If you’ve ever shipped code and wondered "but what did I miss?", this course gives you better tools than hope. As Ignatian engineers, we have a moral obligation to reach for the strongest tools available—not settle for good enough.**
 
 Go further with undergraduate research
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
